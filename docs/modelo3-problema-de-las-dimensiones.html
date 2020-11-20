@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 9 Modelo3 (Problema de las dimensiones) | Curso básico de Matemáticas Uno</title>
+  <meta name="description" content="Este texto se realizo usando bookdown package para escribir libros." />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 9 Modelo3 (Problema de las dimensiones) | Curso básico de Matemáticas Uno" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="images/portada.jpg" />
+  <meta property="og:description" content="Este texto se realizo usando bookdown package para escribir libros." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 9 Modelo3 (Problema de las dimensiones) | Curso básico de Matemáticas Uno" />
+  
+  <meta name="twitter:description" content="Este texto se realizo usando bookdown package para escribir libros." />
+  <meta name="twitter:image" content="images/portada.jpg" />
+
+<meta name="author" content="John Jairo Estrada Álvarez" />
+
+
+<meta name="date" content="2020-07-24" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="modelo2-problema-de-las-edades.html"/>
+<link rel="next" href="modelo4-problema-de-las-dimensiones.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Curso de Matemáticas Uno</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerrequisitos</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#comportamentales"><i class="fa fa-check"></i><b>1.1</b> Comportamentales</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#evaluativos"><i class="fa fa-check"></i><b>1.2</b> Evaluativos</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#fechas-de-evaluación"><i class="fa fa-check"></i><b>1.3</b> Fechas de evaluación</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#video-motivacional"><i class="fa fa-check"></i><b>1.4</b> Video motivacional</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#página-para-reforzar-conceptos-básicos"><i class="fa fa-check"></i><b>1.5</b> Página para reforzar conceptos básicos</a></li>
+<li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#objetivo-general"><i class="fa fa-check"></i><b>1.6</b> Objetivo general</a></li>
+<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#objetivos-específicos"><i class="fa fa-check"></i><b>1.7</b> Objetivos específicos</a></li>
+<li class="chapter" data-level="1.8" data-path="index.html"><a href="index.html#clase-a-clase"><i class="fa fa-check"></i><b>1.8</b> <strong>Clase a clase</strong></a></li>
+<li class="chapter" data-level="1.9" data-path="index.html"><a href="index.html#bibliografía"><i class="fa fa-check"></i><b>1.9</b> Bibliografía</a></li>
+<li class="chapter" data-level="1.10" data-path="index.html"><a href="index.html#video-manejo-de-la-casio-f_x350ms"><i class="fa fa-check"></i><b>1.10</b> Video manejo de la Casio <span class="math inline">\(f_{x}350MS\)</span></a><ul>
+<li class="chapter" data-level="1.10.1" data-path="index.html"><a href="index.html#regla-de-cramer-sistemas-2-por-2"><i class="fa fa-check"></i><b>1.10.1</b> Regla de Cramer sistemas <span class="math inline">\(2\)</span> por <span class="math inline">\(2\)</span></a></li>
+<li class="chapter" data-level="1.10.2" data-path="index.html"><a href="index.html#regla-de-cramer-sistemas-3-por-3"><i class="fa fa-check"></i><b>1.10.2</b> Regla de Cramer sistemas <span class="math inline">\(3\)</span> por <span class="math inline">\(3\)</span></a></li>
+<li class="chapter" data-level="1.10.3" data-path="index.html"><a href="index.html#regla-de-sarrus-determinante-3-por-3"><i class="fa fa-check"></i><b>1.10.3</b> Regla de Sarrus determinante <span class="math inline">\(3\)</span> por <span class="math inline">\(3\)</span></a></li>
+<li class="chapter" data-level="1.10.4" data-path="index.html"><a href="index.html#solución-de-la-ecuación-cuadrática"><i class="fa fa-check"></i><b>1.10.4</b> Solución de la ecuación cuadrática</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introducción</a><ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#teoría-de-conjuntos"><i class="fa fa-check"></i><b>2.1</b> Teoría de conjuntos</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#propiedades-de-la-unión"><i class="fa fa-check"></i><b>2.2</b> Propiedades de la Unión</a></li>
+<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#propiedades-de-la-intersección"><i class="fa fa-check"></i><b>2.3</b> Propiedades de la Intersección</a></li>
+<li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#propiedades-de-la-unión-y-la-intersección"><i class="fa fa-check"></i><b>2.4</b> Propiedades de la unión y la intersección</a></li>
+<li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#diferencia-entre-dos-conjuntos"><i class="fa fa-check"></i><b>2.5</b> Diferencia entre dos conjuntos</a></li>
+<li class="chapter" data-level="2.6" data-path="intro.html"><a href="intro.html#complemento-de-un-conjunto"><i class="fa fa-check"></i><b>2.6</b> Complemento de un conjunto</a></li>
+<li class="chapter" data-level="2.7" data-path="intro.html"><a href="intro.html#propiedades-del-algebra-de-conjuntos"><i class="fa fa-check"></i><b>2.7</b> Propiedades del algebra de conjuntos</a></li>
+<li class="chapter" data-level="2.8" data-path="intro.html"><a href="intro.html#propiedades-de-los-números-reales"><i class="fa fa-check"></i><b>2.8</b> Propiedades de los números Reales</a></li>
+<li class="chapter" data-level="2.9" data-path="intro.html"><a href="intro.html#ejemplos-para-la-solución-de-desigualdades-usando-las-propiedades-básicas"><i class="fa fa-check"></i><b>2.9</b> Ejemplos para la solución de desigualdades usando las propiedades básicas</a></li>
+<li class="chapter" data-level="2.10" data-path="intro.html"><a href="intro.html#evaluación-fórmula-del-estudiante-parábola-y-línea-recta"><i class="fa fa-check"></i><b>2.10</b> Evaluación (Fórmula del Estudiante, Parábola y Línea Recta)</a></li>
+<li class="chapter" data-level="2.11" data-path="intro.html"><a href="intro.html#concepto-de-valor-absoluto"><i class="fa fa-check"></i><b>2.11</b> Concepto de valor absoluto</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="potenciación-y-radicales.html"><a href="potenciación-y-radicales.html"><i class="fa fa-check"></i><b>3</b> Potenciación y Radicales</a><ul>
+<li class="chapter" data-level="3.1" data-path="potenciación-y-radicales.html"><a href="potenciación-y-radicales.html#propiedades-potenciación"><i class="fa fa-check"></i><b>3.1</b> Propiedades potenciación</a></li>
+<li class="chapter" data-level="3.2" data-path="potenciación-y-radicales.html"><a href="potenciación-y-radicales.html#propiedades-de-radicales"><i class="fa fa-check"></i><b>3.2</b> Propiedades de radicales</a></li>
+<li class="chapter" data-level="3.3" data-path="potenciación-y-radicales.html"><a href="potenciación-y-radicales.html#ejemplo-ejercicio-del-taller"><i class="fa fa-check"></i><b>3.3</b> Ejemplo (ejercicio del taller)</a></li>
+<li class="chapter" data-level="3.4" data-path="potenciación-y-radicales.html"><a href="potenciación-y-radicales.html#ejemplo-ejercicio-del-taller-1"><i class="fa fa-check"></i><b>3.4</b> Ejemplo (ejercicio del taller)</a></li>
+<li class="chapter" data-level="3.5" data-path="potenciación-y-radicales.html"><a href="potenciación-y-radicales.html#ejemplo"><i class="fa fa-check"></i><b>3.5</b> Ejemplo</a></li>
+<li class="chapter" data-level="3.6" data-path="potenciación-y-radicales.html"><a href="potenciación-y-radicales.html#ley-distributiva"><i class="fa fa-check"></i><b>3.6</b> Ley distributiva</a></li>
+<li class="chapter" data-level="3.7" data-path="potenciación-y-radicales.html"><a href="potenciación-y-radicales.html#ejemplos-ley-distributiva"><i class="fa fa-check"></i><b>3.7</b> Ejemplos ley distributiva</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html"><i class="fa fa-check"></i><b>4</b> Solución de Ecuaciones</a><ul>
+<li class="chapter" data-level="4.1" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#propiedades-de-las-ecuaciones"><i class="fa fa-check"></i><b>4.1</b> Propiedades de las ecuaciones</a></li>
+<li class="chapter" data-level="4.2" data-path="potenciación-y-radicales.html"><a href="potenciación-y-radicales.html#ley-distributiva"><i class="fa fa-check"></i><b>4.2</b> Ley distributiva</a></li>
+<li class="chapter" data-level="4.3" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#factorización-tema1"><i class="fa fa-check"></i><b>4.3</b> Factorización (Tema1)</a></li>
+<li class="chapter" data-level="4.4" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#método-de-la-cruceta"><i class="fa fa-check"></i><b>4.4</b> Método de la cruceta</a></li>
+<li class="chapter" data-level="4.5" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#método-factorizacion-forzada"><i class="fa fa-check"></i><b>4.5</b> Método factorizacion forzada</a></li>
+<li class="chapter" data-level="4.6" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#productos-notables-básicos"><i class="fa fa-check"></i><b>4.6</b> Productos notables básicos</a></li>
+<li class="chapter" data-level="4.7" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#suma-al-cuadrado"><i class="fa fa-check"></i><b>4.7</b> Suma al cuadrado</a><ul>
+<li class="chapter" data-level="4.7.1" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#diferencia-al-cuadrado"><i class="fa fa-check"></i><b>4.7.1</b> Diferencia al cuadrado</a></li>
+<li class="chapter" data-level="4.7.2" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#diferencia-de-cuadrados"><i class="fa fa-check"></i><b>4.7.2</b> Diferencia de cuadrados</a></li>
+<li class="chapter" data-level="4.7.3" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#suma-al-cúbo"><i class="fa fa-check"></i><b>4.7.3</b> Suma al cúbo</a></li>
+<li class="chapter" data-level="4.7.4" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#diferencia-al-cúbo"><i class="fa fa-check"></i><b>4.7.4</b> Diferencia al cúbo</a></li>
+<li class="chapter" data-level="4.7.5" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#suma-de-cúbos"><i class="fa fa-check"></i><b>4.7.5</b> Suma de cúbos</a></li>
+<li class="chapter" data-level="4.7.6" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#diferencia-de-cúbos"><i class="fa fa-check"></i><b>4.7.6</b> Diferencia de cúbos</a></li>
+</ul></li>
+<li class="chapter" data-level="4.8" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#operaciones-con-polinomios"><i class="fa fa-check"></i><b>4.8</b> Operaciones con Polinomios</a><ul>
+<li class="chapter" data-level="4.8.1" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#suma-de-polinomios"><i class="fa fa-check"></i><b>4.8.1</b> <strong>Suma de polinomios</strong></a></li>
+<li class="chapter" data-level="4.8.2" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#diferencia-de-polinomios"><i class="fa fa-check"></i><b>4.8.2</b> <strong>Diferencia de polinomios</strong></a></li>
+<li class="chapter" data-level="4.8.3" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#producto-de-dos-polinomios"><i class="fa fa-check"></i><b>4.8.3</b> <strong>Producto de dos polinomios</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="4.9" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#despeje-de-variable-tema1"><i class="fa fa-check"></i><b>4.9</b> Despeje de variable (Tema1)`</a><ul>
+<li class="chapter" data-level="4.9.1" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo1-despeje-de-variable"><i class="fa fa-check"></i><b>4.9.1</b> Ejemplo1 (Despeje de variable)</a></li>
+<li class="chapter" data-level="4.9.2" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo2-despeje-de-variable"><i class="fa fa-check"></i><b>4.9.2</b> Ejemplo2 (Despeje de variable)</a></li>
+<li class="chapter" data-level="4.9.3" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo3-despeje-de-variable"><i class="fa fa-check"></i><b>4.9.3</b> Ejemplo3 (Despeje de variable)</a></li>
+<li class="chapter" data-level="4.9.4" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo4-despeje-de-variable"><i class="fa fa-check"></i><b>4.9.4</b> Ejemplo4 (Despeje de variable)</a></li>
+<li class="chapter" data-level="4.9.5" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo5-despeje-de-variable"><i class="fa fa-check"></i><b>4.9.5</b> Ejemplo5 (Despeje de variable)</a></li>
+<li class="chapter" data-level="4.9.6" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo6-despeje-de-variable"><i class="fa fa-check"></i><b>4.9.6</b> Ejemplo6 (Despeje de variable)</a></li>
+<li class="chapter" data-level="4.9.7" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo7-despeje-de-variable"><i class="fa fa-check"></i><b>4.9.7</b> Ejemplo7 (Despeje de variable)</a></li>
+<li class="chapter" data-level="4.9.8" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo8-despeje-de-variable"><i class="fa fa-check"></i><b>4.9.8</b> Ejemplo8 (Despeje de variable)</a></li>
+<li class="chapter" data-level="4.9.9" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo9-despeje-de-variable"><i class="fa fa-check"></i><b>4.9.9</b> Ejemplo9 (Despeje de variable)</a></li>
+<li class="chapter" data-level="4.9.10" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo10-despeje-de-variable"><i class="fa fa-check"></i><b>4.9.10</b> Ejemplo10 (Despeje de variable)</a></li>
+</ul></li>
+<li class="chapter" data-level="4.10" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#solución-de-ecuaciones-1"><i class="fa fa-check"></i><b>4.10</b> Solución de ecuaciones</a><ul>
+<li class="chapter" data-level="4.10.1" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#fórmula-del-estudiante"><i class="fa fa-check"></i><b>4.10.1</b> Fórmula del estudiante</a></li>
+<li class="chapter" data-level="4.10.2" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo1-solución-de-ec"><i class="fa fa-check"></i><b>4.10.2</b> Ejemplo1 (Solución de Ec)</a></li>
+<li class="chapter" data-level="4.10.3" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo2-solución-de-ec"><i class="fa fa-check"></i><b>4.10.3</b> Ejemplo2 (Solución de Ec)</a></li>
+<li class="chapter" data-level="4.10.4" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo3-solución-de-ec"><i class="fa fa-check"></i><b>4.10.4</b> Ejemplo3 (Solución de Ec)</a></li>
+<li class="chapter" data-level="4.10.5" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo4-solución-de-ec"><i class="fa fa-check"></i><b>4.10.5</b> Ejemplo4 (Solución de Ec)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html"><i class="fa fa-check"></i><b>5</b> Solución de sistemas de ecuaciones</a><ul>
+<li class="chapter" data-level="5.1" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#teorema-de-los-sistema-lineales"><i class="fa fa-check"></i><b>5.1</b> Teorema de los sistema lineales</a></li>
+<li class="chapter" data-level="5.2" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#sistemas-2-por-2"><i class="fa fa-check"></i><b>5.2</b> Sistemas <span class="math inline">\(2\)</span> por <span class="math inline">\(2\)</span></a></li>
+<li class="chapter" data-level="5.3" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#gráfica-sistemas-de-ecuaciones"><i class="fa fa-check"></i><b>5.3</b> Gráfica sistemas de ecuaciones</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#técnica-de-sustitución"><i class="fa fa-check"></i><b>5.3.1</b> Técnica de sustitución</a></li>
+<li class="chapter" data-level="5.3.2" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#técnica-de-eliminación"><i class="fa fa-check"></i><b>5.3.2</b> Técnica de eliminación</a></li>
+<li class="chapter" data-level="5.3.3" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#técnica-de-los-determinantes"><i class="fa fa-check"></i><b>5.3.3</b> Técnica de los determinantes</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#sistemas-3-por-3"><i class="fa fa-check"></i><b>5.4</b> Sistemas <span class="math inline">\(3\)</span> por <span class="math inline">\(3\)</span></a><ul>
+<li class="chapter" data-level="5.4.1" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#técnica-de-sustitución-1"><i class="fa fa-check"></i><b>5.4.1</b> Técnica de sustitución</a></li>
+<li class="chapter" data-level="5.4.2" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#técnica-de-eliminación-1"><i class="fa fa-check"></i><b>5.4.2</b> Técnica de eliminación</a></li>
+<li class="chapter" data-level="5.4.3" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#técnica-de-los-determinantes-1"><i class="fa fa-check"></i><b>5.4.3</b> Técnica de los determinantes</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#sistemas-nl"><i class="fa fa-check"></i><b>5.5</b> Sistemas NL</a><ul>
+<li class="chapter" data-level="5.5.1" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejemplos-de-sistemas-no-lineales"><i class="fa fa-check"></i><b>5.5.1</b> Ejemplos de sistemas no lineales</a></li>
+<li class="chapter" data-level="5.5.2" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#técnica-de-sustitución-2"><i class="fa fa-check"></i><b>5.5.2</b> Técnica de sustitución</a></li>
+<li class="chapter" data-level="5.5.3" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#técnica-de-eliminación-2"><i class="fa fa-check"></i><b>5.5.3</b> Técnica de eliminación</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#observaciones"><i class="fa fa-check"></i><b>5.6</b> <strong>OBSERVACIONES</strong></a><ul>
+<li class="chapter" data-level="5.6.1" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejercicio-del-taller"><i class="fa fa-check"></i><b>5.6.1</b> Ejercicio del taller</a></li>
+<li class="chapter" data-level="5.6.2" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejercicio-del-taller-1"><i class="fa fa-check"></i><b>5.6.2</b> Ejercicio del taller</a></li>
+<li class="chapter" data-level="5.6.3" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejercicio-del-taller-2"><i class="fa fa-check"></i><b>5.6.3</b> Ejercicio del taller</a></li>
+<li class="chapter" data-level="5.6.4" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejercicio-del-parcial"><i class="fa fa-check"></i><b>5.6.4</b> Ejercicio del parcial</a></li>
+<li class="chapter" data-level="5.6.5" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejercicio-del-parcial-1"><i class="fa fa-check"></i><b>5.6.5</b> Ejercicio del parcial</a></li>
+<li class="chapter" data-level="5.6.6" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejercicio-del-parcial-2"><i class="fa fa-check"></i><b>5.6.6</b> Ejercicio del parcial</a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejemplo1"><i class="fa fa-check"></i><b>5.7</b> Ejemplo1</a><ul>
+<li class="chapter" data-level="5.7.1" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejemplo2"><i class="fa fa-check"></i><b>5.7.1</b> Ejemplo2</a></li>
+<li class="chapter" data-level="5.7.2" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejemplo3"><i class="fa fa-check"></i><b>5.7.2</b> Ejemplo3</a></li>
+<li class="chapter" data-level="5.7.3" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejercicio4taller"><i class="fa fa-check"></i><b>5.7.3</b> Ejercicio4(Taller)</a></li>
+<li class="chapter" data-level="5.7.4" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejercicio16taller"><i class="fa fa-check"></i><b>5.7.4</b> Ejercicio16(Taller)</a></li>
+<li class="chapter" data-level="5.7.5" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejercicio14taller"><i class="fa fa-check"></i><b>5.7.5</b> Ejercicio14(Taller)</a></li>
+<li class="chapter" data-level="5.7.6" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejercicio20taller"><i class="fa fa-check"></i><b>5.7.6</b> Ejercicio20(Taller)</a></li>
+<li class="chapter" data-level="5.7.7" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejercicio9taller"><i class="fa fa-check"></i><b>5.7.7</b> Ejercicio9(Taller)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html"><i class="fa fa-check"></i><b>6</b> Planteo y solución de problemas</a><ul>
+<li class="chapter" data-level="6.1" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#sugerencia-para-construir-una-ecuación"><i class="fa fa-check"></i><b>6.1</b> <strong>Sugerencia para construir una ecuación</strong></a></li>
+<li class="chapter" data-level="6.2" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#sugerencia-para-resolver-un-problema-según-george-polya-13-dic1887-7sep1985"><i class="fa fa-check"></i><b>6.2</b> <strong>Sugerencia para resolver un problema según George Polya (13 Dic1887-7Sep1985)</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="modelo1-problema-de-las-edades.html"><a href="modelo1-problema-de-las-edades.html"><i class="fa fa-check"></i><b>7</b> Modelo1 (Problema de las edades)</a></li>
+<li class="chapter" data-level="8" data-path="modelo2-problema-de-las-edades.html"><a href="modelo2-problema-de-las-edades.html"><i class="fa fa-check"></i><b>8</b> Modelo2 (Problema de las edades)</a></li>
+<li class="chapter" data-level="9" data-path="modelo3-problema-de-las-dimensiones.html"><a href="modelo3-problema-de-las-dimensiones.html"><i class="fa fa-check"></i><b>9</b> Modelo3 (Problema de las dimensiones)</a></li>
+<li class="chapter" data-level="10" data-path="modelo4-problema-de-las-dimensiones.html"><a href="modelo4-problema-de-las-dimensiones.html"><i class="fa fa-check"></i><b>10</b> Modelo4 (Problema de las dimensiones)</a></li>
+<li class="chapter" data-level="11" data-path="modelo5-problema-de-las-dimensiones.html"><a href="modelo5-problema-de-las-dimensiones.html"><i class="fa fa-check"></i><b>11</b> Modelo5 (Problema de las dimensiones)</a></li>
+<li class="chapter" data-level="12" data-path="modelo6-problema-de-las-aceras.html"><a href="modelo6-problema-de-las-aceras.html"><i class="fa fa-check"></i><b>12</b> Modelo6 (Problema de las aceras)</a></li>
+<li class="chapter" data-level="13" data-path="modelo7-problema-de-interés-simple.html"><a href="modelo7-problema-de-interés-simple.html"><i class="fa fa-check"></i><b>13</b> Modelo7 (Problema de interés simple)</a></li>
+<li class="chapter" data-level="14" data-path="modelo8-problema-de-velocidad.html"><a href="modelo8-problema-de-velocidad.html"><i class="fa fa-check"></i><b>14</b> Modelo8 (Problema de velocidad)</a></li>
+<li class="chapter" data-level="15" data-path="modelo9-problema-de-mezcla.html"><a href="modelo9-problema-de-mezcla.html"><i class="fa fa-check"></i><b>15</b> Modelo9 (Problema de mezcla)</a></li>
+<li class="chapter" data-level="16" data-path="modelo10-problema-de-trabajo.html"><a href="modelo10-problema-de-trabajo.html"><i class="fa fa-check"></i><b>16</b> Modelo10 (Problema de trabajo)</a></li>
+<li class="chapter" data-level="17" data-path="variación-directa.html"><a href="variación-directa.html"><i class="fa fa-check"></i><b>17</b> Variación directa</a></li>
+<li class="chapter" data-level="18" data-path="variación-inversa.html"><a href="variación-inversa.html"><i class="fa fa-check"></i><b>18</b> Variación inversa</a></li>
+<li class="chapter" data-level="19" data-path="regla-de-tres-simple-y-directa.html"><a href="regla-de-tres-simple-y-directa.html"><i class="fa fa-check"></i><b>19</b> Regla de tres simple y directa</a></li>
+<li class="chapter" data-level="20" data-path="modelo11-problema-regla-de-tres-simple-y-directa.html"><a href="modelo11-problema-regla-de-tres-simple-y-directa.html"><i class="fa fa-check"></i><b>20</b> Modelo11 (Problema Regla de tres simple y directa)</a></li>
+<li class="chapter" data-level="21" data-path="regla-de-tres-simple-e-inversa.html"><a href="regla-de-tres-simple-e-inversa.html"><i class="fa fa-check"></i><b>21</b> Regla de tres simple e inversa</a></li>
+<li class="chapter" data-level="22" data-path="modelo12-problema-regla-de-tres-simple-inversa.html"><a href="modelo12-problema-regla-de-tres-simple-inversa.html"><i class="fa fa-check"></i><b>22</b> Modelo12 (Problema Regla de tres simple inversa)</a></li>
+<li class="chapter" data-level="23" data-path="modelo13-problema-regla-de-tres-simple-inversa.html"><a href="modelo13-problema-regla-de-tres-simple-inversa.html"><i class="fa fa-check"></i><b>23</b> Modelo13 (Problema Regla de tres simple inversa)</a></li>
+<li class="chapter" data-level="24" data-path="regla-de-tres-simple-compuesta.html"><a href="regla-de-tres-simple-compuesta.html"><i class="fa fa-check"></i><b>24</b> Regla de tres simple compuesta</a><ul>
+<li class="chapter" data-level="24.1" data-path="regla-de-tres-simple-compuesta.html"><a href="regla-de-tres-simple-compuesta.html#directamente-proporcional"><i class="fa fa-check"></i><b>24.1</b> Directamente proporcional</a></li>
+<li class="chapter" data-level="24.2" data-path="regla-de-tres-simple-compuesta.html"><a href="regla-de-tres-simple-compuesta.html#inversamente-proporcional"><i class="fa fa-check"></i><b>24.2</b> Inversamente proporcional</a></li>
+<li class="chapter" data-level="24.3" data-path="regla-de-tres-simple-compuesta.html"><a href="regla-de-tres-simple-compuesta.html#directamente-e-inversamente-proporcional-mixta"><i class="fa fa-check"></i><b>24.3</b> Directamente e Inversamente proporcional (Mixta)</a></li>
+</ul></li>
+<li class="chapter" data-level="25" data-path="modelo14-problema-regla-de-tres-compuesta-ó-mixta.html"><a href="modelo14-problema-regla-de-tres-compuesta-ó-mixta.html"><i class="fa fa-check"></i><b>25</b> Modelo14 (Problema Regla de tres compuesta ó Mixta)</a></li>
+<li class="chapter" data-level="26" data-path="modelo15-problema-regla-de-tres-compuesta-ó-mixta.html"><a href="modelo15-problema-regla-de-tres-compuesta-ó-mixta.html"><i class="fa fa-check"></i><b>26</b> Modelo15 (Problema Regla de tres compuesta ó Mixta)</a></li>
+<li class="chapter" data-level="27" data-path="modelo16-problema-regla-de-tres-compuesta-ó-mixta.html"><a href="modelo16-problema-regla-de-tres-compuesta-ó-mixta.html"><i class="fa fa-check"></i><b>27</b> Modelo16 (Problema Regla de tres compuesta ó Mixta)</a></li>
+<li class="chapter" data-level="28" data-path="modelo17-problema-regla-de-tres-compuesta-ó-mixta.html"><a href="modelo17-problema-regla-de-tres-compuesta-ó-mixta.html"><i class="fa fa-check"></i><b>28</b> Modelo17 (Problema Regla de tres compuesta ó Mixta)</a></li>
+<li class="chapter" data-level="29" data-path="modelo18-problema-regla-de-tres-simple-y-directa.html"><a href="modelo18-problema-regla-de-tres-simple-y-directa.html"><i class="fa fa-check"></i><b>29</b> Modelo18 (Problema Regla de tres simple y directa)</a></li>
+<li class="chapter" data-level="30" data-path="modelo19-problema-regla-de-tres-simple-y-directa.html"><a href="modelo19-problema-regla-de-tres-simple-y-directa.html"><i class="fa fa-check"></i><b>30</b> Modelo19 (Problema Regla de tres simple y directa)</a></li>
+<li class="chapter" data-level="31" data-path="modelo20-problema-regla-de-tres-compuesta.html"><a href="modelo20-problema-regla-de-tres-compuesta.html"><i class="fa fa-check"></i><b>31</b> Modelo20 (Problema Regla de tres compuesta)</a></li>
+<li class="chapter" data-level="32" data-path="modelo23-problema-de-la-caja.html"><a href="modelo23-problema-de-la-caja.html"><i class="fa fa-check"></i><b>32</b> Modelo23 (Problema de la caja)</a></li>
+<li class="chapter" data-level="33" data-path="modelo25-problema-del-triángulo.html"><a href="modelo25-problema-del-triángulo.html"><i class="fa fa-check"></i><b>33</b> Modelo25 (Problema del triángulo)</a></li>
+<li class="chapter" data-level="34" data-path="modelo26-problema-de-mezcla.html"><a href="modelo26-problema-de-mezcla.html"><i class="fa fa-check"></i><b>34</b> Modelo26 (Problema de mezcla)</a></li>
+<li class="chapter" data-level="35" data-path="modelo27-problema-de-mezcla.html"><a href="modelo27-problema-de-mezcla.html"><i class="fa fa-check"></i><b>35</b> Modelo27 (Problema de mezcla)</a></li>
+<li class="chapter" data-level="36" data-path="modelo28-problema-de-velocidad1.html"><a href="modelo28-problema-de-velocidad1.html"><i class="fa fa-check"></i><b>36</b> Modelo28 (Problema de velocidad1)</a></li>
+<li class="chapter" data-level="37" data-path="modelo29-problema-de-la-recta.html"><a href="modelo29-problema-de-la-recta.html"><i class="fa fa-check"></i><b>37</b> Modelo29 (Problema de la recta)</a></li>
+<li class="chapter" data-level="38" data-path="modelo30-problema-de-la-región-sombreada.html"><a href="modelo30-problema-de-la-región-sombreada.html"><i class="fa fa-check"></i><b>38</b> Modelo30 (Problema de la región sombreada)</a></li>
+<li class="chapter" data-level="39" data-path="modelo31-problema-de-la-recta-tangente.html"><a href="modelo31-problema-de-la-recta-tangente.html"><i class="fa fa-check"></i><b>39</b> Modelo31 (Problema de la recta tangente)</a></li>
+<li class="chapter" data-level="40" data-path="modelo39-problema-de-trabajo.html"><a href="modelo39-problema-de-trabajo.html"><i class="fa fa-check"></i><b>40</b> Modelo39 (Problema de trabajo)</a></li>
+<li class="chapter" data-level="41" data-path="modelo-40-problema-de-velocidad2.html"><a href="modelo-40-problema-de-velocidad2.html"><i class="fa fa-check"></i><b>41</b> Modelo 40 (Problema de velocidad2)</a></li>
+<li class="chapter" data-level="42" data-path="concepto-de-función.html"><a href="concepto-de-función.html"><i class="fa fa-check"></i><b>42</b> Concepto de función</a><ul>
+<li class="chapter" data-level="42.1" data-path="concepto-de-función.html"><a href="concepto-de-función.html#ejemplos"><i class="fa fa-check"></i><b>42.1</b> Ejemplos</a></li>
+<li class="chapter" data-level="42.2" data-path="concepto-de-función.html"><a href="concepto-de-función.html#criterio-de-la-recta-vertical"><i class="fa fa-check"></i><b>42.2</b> Criterio de la recta vertical</a></li>
+<li class="chapter" data-level="42.3" data-path="concepto-de-función.html"><a href="concepto-de-función.html#desplazamiento-horizontal-y-vertical-de-una-gráfica-en-el-plano-xy"><i class="fa fa-check"></i><b>42.3</b> Desplazamiento horizontal y vertical de una gráfica en el plano <span class="math inline">\(XY\)</span></a></li>
+<li class="chapter" data-level="42.4" data-path="concepto-de-función.html"><a href="concepto-de-función.html#estiramiento-y-comprensión-de-una-gráfica-en-el-plano-xy"><i class="fa fa-check"></i><b>42.4</b> Estiramiento y comprensión de una gráfica en el plano <span class="math inline">\(XY\)</span></a></li>
+<li class="chapter" data-level="42.5" data-path="concepto-de-función.html"><a href="concepto-de-función.html#ejemplos-básicos"><i class="fa fa-check"></i><b>42.5</b> Ejemplos básicos</a></li>
+<li class="chapter" data-level="42.6" data-path="concepto-de-función.html"><a href="concepto-de-función.html#leyes-de-los-exponentes"><i class="fa fa-check"></i><b>42.6</b> Leyes de los exponentes</a></li>
+<li class="chapter" data-level="42.7" data-path="concepto-de-función.html"><a href="concepto-de-función.html#gráfica-de-una-función-exponencial"><i class="fa fa-check"></i><b>42.7</b> Gráfica de una función exponencial</a></li>
+<li class="chapter" data-level="42.8" data-path="concepto-de-función.html"><a href="concepto-de-función.html#comparando-dos-funciones-exponenciales"><i class="fa fa-check"></i><b>42.8</b> Comparando dos funciones exponenciales</a></li>
+<li class="chapter" data-level="42.9" data-path="concepto-de-función.html"><a href="concepto-de-función.html#propiedades-de-la-función-exponencial"><i class="fa fa-check"></i><b>42.9</b> Propiedades de la función exponencial</a></li>
+<li class="chapter" data-level="42.10" data-path="concepto-de-función.html"><a href="concepto-de-función.html#gráfica-de-una-función-logarítmica"><i class="fa fa-check"></i><b>42.10</b> Gráfica de una función logarítmica</a></li>
+<li class="chapter" data-level="42.11" data-path="concepto-de-función.html"><a href="concepto-de-función.html#comparando-dos-funciones-logarítmicas"><i class="fa fa-check"></i><b>42.11</b> Comparando dos funciones logarítmicas</a></li>
+<li class="chapter" data-level="42.12" data-path="concepto-de-función.html"><a href="concepto-de-función.html#propiedades-de-la-función-logarítmica"><i class="fa fa-check"></i><b>42.12</b> Propiedades de la función logarítmica</a></li>
+<li class="chapter" data-level="42.13" data-path="concepto-de-función.html"><a href="concepto-de-función.html#leyes-de-los-logarítmos"><i class="fa fa-check"></i><b>42.13</b> Leyes de los logarítmos</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
+<li class="chapter" data-level="43" data-path="literature.html"><a href="literature.html"><i class="fa fa-check"></i><b>43</b> Taller Uno</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Curso básico de Matemáticas Uno</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="modelo3-problema-de-las-dimensiones" class="section level1">
+<h1><span class="header-section-number">Capítulo 9</span> Modelo3 (Problema de las dimensiones)</h1>
+<p><strong>Enunciado Problema (1) del taller 2</strong></p>
+<p>En la Figura se muestra los puntos medios de los lados en un triángulo. Determine los vértices del triángulo.</p>
+<div class="figure" style="text-align: center"><span id="fig:Dimensiones1"></span>
+<img src="/home/john/Documentos/DOC-RMD-CLASESUCESV1/FIGURASFNC2017/TrianguloVertice.jpg" alt="Problema de dimensiones [Imagen tomada de [@zill2012algebra] pág $197$]"  />
+<p class="caption">
+Figura 9.1: Problema de dimensiones [Imagen tomada de <span class="citation">(Zill and Dewar <a href="#ref-zill2012algebra">2012</a>)</span> pág <span class="math inline">\(197\)</span>]
+</p>
+</div>
+<!-- <center> ![](/home/john/Documentos/DOC-RMD-CLASESUCESV1/FIGURASFNC2017/TrianguloVertice.jpg){width=45%}</center> -->
+<p>Obtener las componentes <span class="math inline">\((x_1,y_1)=?\)</span>, <span class="math inline">\((x_2,y_2)=?\)</span>, y <span class="math inline">\((x_3,y_3)=?\)</span></p>
+<p>Aplicación de punto medio para un segmento.</p>
+<p>Ejemplo: Hallar el punto medio para un segmento cuyos puntos extremos son <span class="math inline">\(P(1,2)\)</span> y <span class="math inline">\(Q(3,5)\)</span>.</p>
+<p>Entonces el punto medio entre dos puntos <span class="math inline">\(P\)</span> y <span class="math inline">\(Q\)</span> es:</p>
+<p><span class="math display">\[
+(\dfrac{1+3}{2},\dfrac{2+5}{2})
+\]</span></p>
+<p><strong>Planteo del problema</strong></p>
+<p>Primero con <span class="math inline">\((x_1,y_1)\)</span> y <span class="math inline">\((x_3,y_3)\)</span></p>
+<p><span class="math display">\[
+(-1,2)=(\dfrac{x_1+x_3}{2},\dfrac{y_1+y_3}{2})
+\]</span></p>
+<p><span class="math display">\[
+-1=\dfrac{x_1+x_3}{2}
+\]</span></p>
+<p><span class="math display">\[
+(-1)(2)=x_1+x_3
+\]</span>
+<span class="math display">\[
+-2=x_1+x_3 \ \ \text{Primera ecuación}
+\]</span></p>
+<p><span class="math display">\[
+2=\dfrac{y_1+y_3}{2}
+\]</span>
+<span class="math display">\[
+4=y_1+y_3 \ \ \text{Segunda ecuación}
+\]</span></p>
+<p><span class="math display">\[
+2=\dfrac{x_3+x_2}{2}
+\]</span></p>
+<p><span class="math display">\[
+4=x_3+x_2 \ \ \text{Tercera ecuación}
+\]</span></p>
+<p><span class="math display">\[
+3=\dfrac{y_3+y_2}{2}
+\]</span></p>
+<p><span class="math display">\[
+6=y_3+y_2 \ \ \text{Cuarta ecuación}
+\]</span></p>
+<p><span class="math display">\[
+1=\dfrac{x_1+x_2}{2}
+\]</span>
+<span class="math display">\[
+2=x_1+x_2  \ \ \text{Quinta ecuación}
+\]</span></p>
+<p><span class="math display">\[
+1=\dfrac{y_1+y_2}{2}
+\]</span></p>
+<p><span class="math display">\[
+2=y_1+y_2  \ \ \text{Sexta ecuación}
+\]</span></p>
+<p>Primer sistema de las <span class="math inline">\(x\)</span>’</p>
+<p><span class="math display">\[\begin{equation}
+(1) \ -2  =  1x_1+0x_2+1x_3 \\
+(2) \ \ 4  = 0x_1+1x_2 +1x_3\\
+(3) \ \ 2  =1x_1+1x_2+0x_3
+\end{equation}\]</span></p>
+<p>Matriz de coeficientes en el sistema <span class="math inline">\(3 \times 3\)</span></p>
+<p><span class="math display">\[
+\begin{vmatrix}
+1 &amp; 0 &amp; 1\\
+0 &amp; 1 &amp; 1 \\
+1 &amp; 1 &amp; 0
+\end{vmatrix}=-2
+\]</span></p>
+<p><span class="math display">\[
+x_1=\dfrac{\begin{vmatrix}
+-2 &amp; 0 &amp; 1\\
+4 &amp; 1 &amp; 1 \\
+2 &amp; 1 &amp; 0
+\end{vmatrix}}{-2}=\dfrac{4}{-2}=-2
+\]</span></p>
+<p><span class="math display">\[
+x_2=\dfrac{\begin{vmatrix}
+1 &amp; -2 &amp; 1\\
+0 &amp; 4 &amp; 1 \\
+1 &amp; 2 &amp; 0
+\end{vmatrix}}{-2}=\dfrac{8}{-2}=-4
+\]</span></p>
+<p><span class="math display">\[
+x_3=\dfrac{\begin{vmatrix}
+1 &amp; 0 &amp; -2\\
+0 &amp; 1 &amp; 4 \\
+1 &amp; 1 &amp; 2
+\end{vmatrix}}{-2}=\dfrac{0}{-2}=0
+\]</span></p>
+<p>Segundo sistema de las <span class="math inline">\(y\)</span>’</p>
+<p><span class="math display">\[\begin{equation}
+(1) \ 4 = y_1+y_3 \\
+(2) \ \ 6 = y_3+y_2 \\
+(3) \ \ 2 = y_1+y_2
+\end{equation}\]</span></p>
+<p>Matriz de coeficientes en el sistema <span class="math inline">\(3 \times 3\)</span></p>
+<p><span class="math display">\[
+\begin{vmatrix}
+1 &amp; 0 &amp; 1\\
+0 &amp; 1 &amp; 1 \\
+1 &amp; 1 &amp; 0
+\end{vmatrix}=-2
+\]</span></p>
+<p><span class="math display">\[
+y_1=\dfrac{\begin{vmatrix}
+4 &amp; 0 &amp; 1\\
+6 &amp; 1 &amp; 1 \\
+2 &amp; 1 &amp; 0
+\end{vmatrix}}{-2}=\dfrac{0}{-2}=0
+\]</span></p>
+<p><span class="math display">\[
+y_2=\dfrac{\begin{vmatrix}
+1 &amp; 4 &amp; 1\\
+0 &amp; 6 &amp; 1 \\
+1 &amp; 2 &amp; 0
+\end{vmatrix}}{-2}=\dfrac{-4}{-2}=2
+\]</span></p>
+<p><span class="math display">\[
+y_3=\dfrac{\begin{vmatrix}
+1 &amp; 0 &amp; 4\\
+0 &amp; 1 &amp; 6 \\
+1 &amp; 1 &amp; 2
+\end{vmatrix}}{-2}=\dfrac{-8}{-2}=4
+\]</span></p>
+<p>Respuesta: Los vértices del triángulo son. <span class="math inline">\((x_1=-2,y_1=0)\)</span>, <span class="math inline">\((x_2=-4,y_2=2)\)</span>, y <span class="math inline">\((x_3=0,y_3=4)\)</span></p>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-zill2012algebra">
+<p>Zill, Dennis G, and Jacqueline M Dewar. 2012. <em>Algebra, Trigonometria Y Geometria Analitica.</em> McGraw Hill.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="modelo2-problema-de-las-edades.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="modelo4-problema-de-las-dimensiones.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["LibroMateUnoSemestre01-2020.pdf", "LibroMateUnoSemestre01-2020.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
