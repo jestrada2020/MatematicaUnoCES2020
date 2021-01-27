@@ -424,3 +424,4 @@ fig:EcRecta2
 ley-del-seno
 ley-del-coseno
 grupob
+grupoa
