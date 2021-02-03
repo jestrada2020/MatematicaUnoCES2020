@@ -425,3 +425,5 @@ ley-del-seno
 ley-del-coseno
 grupob
 grupoa
+fig:FigEjConjunto2
+notas-del-martes-02-2021
