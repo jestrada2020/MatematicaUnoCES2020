@@ -489,3 +489,8 @@ thm:TMAValor2
 def:unnamed-chunk-25
 conjuntos-numéricos
 recta-real-y-desigualdades
+ejercicio-1d
+ejercicio-2d
+ejercicio-3d
+ejercicio-4d
+ejercicio-5d
