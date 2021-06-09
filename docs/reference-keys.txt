@@ -495,3 +495,17 @@ ejercicio-3d
 ejercicio-4d
 ejercicio-5d
 matemáticas-del-planeta-tierra
+tabla
+fórmulas-de-adición-para-coseno-y-seno
+teorema-de-pítagoras-e-identidad-trigonométrica
+identidad-trigonométrica-básicas
+simplificación-de-un-ángulo-medido-en-radianes
+ángulos-básicos-y-su-representación-desde-la-geometría
+seis-funciones-trigonometricas-en-el-plano-xy
+fig:ConceptoDeFuncion01
+fig:ConceptoDeFuncion2
+fig:ConceptoDominioYRango1
+fig:ConceptoDeFuncion1
+fig:MovimientoDeUnaFuncion1
+fig:MovimientoDeUnaFuncion3
+fig:MovimientoDeUnaFuncion2
