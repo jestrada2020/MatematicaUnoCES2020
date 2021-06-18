@@ -509,3 +509,17 @@ fig:ConceptoDeFuncion1
 fig:MovimientoDeUnaFuncion1
 fig:MovimientoDeUnaFuncion3
 fig:MovimientoDeUnaFuncion2
+fig:LeyDist1
+fig:Factorizacion1
+fig:Factorizacion2
+fig:Factorizacion3
+fig:Factorizacion4
+fig:ProductoNotable1
+fig:ProductoNotable2
+fig:ProductoNotable3
+fig:ProductosNotables1
+fig:ClasificacionPolinomios1
+fig:CerosDeEcu1
+simplificación
+operaciones-con-conjuntos
+desigualdades-y-conjuntos-de-intervalos-en-la-recta-real
