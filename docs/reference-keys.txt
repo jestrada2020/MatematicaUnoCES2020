@@ -523,3 +523,4 @@ fig:CerosDeEcu1
 simplificación
 operaciones-con-conjuntos
 desigualdades-y-conjuntos-de-intervalos-en-la-recta-real
+videos-de-asesoría
