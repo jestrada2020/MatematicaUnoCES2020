@@ -1,0 +1,1731 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\usepackage{hyperref}
+\hypersetup{
+            pdftitle={Curso básico de Matemáticas Uno},
+            pdfauthor={John Jairo Estrada Álvarez},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage{booktabs}
+\usepackage{booktabs}
+\usepackage{longtable}
+
+\ifxetex
+  \usepackage{letltxmacro}
+  \setlength{\XeTeXLinkMargin}{1pt}
+  \LetLtxMacro\SavedIncludeGraphics\includegraphics
+  \def\includegraphics#1#{% #1 catches optional stuff (star/opt. arg.)
+    \IncludeGraphicsAux{#1}%
+  }%
+  \newcommand*{\IncludeGraphicsAux}[2]{%
+    \XeTeXLinkBox{%
+      \SavedIncludeGraphics#1{#2}%
+    }%
+  }%
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+
+\title{Curso básico de Matemáticas Uno}
+\author{John Jairo Estrada Álvarez}
+\date{2020-06-25}
+
+\usepackage{amsthm}
+\newtheorem{theorem}{Teorema}[chapter]
+\newtheorem{lemma}{Lema}[chapter]
+\newtheorem{corollary}{Corolario}[chapter]
+\newtheorem{proposition}{Proposición}[chapter]
+\newtheorem{conjecture}{Conjecture}[chapter]
+\theoremstyle{definition}
+\newtheorem{definition}{Definición}[chapter]
+\theoremstyle{definition}
+\newtheorem{example}{Ejemplo}[chapter]
+\theoremstyle{definition}
+\newtheorem{exercise}{Ejercicio}[chapter]
+\theoremstyle{remark}
+\newtheorem*{remark}{Nota: }
+\newtheorem*{solution}{Solución}
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{prerrequisitos}{%
+\chapter{Prerrequisitos}\label{prerrequisitos}}
+
+El curso de matemáticas uno sólo tiene los siguientes prerrequistios
+
+\hypertarget{comportamentales}{%
+\section{Comportamentales}\label{comportamentales}}
+
+\begin{itemize}
+\item
+  Tener disposición para hacer silecio y generar un buen ambiente de escucha en el aula de clase.
+\item
+  Tener la capacidad de acatar sugerencias para mejorar las técnicas de estudio ya adquiridas en procesos educativos pasados.
+\item
+  Saber tomar nota mientras el profesor explica los temas de ese día.
+\item
+  Repasar las notas de clase y complementar con la lectura del texto guía
+  según se avanza en el desarrollo temático del curso.
+\end{itemize}
+
+\hypertarget{evaluativos}{%
+\section{Evaluativos}\label{evaluativos}}
+
+Tener los implementos básicos para una evaluación:
+
+\begin{itemize}
+\item
+  Lapicero.
+\item
+  Lapiz.
+\item
+  Borrador.
+\item
+  Calculadora.
+\item
+  Todos los celulares apagados.
+\item
+  Ir al baño antes de iniciar la evalualción.
+\item
+  No hay preguntas en el desarrollo de la evaluación.
+\item
+  Todas la maletas deben estar adelante.
+\end{itemize}
+
+\hypertarget{fechas-de-evaluaciuxf3n}{%
+\section{Fechas de evaluación}\label{fechas-de-evaluaciuxf3n}}
+
+-(a) PRIMER PARCIAL: \(21\) de febrero
+
+-(b) SEGUNDO PARCIAL: \(27\) de marzo
+
+-(c) TERCER PARCIAL: \(8\) de mayo
+
+-(d) CUARTO PARCIAL: \(5\) de Junio
+
+\hypertarget{video-motivacional}{%
+\section{Video motivacional}\label{video-motivacional}}
+
+\textbf{Todos tenemos un matemático interno}
+
+Título del video en \textbf{youTube}:
+
+Las matemáticas nos hacen libres y menos manipulables.
+
+\url{https://www.youtube.com/watch?v=BbA5dpS4CcI}.
+
+\hypertarget{puxe1gina-para-reforzar-conceptos-buxe1sicos}{%
+\section{Página para reforzar conceptos básicos}\label{puxe1gina-para-reforzar-conceptos-buxe1sicos}}
+
+El siguiente link es una página para repasar conceptos basicos que requieras en tu formación.
+
+\url{https://www.thatquiz.org/}
+
+\hypertarget{desarrollo-temuxe1tico}{%
+\chapter{Desarrollo temático}\label{desarrollo-temuxe1tico}}
+
+\hypertarget{objetivo-general}{%
+\section{Objetivo general}\label{objetivo-general}}
+
+Resolver problemas matemáticos para desarrollar el pensamiento lógico y deductivo, utilizando las leyes y principios de la lógica de la matemática, para que le permita razonar de manera adecuada con creatividad.
+
+\hypertarget{objetivos-especuxedficos}{%
+\section{Objetivos específicos}\label{objetivos-especuxedficos}}
+
+\begin{itemize}
+\tightlist
+\item
+  Iniciar el estudio de los conjuntos numéricos y caracterizar sus
+  propiedades básicas para resolver desigualdades y sus diversas aplicaciones
+\item
+  Resolver desigualdades entre números reales para aplicar su soluciones en
+  diferentes escenarios de la Química Farmacéutica.
+\item
+  Efectuar operaciones de aritmética básica
+\item
+  Fundamentar la proporcionalidad directa e inversa
+\item
+  Efectuar simplificar expresiones algebraicas.
+\item
+  Categorizar el número de raíces reales de un polinomio, calcular algunas de ellas.
+\item
+  Describir las funciones trigonométricas a partir de la relación existente entre el triángulo rectángulo, y el círculo unitario, para resolver problemas trigonométricos en diversas disciplinas de la ciencias aplicadas.
+\end{itemize}
+
+\hypertarget{clase-a-clase}{%
+\section{\texorpdfstring{\textbf{Clase a clase}}{Clase a clase}}\label{clase-a-clase}}
+
+\hypertarget{sistema-numuxe9rico-de-la-luxednea-real}{%
+\subsubsection{\texorpdfstring{\textbf{Sistema numérico de la línea Real}}{Sistema numérico de la línea Real}}\label{sistema-numuxe9rico-de-la-luxednea-real}}
+
+\begin{itemize}
+\tightlist
+\item
+  Concepto de conjunto y sus propiedades básicas
+\item
+  Conjuntos numéricos y su clasificaciòn
+\item
+  Concepto de distancia en la linea real
+\item
+  Desigualdades y sus propiedades
+\item
+  concepto de valor absoluto y sus propiedades
+\item
+  Desigualdades con valor absoluto
+\end{itemize}
+
+\hypertarget{algebra}{%
+\subsubsection{\texorpdfstring{\textbf{Algebra}}{Algebra}}\label{algebra}}
+
+\begin{itemize}
+\tightlist
+\item
+  Productos notables
+\item
+  Factorización.
+\item
+  Simplificación de expresiones racionales
+\item
+  Expresiones racionales compuestas
+\item
+  Potenciación y radicación
+\item
+  Polinomios
+\item
+  Teorema del residuo y teorema del factor
+\item
+  Raíces racionales de un polinomio Teorema fundamental del álgebra
+\item
+  Ley de signos de Descartes
+\item
+  Factorización sobre complejos
+\item
+  Aproximación de raíces irracionales (Métodos de Bisección, Regla Falsa y Secante).
+\end{itemize}
+
+\hypertarget{sistema-de-coordenadas-cartesianas}{%
+\subsubsection{\texorpdfstring{\textbf{Sistema de coordenadas cartesianas}}{Sistema de coordenadas cartesianas}}\label{sistema-de-coordenadas-cartesianas}}
+
+\begin{itemize}
+\tightlist
+\item
+  Distancia
+\item
+  Ecuación de la recta
+\item
+  Ecuación de la circunferencia
+\item
+  Funciones (Dominio y Rango)
+\item
+  Operaciones con funciones
+\item
+  Problemas de aplicación
+\end{itemize}
+
+\hypertarget{funciones-exponencial-y-logaruxedtmica}{%
+\subsubsection{\texorpdfstring{\textbf{Funciones exponencial y logarítmica}}{Funciones exponencial y logarítmica}}\label{funciones-exponencial-y-logaruxedtmica}}
+
+\begin{itemize}
+\tightlist
+\item
+  Propiedades de la función exponencial.
+\item
+  Representación gráfica de la función exponencial.
+\item
+  Ecuaciones exponenciales y su solución.
+\item
+  Propiedades de la funcion logaritmica.
+\item
+  Representición gráfica de la función logaritmica.
+\item
+  Ecuaciones logaritmicas y su solución.
+\item
+  Problemas de la función exponencial y logaritmica.
+\end{itemize}
+
+\hypertarget{trigonometruxeda}{%
+\subsubsection{\texorpdfstring{\textbf{Trigonometría}}{Trigonometría}}\label{trigonometruxeda}}
+
+\begin{itemize}
+\tightlist
+\item
+  Definiciones básicas
+\item
+  Definición de las funciones trigonometricas a partir del triángulo rectángulo.
+\item
+  Aplicaciones trigonometricas usando el triángulo rectángulo.
+\item
+  Relación entre el triangulo rectángulo y el círculo unitario.
+\item
+  Valores trigonometricos para los ángulos básicos en el círculo unitario.
+\item
+  Identidades básicas.
+\item
+  funciones trigonometricas inversas básicas.
+\item
+  Ecuaciones trigonometricas.
+\item
+  Teorema del seno.
+\item
+  Teorema del coseno.
+\end{itemize}
+
+\hypertarget{bibliografuxeda}{%
+\section{Bibliografía}\label{bibliografuxeda}}
+
+\begin{itemize}
+\item
+  Dennis Zill, Algebra y trigonometría con Geometría Analítica, 8 ed. Mc Graw Hill
+\item
+  SWOKOWSKI, Earl. Álgebra y Trigonometría con Geometría Analítica. 9ª ed. México. Thomson. 1998. 976p.
+\item
+  DIEZ, Luis. Matemáticas Operativas. 15ª ed. Medellín. Zona Dinámica. 1998, 289p.
+\item
+  ALLENDOFER, Carl \& Oakley, Cletus. Matemáticas Universitarias. 4ª ed. Bogotá. McGraw-Hill. 2003. 383p.
+\item
+  STEWART, JAMES. precálculo. Matemáticas para el Cálculo. 5ª ed. México. Thomson. 2007. 933 p.
+\item
+  SPIEGEL, Murray. Álgebra Superior. México. McGraw-Hill. 1997. 312p.
+\end{itemize}
+
+\hypertarget{video-manejo-de-la-casio-f_x350ms}{%
+\section{\texorpdfstring{Video manejo de la Casio \(f_{x}350MS\)}{Video manejo de la Casio f\_\{x\}350MS}}\label{video-manejo-de-la-casio-f_x350ms}}
+
+En este video se pretende dar unas pautas de como usar
+la calculadora Casio (incluyendo versiones como \(f_{x}82MS\))
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(knitr)}
+\NormalTok{knitr}\OperatorTok{::}\KeywordTok{include_url}\NormalTok{(}\StringTok{"https://www.youtube.com/watch?v=iwKqLbwDjgY"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## PhantomJS not found. You can install it with webshot::install_phantomjs(). If it is installed, please make sure the phantomjs executable can be found via the PATH variable.
+\end{verbatim}
+
+\url{https://www.youtube.com/watch?v=iwKqLbwDjgY}
+
+\hypertarget{regla-de-cramer-sistemas-2-por-2}{%
+\subsection{\texorpdfstring{Regla de Cramer sistemas \(2\) por \(2\)}{Regla de Cramer sistemas 2 por 2}}\label{regla-de-cramer-sistemas-2-por-2}}
+
+\url{https://youtu.be/hMEyOtdJdXo}
+
+\hypertarget{regla-de-cramer-sistemas-3-por-3}{%
+\subsection{\texorpdfstring{Regla de Cramer sistemas \(3\) por \(3\)}{Regla de Cramer sistemas 3 por 3}}\label{regla-de-cramer-sistemas-3-por-3}}
+
+\url{https://youtu.be/SpRbyapGhtk}
+
+\hypertarget{regla-de-sarrus-determinante-3-por-3}{%
+\subsection{\texorpdfstring{Regla de Sarrus determinante \(3\) por \(3\)}{Regla de Sarrus determinante 3 por 3}}\label{regla-de-sarrus-determinante-3-por-3}}
+
+\url{https://youtu.be/bdLfefNCt9c}
+
+\hypertarget{soluciuxf3n-de-la-ecuaciuxf3n-cuadruxe1tica}{%
+\subsection{Solución de la ecuación cuadrática}\label{soluciuxf3n-de-la-ecuaciuxf3n-cuadruxe1tica}}
+
+\url{https://youtu.be/DZa7OflVcB4}
+
+\hypertarget{intro}{%
+\chapter{Introducción}\label{intro}}
+
+\hypertarget{teoruxeda-de-conjuntos}{%
+\section{Teoría de conjuntos}\label{teoruxeda-de-conjuntos}}
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-2}{}{\label{def:unnamed-chunk-2} }Un \textbf{conjunto} es una colección bien definida de objetos, llamados sus elementos. Los conjuntos se simbolizan con letras minúsculas \(A\), \(B\), \(...\) Los objetos que componen el conjunto se denominan elementos y se denotan con letras minúsculas \(a, b, ...\) {[}Tomado de \citep{zill2012algebra} pág \(21\){]}
+\end{definition}
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-3}{}{\label{def:unnamed-chunk-3} }Para definir un \textbf{conjunto por extensión}, se enumeran todos sus elementos separándolos por comas y luego se encierran entre llaves.
+
+Para escribir un \textbf{conjunto por comprensión} se elige un elemento arbitrario \(x\) y se señala que cumple la propiedad \(P(x)\). Finalmente, se encierra toda la expresión entre llaves. {[}Tomado de \citep{zill2012algebra} pág \(22\){]}
+\end{definition}
+
+\[
+A=\{ x | x \ \ \text{cumple la propiedad} \ \ P(x)   \}
+\]
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-4}{}{\label{def:unnamed-chunk-4} }Diremos que dos conjutnos \(A\) y \(B\) son iguales si tienen los mismos elementos. Para indicar que \(A\) y \(B\) son iguales se escribe:{[}Tomado de \citep{zill2012algebra} pág \(22\){]}
+\end{definition}
+
+\[
+A=B
+\]
+
+\begin{remark}
+\iffalse{} {Nota: } \fi{}Un conjunto que posee un número finito de elementos; se llaman \textbf{conjuntos finitos}.
+
+Un conjunto que no tiene un número finito de elemenos se llaman \textbf{conjunto infinito}.
+
+{[}Tomado de \citep{zill2012algebra} pág \(23\){]}
+\end{remark}
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-6}{}{\label{def:unnamed-chunk-6} }El número de elementos de un conjunto finito es lo que se llama la \textbf{cardinalidad} de dicho conjunto. La cardinalidad de un conjunto finito \(A\) se denota por: {[}Tomado de \citep{zill2012algebra} pág \(24\){]}
+\end{definition}
+
+\[
+Card(A) \ \ \ \text{ó}  \ \ \ |A|
+\]
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-7}{}{\label{def:unnamed-chunk-7} }Dos conjuntos finitos \(X\) y \(Y\) se dicen ser \textbf{equipotentes} si tienen exactamente el mismo número de elementos. {[}Tomado de \citep{zill2012algebra} pág \(24\){]}
+\end{definition}
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-8}{}{\label{def:unnamed-chunk-8} }Un conjunto se dice \textbf{vacío} si no posee elementos. El conjunto vacío se denota como:
+\end{definition}
+
+\[
+\{ \} \ \ \ \text{ó}  \ \ \ \Phi
+\]
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-9}{}{\label{def:unnamed-chunk-9} }El conjunto \textbf{universal} se define como el conjunto que posee todos los elementos de todos los conjunots, y se denota como:{[}Tomado de \citep{zill2012algebra} pág \(25\){]}
+\end{definition}
+
+\[
+\text{Conjunto universal:} \ \ \ U
+\]
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-10}{}{\label{def:unnamed-chunk-10} }Si cada elemento de un conjunto \(A\) es también elemento de un conjunto \(B\), entonces se dice que \(A\) es un subconjunto de \(B\). Se dice también que \(A\) está contenido en \(B\) o que \(B\) contiene a \(A\). La relación de subconjunto se denota como: {[}Tomado de \citep{zill2012algebra} pág \(25\){]}
+\end{definition}
+
+\[
+A \subset B  \ \ \ \text{ó}  \ \ \ B \supset A
+\]
+
+\begin{figure}
+
+{\centering \includegraphics[width=3.89in]{images/Figconjunto1} 
+
+}
+
+\caption{Relación de subconjunto [Imagen tomada de [@zill2012algebra] pág $26$]}\label{fig:Figconjunto1}
+\end{figure}
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-11}{}{\label{def:unnamed-chunk-11} }La unión de dos conjuntos \(A\) y \(B\) consta de todos los elementos que pertenecen a \(A\) o a \(B\). La unión de \(A\) y \(B\) se denota por \(A \cup B\). {[}Tomado de \citep{zill2012algebra} pág \(31\){]}
+\end{definition}
+
+\[
+A \cup B = \{ x | x \in A \ \text{o} \ x \in B\}
+\]
+
+\begin{figure}
+
+{\centering \includegraphics[width=3.85in]{images/FigUniona1} 
+
+}
+
+\caption{Relación de subconjunto [Imagen tomada de [@zill2012algebra] pág $32$]}\label{fig:FigUnionA-1}
+\end{figure}
+\begin{figure}
+
+{\centering \includegraphics[width=3.83in]{images/FigUniona2} 
+
+}
+
+\caption{Relación de subconjunto [Imagen tomada de [@zill2012algebra] pág $32$]}\label{fig:FigUnionA-2}
+\end{figure}
+\begin{figure}
+
+{\centering \includegraphics[width=3.83in]{images/FigUniona3} 
+
+}
+
+\caption{Relación de subconjunto [Imagen tomada de [@zill2012algebra] pág $32$]}\label{fig:FigUnionA-3}
+\end{figure}
+
+\hypertarget{propiedades-de-la-uniuxf3n}{%
+\section{Propiedades de la Unión}\label{propiedades-de-la-uniuxf3n}}
+
+\begin{figure}
+
+{\centering \includegraphics[width=11.15in]{images/PropiedadesUnion} 
+
+}
+
+\caption{Propiedades de la unión [Imagen tomada de [@zill2012algebra] pág $32$]}\label{fig:PropiedadesUnion}
+\end{figure}
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-12}{}{\label{def:unnamed-chunk-12} }La intersección de dos conjuntos \(A\) y \(B\) consta de todos los elementos que pertenecen a \(A\) y a \(B\). La intersección de \(A\) y \(B\) se denota por \(A \cap B\). {[}Tomado de \citep{zill2012algebra} pág \(30\){]}
+\end{definition}
+
+\[
+A \cap B = \{ x | x \in A \ \text{y} \ x \in B\}
+\]
+
+\begin{figure}
+
+{\centering \includegraphics[width=3.85in]{images/FigInterseccion1} 
+
+}
+
+\caption{Intersección de conjuntos [Imagen tomada de [@zill2012algebra] pág $30$]}\label{fig:FigInterseccion}
+\end{figure}
+
+\hypertarget{propiedades-de-la-intersecciuxf3n}{%
+\section{Propiedades de la Intersección}\label{propiedades-de-la-intersecciuxf3n}}
+
+\begin{figure}
+
+{\centering \includegraphics[width=11.17in]{images/PropiedadesInterseccion} 
+
+}
+
+\caption{Propiedades de la intersección [Imagen tomada de [@zill2012algebra] pág $30$]}\label{fig:PropiedadesInterseccion}
+\end{figure}
+
+\hypertarget{propiedades-de-la-uniuxf3n-y-la-intersecciuxf3n}{%
+\section{Propiedades de la unión y la intersección}\label{propiedades-de-la-uniuxf3n-y-la-intersecciuxf3n}}
+
+\begin{figure}
+
+{\centering \includegraphics[width=11.56in]{images/FigUI} 
+
+}
+
+\caption{Propiedades de la unión y la intersección [Imagen tomada de [@zill2012algebra] pág $33$]}\label{fig:FigUI}
+\end{figure}
+
+\hypertarget{diferencia-entre-dos-conjuntos}{%
+\section{Diferencia entre dos conjuntos}\label{diferencia-entre-dos-conjuntos}}
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-13}{}{\label{def:unnamed-chunk-13} }La diferencia de dos conjuntos \(A\) y \(B\) consta de todos los elementos que pertenecen a \(A\) y no pertenecen a \(B\). La diferencia de \(A\) y \(B\) se denota por \(A - B\). {[}Tomado de \citep{zill2012algebra} pág \(34\){]}
+\end{definition}
+
+\[
+A - B = \{ x | x \in A \ \text{y} \ x \notin B\}
+\]
+
+\begin{figure}
+
+{\centering \includegraphics[width=3.88in]{images/FigDif} 
+
+}
+
+\caption{Diferencia entre conjuntos [Imagen tomada de [@zill2012algebra] pág $34$]}\label{fig:FigDif}
+\end{figure}
+
+\hypertarget{complemento-de-un-conjunto}{%
+\section{Complemento de un conjunto}\label{complemento-de-un-conjunto}}
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-14}{}{\label{def:unnamed-chunk-14} }El complemento de un conjunto \(A\) consta de todos los elementos del universo \(U\), y que no pertenecen a \(A\). El complemento de \(A\) se denota por \$A\^{}\{c\} \$. {[}Tomado de \citep{zill2012algebra} pág \(34\){]}
+\end{definition}
+
+\[
+A'=A^{c} = \{ x | x \notin A \}
+\]
+
+\begin{figure}
+
+{\centering \includegraphics[width=3.83in]{images/FigComplemento} 
+
+}
+
+\caption{Complemento de un conjunto [Imagen tomada de [@zill2012algebra] pág $34$]}\label{fig:FigComplemento}
+\end{figure}
+
+\hypertarget{propiedades-del-algebra-de-conjuntos}{%
+\section{Propiedades del algebra de conjuntos}\label{propiedades-del-algebra-de-conjuntos}}
+
+\begin{figure}
+
+{\centering \includegraphics[width=11.25in]{images/FigPropiedadesGeneral} 
+
+}
+
+\caption{Leyes del algebrfa de Conjuntos [Imagen tomada de [@zill2012algebra] pág $36$]}\label{fig:FigPropiedadesGeneral}
+\end{figure}
+
+\hypertarget{conjuntos-numuxe9ricos}{%
+\chapter{Conjuntos numéricos}\label{conjuntos-numuxe9ricos}}
+
+\begin{figure}
+
+{\centering \includegraphics[width=4.61in]{images/FigPinumero} 
+
+}
+
+\caption{Número Irracional [Imagen tomada de [@zill2012algebra] pág $50$]}\label{fig:FigPinumero}
+\end{figure}
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-15}{}{\label{def:unnamed-chunk-15} }El conjunto de los números naturales consta de:
+\end{definition}
+
+\[
+N=\{ 1,2,3,4,...\}
+\]
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-16}{}{\label{def:unnamed-chunk-16} }El conjunto de los números enteros consta de:
+\end{definition}
+
+\[
+Z=\{...,-3,-2,-1,0,1,2,3,4,...\}
+\]
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-17}{}{\label{def:unnamed-chunk-17} }El conjunto de los números racionales consta de todos los números que son cociente de dos enteros, siempre que el denominador sea diferente de cero. Es decir:
+\end{definition}
+
+\[
+Q=\{ \dfrac{p}{q} | p \ \text{y} \ q \ \ \text{son números enteros,} \ \ q \ \neq \ 0\}
+\]
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-18}{}{\label{def:unnamed-chunk-18} }El conjunto de los números irracionales consta de todos los números que no son el cociente de dos enteros, siempre que el denominador sea diferente de cero. Es decir:
+\end{definition}
+
+\[
+Q^{*}=\{x |   \ x \neq \ \dfrac{p}{q}, \ \ q \ \neq \ 0\   \}
+\]
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-19}{}{\label{def:unnamed-chunk-19} }El conjunto de los números reales consta de la unión entre el conjunto de los racionales y los irracionales. Es decir:
+\end{definition}
+
+\[
+R=\{x |   \ x \in Q \ \text{o} \ x \in Q^{*} \}=Q \cup Q^{*}
+\]
+
+\begin{figure}
+
+{\centering \includegraphics[width=11.79in]{images/FigConjuntoN} 
+
+}
+
+\caption{Diagrama de los conjuntos numéricos [Imagen tomada de [@zill2012algebra] pág $49$]}\label{fig:FigConjuntoN}
+\end{figure}
+
+\hypertarget{propiedades-de-los-nuxfameros-reales}{%
+\section{Propiedades de los números Reales}\label{propiedades-de-los-nuxfameros-reales}}
+
+\begin{figure}
+
+{\centering \includegraphics[width=12.17in]{images/FigPropiedadesReales} 
+
+}
+
+\caption{Propiedades de los números reales [Imagen tomada de [@zill2012algebra] pág $51$]}\label{fig:FigPropiedadesReales}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=14.42in]{images/FigPropiedadesRealesB} 
+
+}
+
+\caption{Propiedades de los números reales [Imagen tomada de [@zill2012algebra] pág $51$]}\label{fig:FigPropiedadesRealesB}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=14.46in]{images/FigPropiedadesRealesC} 
+
+}
+
+\caption{Propiedades de los números reales [Imagen tomada de [@zill2012algebra] pág $53$]}\label{fig:FigPropiedadesRealesC}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=14.44in]{images/FigPropiedadesRealesD} 
+
+}
+
+\caption{Propiedades de los números reales [Imagen tomada de [@zill2012algebra] pág $53$]}\label{fig:FigPropiedadesRealesD}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=11.99in]{images/FigPropiedadesRealesE} 
+
+}
+
+\caption{Propiedades de los números reales [Imagen tomada de [@zill2012algebra] pág $54$]}\label{fig:FigPropiedadesRealesE}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=12.1in]{images/FigPropiedadesRealesF} 
+
+}
+
+\caption{Propiedades de los números reales [Imagen tomada de [@zill2012algebra] pág $55$]}\label{fig:FigPropiedadesRealesF}
+\end{figure}
+
+\hypertarget{recta-real-y-desigualdades}{%
+\chapter{Recta real y desigualdades}\label{recta-real-y-desigualdades}}
+
+\begin{figure}
+
+{\centering \includegraphics[width=10.54in]{images/FigRectaRealA} 
+
+}
+
+\caption{Distancia en la recta real [Imagen tomada de [@zill2012algebra] pág $58$]}\label{fig:FigRectaRealA}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=10.32in]{images/FigRectaRealB} 
+
+}
+
+\caption{Signo de la recta real [Imagen tomada de [@zill2012algebra] pág $58$]}\label{fig:FigRectaRealB}
+\end{figure}
+
+\hypertarget{evaluaciuxf3n-fuxf3rmula-del-estudiante-paruxe1bola-y-luxednea-recta}{%
+\section{Evaluación (Fórmula del Estudiante, Parábola y Línea Recta)}\label{evaluaciuxf3n-fuxf3rmula-del-estudiante-paruxe1bola-y-luxednea-recta}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(knitr)}
+\NormalTok{knitr}\OperatorTok{::}\KeywordTok{include_app}\NormalTok{(}\StringTok{"https://johnshinyv2uces.shinyapps.io/parcialSIM003a/"}\NormalTok{,}\DataTypeTok{height =} \StringTok{"2000px"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{definition}
+\protect\hypertarget{def:unnamed-chunk-21}{}{\label{def:unnamed-chunk-21} }Se dice que el número real \(a\) es menor que \(b\), lo que se escribe \(a<b\), si y sólo si la diferencia \(b-a\) es positiva. En símbolos: {[}Tomado de \citep{zill2012algebra} pág \(58\){]}
+\end{definition}
+
+\[
+a<b \ \ \ \text{si y sólo si} \ \ \ (b-a)>0
+\]
+
+\hypertarget{concepto-de-valor-absoluto}{%
+\section{Concepto de valor absoluto}\label{concepto-de-valor-absoluto}}
+
+You can write citations, too. For example, we are using the \textbf{bookdown} package \citep{R-bookdown} in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015}.
+
+\hypertarget{literatura}{%
+\chapter{Literatura}\label{literatura}}
+
+Here is a review of existing methods.
+
+\hypertarget{muxe9todo}{%
+\chapter{Método}\label{muxe9todo}}
+
+We describe our methods in this chapter.
+
+\hypertarget{taller-parcial-uno}{%
+\chapter{Taller Parcial Uno}\label{taller-parcial-uno}}
+
+A.) Para cada función calcule los valores indicados:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(f(x)=3x^{2}+5x-2\)
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  \(f(0)\)
+\item
+  \(f(-1)\)
+\item
+  \(f(2)\)
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  \(h(x)=(2x+1)^{3}\)
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  \(h(0)\)
+\item
+  \(h(-1)\)
+\item
+  \(h(1)\)
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  \(g(x)=x+\dfrac{1}{x}\)
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  \(g(2)\)
+\item
+  \(g(-1)\)
+\item
+  \(g(1)\)
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  \(f(x)=\dfrac{x}{x^{2}+1}\)
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  \(f(2)\)
+\item
+  \(f(0)\)
+\item
+  \(f(-1)\)
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  \(h(x)=\sqrt{x^{2}+2x+4}\)
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  \(h(2)\)
+\item
+  \(h(0)\)
+\item
+  \(h(-4)\)
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\tightlist
+\item
+  \(f(x)=x-\left |x-2 \right |\)
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  \(f(2)\)
+\item
+  \(f(1)\)
+\item
+  \(f(3)\)
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{6}
+\tightlist
+\item
+  \(f(x)= \left\{ \begin{array}{lcc} 5 & si & x \leq 2 \\ \\ x^2-6x+10 & si & 2 < x < 5 \\ \\ 4x-15 & si & x \geq 5 \end{array} \right.\)
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  \(f(2)\)
+\item
+  \(f(0)\)
+\item
+  \(f(-4)\)
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{7}
+\tightlist
+\item
+  \(f(x)= \left\{ \begin{array}{lcc} 3 & si & x <-5 \\ \\ x+1 & si & -5 \leq x \leq 5 \\ \\ \sqrt{x} & si & x > 5 \end{array} \right.\)
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  \(f(-6)\)
+\item
+  \(f(-5)\)
+\item
+  \(f(16)\)
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{8}
+\tightlist
+\item
+  \(f(x)=2x^{2}-3x+1\)
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  \(f(x-2)\)
+\item
+  \(f(x+3)\)
+\item
+  \(f(x^{2}+3x-1)\)
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{9}
+\tightlist
+\item
+  \(f(x)=\sqrt{x}\)
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  \(f(x-2)\)
+\item
+  \(f(x^{2}+3x-1)\)
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{10}
+\tightlist
+\item
+  \(f(x)=3x+\dfrac{2}{x}\)
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  \(f\left( \dfrac{x-1}{x}\right)\)
+\item
+  \(f\left( \dfrac{x}{x-2}\right)\)
+\item
+  \(f\left( \dfrac{1}{x}\right)\)
+\end{enumerate}
+
+B.) Determinar el dominio de la función dada.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \(f(x)=\sqrt{1-x}\)
+\item
+  \(w(x)=\sqrt{1+x^{2}}\)
+\item
+  \(f(x)=\dfrac{x^{2}+5}{x+2}\)
+\item
+  \(g(x)=\dfrac{x+1}{x^{2}-x-2}\)
+\item
+  \(h(x)=\dfrac{x+2}{\sqrt{9-x^{2}}}\)
+\item
+  \(f(x)= \left\{ \begin{array}{lcc} 5 & si & x \leq 2 \\ \\ x^2-6x+10 & si & 2 < x < 5 \\ \\ 4x-15 & si & x \geq 5 \end{array} \right.\)
+\item
+  \(f(x)= \left\{ \begin{array}{lcc} 3 & si & x <-5 \\ \\ x+1 & si & -5 \leq x \leq 5 \\ \\ \sqrt{x} & si & x > 5 \end{array} \right.\)
+\end{enumerate}
+
+C.) Encuentre el cociente incremental para una función \(y=f(x)\) definido como:
+
+\[
+\dfrac{f(x+h)-f(x)}{h}
+\]
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  \(f(x)=4-5x\)
+\item
+  \(f(x)=4x-x^{2}\)
+\item
+  \(f(x)=\dfrac{x}{x+1}\)
+\item
+  \(f(x)=\dfrac{1}{x}\)
+\end{enumerate}
+
+D.) En los siguientes enunciados obtener las fórmulas de \(h(x)\) y \(g(u)\) tales que \(f(x)=g(h(x))\).
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  \(f(x)=(x-1)^{2}+2(x-1)+3\)
+\item
+  \(f(x)=\dfrac{1}{x^{2}+1}\)
+\item
+  \(f(x)=\sqrt{3x-5}\)
+\item
+  \(f(x)=\sqrt[3]{2-x}+\dfrac{4}{2-x}\)
+\item
+  \(f(x)=\sqrt{4+x}-\dfrac{1}{(4+x)^{2}}\)
+\end{enumerate}
+
+E.) La población en miles de una colonia de bacterias, \(t\) minutos después de la introducción de una toxina, está dada por la función:
+\[
+f(t)=\begin{cases}
+t^{2}+7 & \text{si $0 \leqslant t < 5$},\\
+-8t+72 & \text{si $t \geq 5$}.
+\end{cases} 
+\]
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  Cuándo muere la colonia?
+\item
+  Explique por qué la población debe ser de \(10.000\) en algún momento entre \(t=1\) y \(t=7\).
+\end{enumerate}
+
+F.) En un estudio sobre la mutación de moscas en la fruta, los investigadores las radiaron con rayos \(X\) y determinaron que el porcentaje de mutación \(M\) aumenta linealmente con la dosis \(D\) de rayos \(X\), medidos en kilo-Roentgens (\(kR\)). Cuando se utiliza una dosis de \(D=3kR\), el porcentaje de mutaciones es de \(7.7 \%\), mientras que una dosis de \(5kR\) da como resultado un porcentaje de mutación de \(12.7 \%\).
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  Exprese \(M\) como una función de \(D\).
+\item
+  Qué porcentaje de las moscas mutará incluso si no se utiliza la radiación?
+\end{enumerate}
+
+G.) Desde el inicio del año, el precio de la gasolina sin plomo ha ido aumentando mensualmente a una tasa constante de \(2\) centavos por galón. Para el primero de junio, el precio ha llegado a \(\$ 3.80\) por galón.
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  Exprese el precio de la gasolina sin plomo como un función como una función del tiempo.
+\item
+  Cuál era el precio a principios del año?
+\item
+  Cuál era el precio el primero de octubre?
+\end{enumerate}
+
+\hypertarget{evaluaciuxf3n}{%
+\chapter{Evaluación}\label{evaluaciuxf3n}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(knitr)}
+\NormalTok{knitr}\OperatorTok{::}\KeywordTok{include_app}\NormalTok{(}\StringTok{"https://procesouces2020.shinyapps.io/parcial001/"}\NormalTok{,}\DataTypeTok{height =} \StringTok{"2000px"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{muxe9todo-cuatro}{%
+\chapter{Método cuatro}\label{muxe9todo-cuatro}}
+
+\hypertarget{aplicaciones}{%
+\chapter{Aplicaciones}\label{aplicaciones}}
+
+\hypertarget{ejemplo-uno}{%
+\section{Ejemplo Uno}\label{ejemplo-uno}}
+
+\hypertarget{ejemplo-dos}{%
+\section{Ejemplo Dos}\label{ejemplo-dos}}
+
+\begin{figure}
+
+{\centering \includegraphics[width=6.33in]{images/ArcoPuente1} 
+
+}
+
+\caption{Puente de arco}\label{fig:grafica21}
+\end{figure}
+
+La oficina de correos sólo aceptará paquetes para los cuales el largo más lo que mida alrededor no sea mayor que \(180 pulg\). Por consiguiente, para el paquete de la Figura \ref{fig:grafica21}, debemos tener:
+\[L+2(x+y)\leq 180\]
+
+¿La oficina de correos aceptará un paquete que mide \(6 pulg\) de ancho, \(8 pulg\) de alto y \(5 pies\) de largo?
+
+¿Aceptar'a un paquete que mide \(2\) por \(2\) por \(4 pies\)?
+
+¿Cual es el mayor largo aceptable para un paquete que tiene base cuadrada y mide \(9\) por \(9 pulg\)?
+
+\begin{equation} 
+f(x)=\frac{1}{\sqrt{2\pi}}e^{-x^2/2}
+\end{equation}
+
+\hypertarget{palabras-finales}{%
+\chapter{Palabras Finales}\label{palabras-finales}}
+
+\hypertarget{literature}{%
+\chapter{Taller Uno}\label{literature}}
+
+\begin{exercise}
+\protect\hypertarget{exr:unnamed-chunk-23}{}{\label{exr:unnamed-chunk-23} }
+
+\begin{enumerate}
+	\item \ $(A\cap B)'$
+	\item \ $B'$
+	\item \ $A'\cup B$
+	\item \ $(A\cup B)'$
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+\protect\hypertarget{exr:unnamed-chunk-24}{}{\label{exr:unnamed-chunk-24} }
+1) \[ A\cup B'\]
+
+\begin{verbatim}
+2) $$ B' $$
+
+3) $$ A'\cup B$$
+
+4) $$ (A\cup B)' $$
+\end{verbatim}
+\end{exercise}
+
+\begin{enumerate}
+	\item \ $A\cup B'$
+	\item \ $A'$
+	\item \ $A'\cup B$
+	\item \ $(A\cup B)'$
+\end{enumerate}
+
+\begin{enumerate}
+	\item \ $A\cup B'$
+	\item \ $A'$
+	\item \ $A'\cup B$
+	\item \ $(A\cup B)'$
+\end{enumerate}
+
+Considere los conjuntos \(A_{1}=\{2,3,5\}\),\(A_{2}=\{1,4\}\),\(A_{3}=\{1,2,3\}\),\(A_{4}=\{1,3,5,7\}\),\(A_{5}=\{3,5,8\}\),\(A_{6}=\{1,7\}\),\(U=\{1,2,3,4,5,6,7,8,9\}\). Determine
+
+\begin{enumerate}
+	\item \ $\bigcup_{i=1}^{6}A_{i}$
+	\item \ $\bigcup_{i=3}^{6}A'_{i}$
+	\item \ $\bigcap_{i=4}^{6}A_{i}$
+\end{enumerate}
+
+Considere los conjuntos \(A=\{a,b,c,d,e\}\),\(B=\{d,e,f,g\}\),\(C=\{e,f,g,h,i\}\),\(D=\{a,c,e,g,i\}\),\break \(E=\{b,d,f,h\}\),\(F=\{a,e,i\}\),\break \(U=\{a,b,c,d,e,f,g,h,i\}\). Determine
+
+\begin{enumerate}
+	\item \ $A\cup B$
+	\item \ $A\cap B$
+	\item \ $E\cup F$
+	\item \ $C\cap D$
+	\item \ $A'$
+	\item \ $B'$
+	\item \ $B-A$
+	\item \ $E'\cap F'$
+	\item \ $(E\cup F)'$
+\end{enumerate}
+
+Considere los conjuntos \(A=\{2,3,5\}\),\(B=\{1,4\}\),\(C=\{1,2,3\}\),\(D=\{1,3,5,7\}\),\(E=\{3,5,8\}\),\(F=\{1,7\}\),\(U=\{1,2,3,4,5,6,7,8,9\}\). Determine
+
+\begin{enumerate}
+	\item \ $A\cup B$
+	\item \ $A\cap B$
+	\item \ $E\cup F$
+	\item \ $C\cap D$
+	\item \ $A'$
+	\item \ $B'$
+	\item \ $B-A$
+	\item \ $E'\cap F'$
+	\item \ $(E\cup F)'$
+\end{enumerate}
+
+Una encuesta hecha a \(100\) m'usicos populares mostr'o que \(40\) de ellos usaban guantes en la mano izquierda y \(39\) usaban guantes en la mano derecha. Si \(60\) de ellos no usaban guantes.
+
+\begin{enumerate}
+    \item  cu\'antos usaban guantes en la mano derecha solamente?
+    \item  cu\'antos usaban guantes en la mano izquierda solamente?
+    \item  cu\'antos usaban guantes en ambas manos?
+\end{enumerate}
+
+Un total de \(35\) sastres fueron entrevistados para un trabajo; \(25\) sab'ian hacer trajes, \(28\) sab'ian hacer camisas, y dos no sab'ian hacer ninguna de las dos cosas. Cu'antos sab'ian hacer trajes y camisas?.
+
+De un grupo de 80 personas de las cuales se tiene la informaci'on de que 27 le'ian la revista A, pero no le'ian la revista B; 26 le'ian la revista B, pero no C; 19 le'ian C pero no A; 2 las tres revistas mencionadas. cuantos prefer'ian otras revistas?
+
+Reescriba el número sin usar el simbolo de valor absoluto, y simplique
+
+\begin{enumerate}
+	\item $\left| -3-4 \right|$
+	\item $\left| -11+1 \right|$
+	\item $(-5)\left| 3-6 \right|$
+	\item $(4)\left| 6-7 \right|$
+	\item $\left| 4-\pi \right|$
+	\item $\left| \pi-4 \right|$
+	\item $\left| \sqrt{2}-1.5 \right|$
+	\item $\left| \sqrt{3}-1.7 \right|$
+	\item $\left| 1.5-\sqrt{2}\right|$
+	\item $\left| 1.7-\sqrt{3}\right|$
+	\item $\frac{\left|-6\right|}{(-2)}$
+	\item $\frac{5}{\left|-2\right|}$
+\end{enumerate}
+
+Determinar el signo en la operacion real si conocemos que \(x<0\) y \(y>0\)
+
+\begin{enumerate}
+	\item \ $xy$
+	\item \ $x^2y$
+	\item \ $\frac{x}{y}+x$
+	\item \ $y-x$
+	\item \ $\frac{x}{y}$
+	\item \ $xy^2$
+	\item \ $\frac{y-x}{xy}$
+	\item \ $y(y-x)$
+\end{enumerate}
+
+Para los siguientes enunciados determinar los falsos o verdaderos
+
+\begin{enumerate}
+	\item ¿Cuál de los siguientes números NO es una solución de la inecuación $5x-4<12$?
+	
+\begin{itemize}
+	\item (A)$-2$
+	\item (B)$3$
+	\item (C)$0$
+	\item (D)$1.8$
+	\item (E)$4$
+\end{itemize}
+	\item ¿Qué inecuación NO representa el mismo conjunto solución?
+	
+\begin{itemize}
+	\item (A)$-2x>4$
+	\item (B)$-4>2x$
+	\item (C)$-x<2$
+	\item (D)$8<-4x$
+	\item (E)$-2>x$
+\end{itemize}
+	\item Si $7$ veces un número se disminuye en 5 unidades resulta un número menor que $47$, entonces el número debe ser menor que:
+	
+\begin{itemize}
+	\item (A)$42$
+	\item (B)$49$
+	\item (C)$52$
+	\item (D)$\frac{82}{7}$
+	\item (E)$\frac{52}{7}$
+\end{itemize}
+	\item El conjunto solución de la inecuación $3x-8<+5x+5$ es:
+	
+\begin{itemize}
+	\item (A)$x<\frac{13}{2}$
+	\item (B)$x>\frac{13}{2}$
+	\item (C)$x<-\frac{13}{2}$
+	\item (D)$x>-\frac{13}{2}$
+	\item (E)$x>-\frac{2}{13}$
+\end{itemize}
+  \item El conjunto solución de la inecuación $\frac{2x+1}{8}<\frac{3x-4}{3}$
+  
+\begin{itemize}
+	\item $x>0$
+	\item $x>\frac{35}{18}$
+	\item $x<\frac{35}{18}$
+	\item $x=\frac{35}{18}$
+	\item $x>\frac{18}{35}$
+\end{itemize}
+\end{enumerate}
+
+La temperatura en escala Fahrenheit y Celsius (centigrados) están relacionados por la fórmula \(C=\frac{5}{9}(F-32)\). ¿A qué temperatura Fahrenheit corresponde una temperatura en escala centígrada que se encuentra? \(40\leq C \leq 50\)
+
+En general, se considera que una persona tiene
+fiebre si tiene una temperatura oral mayor que \(98.6°F\).
+¿Qué temperatura en la escala Celsius indica fiebre? {[}Pista: recuerde que \(T_{F}=\frac{9}{5}T_{c}+32\), donde \(T_{C}\) es grados Celsius y \(T_{F}\) es
+grados Fahrenheit{]}.
+
+Un taxi cobra \(90 pesos\) por el primer cuarto de
+milla y \(30 pesos\) por cada cuarto de milla adicional. ¿Qué distancia en cuartos de milla puede viajar una persona y deber
+entre \(3 pesos\) y \(6 pesos\)?
+
+Durante cierto período, la temperatura en grados Celsius varió entre 25 y 30 grados Celsius. ¿Cuál fue el intervalo en grados Fahrenheit para este período?. Recordar que \(F=\frac{9C}{5}+32\)
+
+Para determinar el coeficiente intelectual de una persona se usa la fórmula: \(I=\frac{100M}{C}\),\break donde \(I\) es el coefienciente interlectual, \(M\) es la edad mental (determinada mediente un test) y \(C\) es la edad cronológica. Si la variación de \(I\) de un grupo de niños de 11 años está dada por \(80\leq I \leq 140\), encuentre el intervalo de edad mental de este grupo.
+
+La necesidad diaria de agua calculada para cierta ciudad esta dada por \(\left|c-3725\right|<100\) donde \(c\) es el número de galones de agua utilizados por día. Determinar la mayor y menor necesidad diaria de agua.
+
+Los lados de un cuadrado se extienden para formar un rectángulo, un lado se alarga \(2cm\), y el otro \(6cm\). El área del rectángulo resultante debe ser menor que \(130cm^2\). ¿Cuáles son las posibles longitudes del lado del cuadrado original?
+
+La oficina de correos s'olo aceptará paquetes para los cuales el largo m'as lo que mida alrededor no sea mayor que \(180 pulg\). Por consiguiente, para el paquete de la Figura \ref{fig:Figura_enunciado09}, debemos tener:
+\[L+2(x+y)\leq 108\]
+
+\begin{enumerate}
+	\item ¿La oficina de correos aceptará un paquete que mide $6 pulg$ de ancho, $8 pulg$ de alto y $5 pies$ de largo?
+	\item ¿Aceptar\'a un paquete que mide $2$ por $2$ por $4 pies$?
+	\item ¿Cual es el mayor largo aceptable para un paquete que tiene base cuadrada y mide $9$ por $9 pulg$?
+\end{enumerate}
+
+Hallar el intervalo entre los que se encuentra la ganancia \(P>0\), si \(\left|P-1000\right|<300\).
+
+Si \(x\leq 1\), entonces \(x^2\leq 1\).¿es VERDADERA? Explique.
+
+Si \(x\geq 2\), entonces \(x^2\geq 4\).¿es VERDADERA? Explique.
+
+En que rango de valores cae la ganancia \(P>0\), si \((2P-100)^2<250000\)?
+
+¿Qué rango de valores toma la ganancia \(P>0\), cuando \((2P+10)^2<6400\)?
+
+Hallar el rango de valores para el costo \(C>0\), sabiendo que \(\left|\frac{C}{C-12}\right|<1\)
+
+Escriba la expresión sin usar el símbolo de valor absoluto y simplifique el resultado.
+
+\begin{enumerate}
+	\item Si $x<-3$, entonces $\left|3+x\right|=?$
+	\item Si $x>5$, entonces $\left|5-x\right|=?$
+	\item Si $x<2$, entonces $\left|2-x\right|=?$
+	\item Si $x\geq -7$, entonces $\left|7+x\right|=?$
+	\item Si $a<b$, entonces $\left|a-b\right|=?$
+	\item Si $a>b$, entonces $\left|a-b\right|=?$
+	\item $\left|x^2+4\right|=?$
+	\item $\left|-x^2-1\right|=?$
+\end{enumerate}
+
+Exprese el enunciado como una desiguialdad.
+
+\begin{enumerate}
+	\item $x$ es negativo.
+	\item $y$ es no negativo.
+	\item $q$ es menor o igual $\pi$
+	\item $d$ está entre $4$ y $5$.
+	\item $t$ no es menor que $5$.
+	\item El negativo de $z$ no es mayor a $3$.
+	\item El cociente de $p$ y $q$ es a lo más $7$.
+	\item El recíproco de $w$ es al menos $9$.
+	\item El valor absoluto de $x$ es mayor que $7$.
+	\item $b$ es positivo.
+	\item $s$ es no positivo.
+	\item $w$ es mayor o igual a $-4$
+	\item $c$ está entre $\frac{1}{5}$ y $\frac{1}{3}$
+	\item $p$ es no mayor que $-2$
+	\item EL negativo de $m$ no es menor que $-2$
+	\item El cociente de $r$ y $s$ es al menos $\frac{1}{5}$.
+\end{enumerate}
+
+Usando las propiedades de los n'umeros reales y de las desigualdades, obtener el conjunto solución en los real para cada inecuación.
+
+\begin{enumerate}
+	\item {\Large $\mid x-3\mid<8$}
+	\item {\Large $\mid x-6\mid>6$}
+	\item {\Large $\mid x-1\mid \leq 5$}
+	\item {\Large $\mid2x-5\mid \geq 3$}
+	\item $\left|  \dfrac{2(x+5)}{3} \right|  \leq \frac{4}{5}$
+	\item {\Large $\dfrac{2(x+5)}{3}\leq \frac{4}{5}$}
+	\item {\Large $5x-4<3x+5$}
+	\item {\Large $\frac{x-5}{3}+\frac{x+4}{2}\geq \frac{x+3}{6}$}
+	\item {\Large $\frac{2x-1}{5}-\frac{3x+1}{3}\geq \frac{x-5}{10}$}
+	\item {\Large $\frac{x-5}{3}+\frac{x+4}{2}\geq \frac{x+3}{6}$}
+	\item {\Large $\frac{x-5}{3}+\frac{x+4}{2}\geq \frac{x+3}{6}$}
+	\item {\Large $\frac{x-5}{3}+\frac{x+4}{2}\geq \frac{x+3}{6}$}
+	\item {\Large $\dfrac{x-3}{x+2} < 0$}
+	\item {\Large $\dfrac{2x+4}{x-2} > 0$}
+	\item {\Large $\dfrac{x-4}{x-3}\geq 2$}
+	\item {\Large $\dfrac{2x+4}{x-3}\leq 2$}
+\end{enumerate}
+
+Un grupo de estudiantes decide asistir a un concierto. el costo de contratar a un autobús para que los lleve al concierto es de 450 dólares, lo cual se debe repartir en forma uniforme entre los estudiantes. Los promotores del concierto ofrecen descuentos a grupos que lleguen en autobús. Los boletos cuestan normalmente 50 dólares cada uno, pero se reducen \(10\) centavos de dólar del precio del boleto por cada persona que vaya en el grupo (hasta la capacidad máxima del autobús).¿Cuántos estudiantes deben ir en el grupo para que el costo total por estudiante sea menor a 54 dólares?
+
+Un carnaval tiene dos planes de boletos.
+Plan \(A\): tarifa de entrada de \(5\) dólares y \(25\) centavos cada vuelta en los juegos.
+Plan \(B\): tarifa de entrada de \(2\) dólares y \(50\) centavos cada vuelta en los juegos.
+¿Cuántas vueltas tendria que dar para que el plan \(A\) resultara menos caro que el plan \(B\)?
+
+Una compañía que renta vehículos ofrece dos planes para rentar un automóvil. Plan \(A\): \(30\) dólares por día y \(10\) centavos por milla. Plan \(B\): \(50\) dólares por día y gratis millas recorridas ilimitadas. ¿Para qué valor de millas el plan \(B\) le hará ahorrar dinero?
+
+Una compañía telefónica ofrece dos planes de larga distancia. Plan \(A\): \(25\) dólares por mes y \(5\) centavos por minuto. Plan \(B\): \(5\) dólares por mes y \(12\) centavos por minuto. ¿Para cuántos minutos de llamadas de larga distancia el plan \(B\) sería ventajoso desde el punto de vista financiero?
+
+Una compañía telefónica ofrece dos planes de larga distancia. Plan \(A\): \(25\) dólares por mes y \(5\) centavos por minuto. Plan \(B\): \(5\) dólares por mes y \(12\) centavos por minuto. ¿Para cuántos minutos de llamadas de larga distancia el plan \(B\) sería ventajoso desde el punto de vista financiero?
+
+Los lados de un cuadrado se extienden para formar un rect'angulo. Como se muestra en la Figura \ref{fig:DRect}, un lado se extiende \(2 cm\) y el otro \(5 cm\). Si el 'area del rect'angulo resultante es menor de \(130 cm^2\), cu'al es la posible longitud de un lado del cuadrado original?
+
+Los lados de un cuadrado se extienden para formar un rectángulo. Un lado se extiende \(2 cm\) y el otro \(6 cm\). Si el área del rectángulo resultante es menor de \(130 cm^2\), y mayor que \(80 cm^2\), ¿cuáles son las posibles longitudes de un lado del cuadrado original?
+
+\begin{verbatim}
+\begin{enumerate}
+	\item \ $(A\cap B)'$
+	\item \ $B'$
+	\item \ $A'\cup B$
+	\item \ $(A\cup B)'$
+\end{enumerate}
+\end{verbatim}
+
+\begin{verbatim}
+\begin{enumerate}
+	\item \ $A\cup B'$
+	\item \ $B'$
+	\item \ $A'\cup B$
+	\item \ $(A\cup B)'$
+\end{enumerate}
+\end{verbatim}
+
+\begin{enumerate}
+	\item \ $A\cup B'$
+	\item \ $A'$
+	\item \ $A'\cup B$
+	\item \ $(A\cup B)'$
+\end{enumerate}
+
+\begin{enumerate}
+	\item \ $A\cup B'$
+	\item \ $A'$
+	\item \ $A'\cup B$
+	\item \ $(A\cup B)'$
+\end{enumerate}
+
+Considere los conjuntos \(A_{1}=\{2,3,5\}\),\(A_{2}=\{1,4\}\),\(A_{3}=\{1,2,3\}\),\(A_{4}=\{1,3,5,7\}\),\(A_{5}=\{3,5,8\}\),\(A_{6}=\{1,7\}\),\(U=\{1,2,3,4,5,6,7,8,9\}\). Determine
+
+\begin{enumerate}
+	\item \ $\bigcup_{i=1}^{6}A_{i}$
+	\item \ $\bigcup_{i=3}^{6}A'_{i}$
+	\item \ $\bigcap_{i=4}^{6}A_{i}$
+\end{enumerate}
+
+Considere los conjuntos \(A=\{a,b,c,d,e\}\),\(B=\{d,e,f,g\}\),\(C=\{e,f,g,h,i\}\),\(D=\{a,c,e,g,i\}\),\break \(E=\{b,d,f,h\}\),\(F=\{a,e,i\}\),\break \(U=\{a,b,c,d,e,f,g,h,i\}\). Determine
+
+\begin{enumerate}
+	\item \ $A\cup B$
+	\item \ $A\cap B$
+	\item \ $E\cup F$
+	\item \ $C\cap D$
+	\item \ $A'$
+	\item \ $B'$
+	\item \ $B-A$
+	\item \ $E'\cap F'$
+	\item \ $(E\cup F)'$
+\end{enumerate}
+
+Considere los conjuntos \(A=\{2,3,5\}\),\(B=\{1,4\}\),\(C=\{1,2,3\}\),\(D=\{1,3,5,7\}\),\(E=\{3,5,8\}\),\(F=\{1,7\}\),\(U=\{1,2,3,4,5,6,7,8,9\}\). Determine
+
+\begin{enumerate}
+	\item \ $A\cup B$
+	\item \ $A\cap B$
+	\item \ $E\cup F$
+	\item \ $C\cap D$
+	\item \ $A'$
+	\item \ $B'$
+	\item \ $B-A$
+	\item \ $E'\cap F'$
+	\item \ $(E\cup F)'$
+\end{enumerate}
+
+Una encuesta hecha a \(100\) m'usicos populares mostr'o que \(40\) de ellos usaban guantes en la mano izquierda y \(39\) usaban guantes en la mano derecha. Si \(60\) de ellos no usaban guantes.
+
+\begin{enumerate}
+    \item  cu\'antos usaban guantes en la mano derecha solamente?
+    \item  cu\'antos usaban guantes en la mano izquierda solamente?
+    \item  cu\'antos usaban guantes en ambas manos?
+\end{enumerate}
+
+Un total de \(35\) sastres fueron entrevistados para un trabajo; \(25\) sab'ian hacer trajes, \(28\) sab'ian hacer camisas, y dos no sab'ian hacer ninguna de las dos cosas. Cu'antos sab'ian hacer trajes y camisas?.
+
+De un grupo de 80 personas de las cuales se tiene la informaci'on de que 27 le'ian la revista A, pero no le'ian la revista B; 26 le'ian la revista B, pero no C; 19 le'ian C pero no A; 2 las tres revistas mencionadas. cuantos prefer'ian otras revistas?
+
+Reescriba el número sin usar el simbolo de valor absoluto, y simplique
+
+\begin{enumerate}
+	\item $\left| -3-4 \right|$
+	\item $\left| -11+1 \right|$
+	\item $(-5)\left| 3-6 \right|$
+	\item $(4)\left| 6-7 \right|$
+	\item $\left| 4-\pi \right|$
+	\item $\left| \pi-4 \right|$
+	\item $\left| \sqrt{2}-1.5 \right|$
+	\item $\left| \sqrt{3}-1.7 \right|$
+	\item $\left| 1.5-\sqrt{2}\right|$
+	\item $\left| 1.7-\sqrt{3}\right|$
+	\item $\frac{\left|-6\right|}{(-2)}$
+	\item $\frac{5}{\left|-2\right|}$
+\end{enumerate}
+
+Determinar el signo en la operacion real si conocemos que \(x<0\) y \(y>0\)
+
+\begin{enumerate}
+	\item \ $xy$
+	\item \ $x^2y$
+	\item \ $\frac{x}{y}+x$
+	\item \ $y-x$
+	\item \ $\frac{x}{y}$
+	\item \ $xy^2$
+	\item \ $\frac{y-x}{xy}$
+	\item \ $y(y-x)$
+\end{enumerate}
+
+Para los siguientes enunciados determinar los falsos o verdaderos
+
+\begin{enumerate}
+	\item ¿Cuál de los siguientes números NO es una solución de la inecuación $5x-4<12$?
+	
+\begin{itemize}
+	\item (A)$-2$
+	\item (B)$3$
+	\item (C)$0$
+	\item (D)$1.8$
+	\item (E)$4$
+\end{itemize}
+	\item ¿Qué inecuación NO representa el mismo conjunto solución?
+	
+\begin{itemize}
+	\item (A)$-2x>4$
+	\item (B)$-4>2x$
+	\item (C)$-x<2$
+	\item (D)$8<-4x$
+	\item (E)$-2>x$
+\end{itemize}
+	\item Si $7$ veces un número se disminuye en 5 unidades resulta un número menor que $47$, entonces el número debe ser menor que:
+	
+\begin{itemize}
+	\item (A)$42$
+	\item (B)$49$
+	\item (C)$52$
+	\item (D)$\frac{82}{7}$
+	\item (E)$\frac{52}{7}$
+\end{itemize}
+	\item El conjunto solución de la inecuación $3x-8<+5x+5$ es:
+	
+\begin{itemize}
+	\item (A)$x<\frac{13}{2}$
+	\item (B)$x>\frac{13}{2}$
+	\item (C)$x<-\frac{13}{2}$
+	\item (D)$x>-\frac{13}{2}$
+	\item (E)$x>-\frac{2}{13}$
+\end{itemize}
+  \item El conjunto solución de la inecuación $\frac{2x+1}{8}<\frac{3x-4}{3}$
+  
+\begin{itemize}
+	\item $x>0$
+	\item $x>\frac{35}{18}$
+	\item $x<\frac{35}{18}$
+	\item $x=\frac{35}{18}$
+	\item $x>\frac{18}{35}$
+\end{itemize}
+\end{enumerate}
+
+La temperatura en escala Fahrenheit y Celsius (centigrados) están relacionados por la fórmula \(C=\frac{5}{9}(F-32)\). ¿A qué temperatura Fahrenheit corresponde una temperatura en escala centígrada que se encuentra? \(40\leq C \leq 50\)
+
+En general, se considera que una persona tiene
+fiebre si tiene una temperatura oral mayor que \(98.6°F\).
+¿Qué temperatura en la escala Celsius indica fiebre? {[}Pista: recuerde que \(T_{F}=\frac{9}{5}T_{c}+32\), donde \(T_{C}\) es grados Celsius y \(T_{F}\) es
+grados Fahrenheit{]}.
+
+Un taxi cobra \(90 pesos\) por el primer cuarto de
+milla y \(30 pesos\) por cada cuarto de milla adicional. ¿Qué distancia en cuartos de milla puede viajar una persona y deber
+entre \(3 pesos\) y \(6 pesos\)?
+
+Durante cierto período, la temperatura en grados Celsius varió entre 25 y 30 grados Celsius. ¿Cuál fue el intervalo en grados Fahrenheit para este período?. Recordar que \(F=\frac{9C}{5}+32\)
+
+Para determinar el coeficiente intelectual de una persona se usa la fórmula: \(I=\frac{100M}{C}\),\break donde \(I\) es el coefienciente interlectual, \(M\) es la edad mental (determinada mediente un test) y \(C\) es la edad cronológica. Si la variación de \(I\) de un grupo de niños de 11 años está dada por \(80\leq I \leq 140\), encuentre el intervalo de edad mental de este grupo.
+
+La necesidad diaria de agua calculada para cierta ciudad esta dada por \(\left|c-3725\right|<100\) donde \(c\) es el número de galones de agua utilizados por día. Determinar la mayor y menor necesidad diaria de agua.
+
+Los lados de un cuadrado se extienden para formar un rectángulo, un lado se alarga \(2cm\), y el otro \(6cm\). El área del rectángulo resultante debe ser menor que \(130cm^2\). ¿Cuáles son las posibles longitudes del lado del cuadrado original?
+
+La oficina de correos s'olo aceptará paquetes para los cuales el largo m'as lo que mida alrededor no sea mayor que \(180 pulg\). Por consiguiente, para el paquete de la Figura \ref{fig:Figura_enunciado09}, debemos tener:
+\[L+2(x+y)\leq 108\]
+
+\begin{enumerate}
+	\item ¿La oficina de correos aceptará un paquete que mide $6 pulg$ de ancho, $8 pulg$ de alto y $5 pies$ de largo?
+	\item ¿Aceptar\'a un paquete que mide $2$ por $2$ por $4 pies$?
+	\item ¿Cual es el mayor largo aceptable para un paquete que tiene base cuadrada y mide $9$ por $9 pulg$?
+\end{enumerate}
+
+Hallar el intervalo entre los que se encuentra la ganancia \(P>0\), si \(\left|P-1000\right|<300\).
+
+Si \(x\leq 1\), entonces \(x^2\leq 1\).¿es VERDADERA? Explique.
+
+Si \(x\geq 2\), entonces \(x^2\geq 4\).¿es VERDADERA? Explique.
+
+En que rango de valores cae la ganancia \(P>0\), si \((2P-100)^2<250000\)?
+
+¿Qué rango de valores toma la ganancia \(P>0\), cuando \((2P+10)^2<6400\)?
+
+Hallar el rango de valores para el costo \(C>0\), sabiendo que \(\left|\frac{C}{C-12}\right|<1\)
+
+Escriba la expresión sin usar el símbolo de valor absoluto y simplifique el resultado.
+
+\begin{enumerate}
+	\item Si $x<-3$, entonces $\left|3+x\right|=?$
+	\item Si $x>5$, entonces $\left|5-x\right|=?$
+	\item Si $x<2$, entonces $\left|2-x\right|=?$
+	\item Si $x\geq -7$, entonces $\left|7+x\right|=?$
+	\item Si $a<b$, entonces $\left|a-b\right|=?$
+	\item Si $a>b$, entonces $\left|a-b\right|=?$
+	\item $\left|x^2+4\right|=?$
+	\item $\left|-x^2-1\right|=?$
+\end{enumerate}
+
+Exprese el enunciado como una desiguialdad.
+
+\begin{enumerate}
+	\item $x$ es negativo.
+	\item $y$ es no negativo.
+	\item $q$ es menor o igual $\pi$
+	\item $d$ está entre $4$ y $5$.
+	\item $t$ no es menor que $5$.
+	\item El negativo de $z$ no es mayor a $3$.
+	\item El cociente de $p$ y $q$ es a lo más $7$.
+	\item El recíproco de $w$ es al menos $9$.
+	\item El valor absoluto de $x$ es mayor que $7$.
+	\item $b$ es positivo.
+	\item $s$ es no positivo.
+	\item $w$ es mayor o igual a $-4$
+	\item $c$ está entre $\frac{1}{5}$ y $\frac{1}{3}$
+	\item $p$ es no mayor que $-2$
+	\item EL negativo de $m$ no es menor que $-2$
+	\item El cociente de $r$ y $s$ es al menos $\frac{1}{5}$.
+\end{enumerate}
+
+Usando las propiedades de los n'umeros reales y de las desigualdades, obtener el conjunto solución en los real para cada inecuación.
+
+\begin{enumerate}
+	\item {\Large $\mid x-3\mid<8$}
+	\item {\Large $\mid x-6\mid>6$}
+	\item {\Large $\mid x-1\mid \leq 5$}
+	\item {\Large $\mid2x-5\mid \geq 3$}
+	\item $\left|  \dfrac{2(x+5)}{3} \right|  \leq \frac{4}{5}$
+	\item {\Large $\dfrac{2(x+5)}{3}\leq \frac{4}{5}$}
+	\item {\Large $5x-4<3x+5$}
+	\item {\Large $\frac{x-5}{3}+\frac{x+4}{2}\geq \frac{x+3}{6}$}
+	\item {\Large $\frac{2x-1}{5}-\frac{3x+1}{3}\geq \frac{x-5}{10}$}
+	\item {\Large $\frac{x-5}{3}+\frac{x+4}{2}\geq \frac{x+3}{6}$}
+	\item {\Large $\frac{x-5}{3}+\frac{x+4}{2}\geq \frac{x+3}{6}$}
+	\item {\Large $\frac{x-5}{3}+\frac{x+4}{2}\geq \frac{x+3}{6}$}
+	\item {\Large $\dfrac{x-3}{x+2} < 0$}
+	\item {\Large $\dfrac{2x+4}{x-2} > 0$}
+	\item {\Large $\dfrac{x-4}{x-3}\geq 2$}
+	\item {\Large $\dfrac{2x+4}{x-3}\leq 2$}
+\end{enumerate}
+
+Un grupo de estudiantes decide asistir a un concierto. el costo de contratar a un autobús para que los lleve al concierto es de 450 dólares, lo cual se debe repartir en forma uniforme entre los estudiantes. Los promotores del concierto ofrecen descuentos a grupos que lleguen en autobús. Los boletos cuestan normalmente 50 dólares cada uno, pero se reducen \(10\) centavos de dólar del precio del boleto por cada persona que vaya en el grupo (hasta la capacidad máxima del autobús).¿Cuántos estudiantes deben ir en el grupo para que el costo total por estudiante sea menor a 54 dólares?
+
+Un carnaval tiene dos planes de boletos.
+Plan \(A\): tarifa de entrada de \(5\) dólares y \(25\) centavos cada vuelta en los juegos.
+Plan \(B\): tarifa de entrada de \(2\) dólares y \(50\) centavos cada vuelta en los juegos.
+¿Cuántas vueltas tendria que dar para que el plan \(A\) resultara menos caro que el plan \(B\)?
+
+Una compañía que renta vehículos ofrece dos planes para rentar un automóvil. Plan \(A\): \(30\) dólares por día y \(10\) centavos por milla. Plan \(B\): \(50\) dólares por día y gratis millas recorridas ilimitadas. ¿Para qué valor de millas el plan \(B\) le hará ahorrar dinero?
+
+Una compañía telefónica ofrece dos planes de larga distancia. Plan \(A\): \(25\) dólares por mes y \(5\) centavos por minuto. Plan \(B\): \(5\) dólares por mes y \(12\) centavos por minuto. ¿Para cuántos minutos de llamadas de larga distancia el plan \(B\) sería ventajoso desde el punto de vista financiero?
+
+Una compañía telefónica ofrece dos planes de larga distancia. Plan \(A\): \(25\) dólares por mes y \(5\) centavos por minuto. Plan \(B\): \(5\) dólares por mes y \(12\) centavos por minuto. ¿Para cuántos minutos de llamadas de larga distancia el plan \(B\) sería ventajoso desde el punto de vista financiero?
+
+Los lados de un cuadrado se extienden para formar un rect'angulo. Como se muestra en la Figura \ref{fig:DRect}, un lado se extiende \(2 cm\) y el otro \(5 cm\). Si el 'area del rect'angulo resultante es menor de \(130 cm^2\), cu'al es la posible longitud de un lado del cuadrado original?
+
+Los lados de un cuadrado se extienden para formar un rectángulo. Un lado se extiende \(2 cm\) y el otro \(6 cm\). Si el área del rectángulo resultante es menor de \(130 cm^2\), y mayor que \(80 cm^2\), ¿cuáles son las posibles longitudes de un lado del cuadrado original?
+
+\bibliography{book.bib,packages.bib}
+
+\end{document}

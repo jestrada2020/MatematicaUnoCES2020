@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 10 Ley del coseno | Curso básico de Matemáticas Uno</title>
+  <meta name="description" content="Este texto se realizó usando bookdown package para escribir libros." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 10 Ley del coseno | Curso básico de Matemáticas Uno" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="/images/portada.jpg" />
+  <meta property="og:description" content="Este texto se realizó usando bookdown package para escribir libros." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 10 Ley del coseno | Curso básico de Matemáticas Uno" />
+  
+  <meta name="twitter:description" content="Este texto se realizó usando bookdown package para escribir libros." />
+  <meta name="twitter:image" content="/images/portada.jpg" />
+
+<meta name="author" content="John Jairo Estrada Álvarez" />
+
+
+<meta name="date" content="2021-11-03" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="ley-del-seno.html"/>
+<link rel="next" href="taller-uno.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Curso de Matemáticas Uno</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerrequisitos</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#comportamentales"><i class="fa fa-check"></i><b>1.1</b> Comportamentales</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#evaluativos"><i class="fa fa-check"></i><b>1.2</b> Evaluativos</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#fechas-de-evaluación"><i class="fa fa-check"></i><b>1.3</b> Fechas de evaluación</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="index.html"><a href="index.html#grupoa"><i class="fa fa-check"></i><b>1.3.1</b> GrupoA</a></li>
+<li class="chapter" data-level="1.3.2" data-path="index.html"><a href="index.html#grupob"><i class="fa fa-check"></i><b>1.3.2</b> GrupoB</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#video-motivacional"><i class="fa fa-check"></i><b>1.4</b> Video motivacional</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#página-para-reforzar-conceptos-básicos"><i class="fa fa-check"></i><b>1.5</b> Página para reforzar conceptos básicos</a></li>
+<li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#matemáticas-del-planeta-tierra"><i class="fa fa-check"></i><b>1.6</b> Matemáticas del planeta tierra</a></li>
+<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#objetivo-general"><i class="fa fa-check"></i><b>1.7</b> Objetivo general</a></li>
+<li class="chapter" data-level="1.8" data-path="index.html"><a href="index.html#objetivos-específicos"><i class="fa fa-check"></i><b>1.8</b> Objetivos específicos</a></li>
+<li class="chapter" data-level="1.9" data-path="index.html"><a href="index.html#clase-a-clase"><i class="fa fa-check"></i><b>1.9</b> <strong>Clase a clase</strong></a></li>
+<li class="chapter" data-level="1.10" data-path="index.html"><a href="index.html#bibliografía"><i class="fa fa-check"></i><b>1.10</b> Bibliografía</a></li>
+<li class="chapter" data-level="1.11" data-path="index.html"><a href="index.html#video-manejo-de-la-casio-f_x350ms"><i class="fa fa-check"></i><b>1.11</b> Video manejo de la Casio <span class="math inline">\(f_{x}350MS\)</span></a><ul>
+<li class="chapter" data-level="1.11.1" data-path="index.html"><a href="index.html#regla-de-cramer-sistemas-2-por-2"><i class="fa fa-check"></i><b>1.11.1</b> Regla de Cramer sistemas <span class="math inline">\(2\)</span> por <span class="math inline">\(2\)</span></a></li>
+<li class="chapter" data-level="1.11.2" data-path="index.html"><a href="index.html#regla-de-cramer-sistemas-3-por-3"><i class="fa fa-check"></i><b>1.11.2</b> Regla de Cramer sistemas <span class="math inline">\(3\)</span> por <span class="math inline">\(3\)</span></a></li>
+<li class="chapter" data-level="1.11.3" data-path="index.html"><a href="index.html#regla-de-sarrus-determinante-3-por-3"><i class="fa fa-check"></i><b>1.11.3</b> Regla de Sarrus determinante <span class="math inline">\(3\)</span> por <span class="math inline">\(3\)</span></a></li>
+<li class="chapter" data-level="1.11.4" data-path="index.html"><a href="index.html#solución-de-la-ecuación-cuadrática"><i class="fa fa-check"></i><b>1.11.4</b> Solución de la ecuación cuadrática</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introducción</a><ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#teoría-de-conjuntos"><i class="fa fa-check"></i><b>2.1</b> Teoría de conjuntos</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#propiedades-de-la-unión"><i class="fa fa-check"></i><b>2.2</b> Propiedades de la Unión</a></li>
+<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#propiedades-de-la-intersección"><i class="fa fa-check"></i><b>2.3</b> Propiedades de la Intersección</a></li>
+<li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#propiedades-de-la-unión-y-la-intersección"><i class="fa fa-check"></i><b>2.4</b> Propiedades de la unión y la intersección</a></li>
+<li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#diferencia-entre-dos-conjuntos"><i class="fa fa-check"></i><b>2.5</b> Diferencia entre dos conjuntos</a></li>
+<li class="chapter" data-level="2.6" data-path="intro.html"><a href="intro.html#complemento-de-un-conjunto"><i class="fa fa-check"></i><b>2.6</b> Complemento de un conjunto</a></li>
+<li class="chapter" data-level="2.7" data-path="intro.html"><a href="intro.html#propiedades-del-algebra-de-conjuntos"><i class="fa fa-check"></i><b>2.7</b> Propiedades del algebra de conjuntos</a></li>
+<li class="chapter" data-level="2.8" data-path="intro.html"><a href="intro.html#operaciones-con-conjuntos"><i class="fa fa-check"></i><b>2.8</b> Operaciones con conjuntos</a></li>
+<li class="chapter" data-level="2.9" data-path="intro.html"><a href="intro.html#ejemplo1"><i class="fa fa-check"></i><b>2.9</b> Ejemplo1</a></li>
+<li class="chapter" data-level="2.10" data-path="intro.html"><a href="intro.html#ejemplo2"><i class="fa fa-check"></i><b>2.10</b> Ejemplo2</a></li>
+<li class="chapter" data-level="2.11" data-path="intro.html"><a href="intro.html#ejemplo3"><i class="fa fa-check"></i><b>2.11</b> Ejemplo3</a></li>
+<li class="chapter" data-level="2.12" data-path="intro.html"><a href="intro.html#propiedades-de-los-números-reales"><i class="fa fa-check"></i><b>2.12</b> Propiedades de los números Reales</a></li>
+<li class="chapter" data-level="2.13" data-path="intro.html"><a href="intro.html#evaluación-conjuntos-y-recta-real"><i class="fa fa-check"></i><b>2.13</b> Evaluación (Conjuntos y recta real)</a></li>
+<li class="chapter" data-level="2.14" data-path="intro.html"><a href="intro.html#desigualdades-y-conjuntos-de-intervalos-en-la-recta-real"><i class="fa fa-check"></i><b>2.14</b> Desigualdades y conjuntos de intervalos en la recta real</a></li>
+<li class="chapter" data-level="2.15" data-path="intro.html"><a href="intro.html#ejemplos-para-la-solución-de-desigualdades-usando-las-propiedades-básicas"><i class="fa fa-check"></i><b>2.15</b> Ejemplos para la solución de desigualdades usando las propiedades básicas</a><ul>
+<li class="chapter" data-level="2.15.1" data-path="intro.html"><a href="intro.html#ejemplo-1"><i class="fa fa-check"></i><b>2.15.1</b> <strong>Ejemplo 1</strong></a></li>
+<li class="chapter" data-level="2.15.2" data-path="intro.html"><a href="intro.html#ejemplo-2"><i class="fa fa-check"></i><b>2.15.2</b> <strong>Ejemplo 2</strong></a></li>
+<li class="chapter" data-level="2.15.3" data-path="intro.html"><a href="intro.html#ejemplo-3"><i class="fa fa-check"></i><b>2.15.3</b> <strong>Ejemplo 3</strong></a></li>
+<li class="chapter" data-level="2.15.4" data-path="intro.html"><a href="intro.html#ejemplo-4"><i class="fa fa-check"></i><b>2.15.4</b> <strong>Ejemplo 4</strong></a></li>
+<li class="chapter" data-level="2.15.5" data-path="intro.html"><a href="intro.html#ejemplo-5"><i class="fa fa-check"></i><b>2.15.5</b> <strong>Ejemplo 5</strong></a></li>
+<li class="chapter" data-level="2.15.6" data-path="intro.html"><a href="intro.html#ejemplo-6"><i class="fa fa-check"></i><b>2.15.6</b> <strong>Ejemplo 6</strong></a></li>
+<li class="chapter" data-level="2.15.7" data-path="intro.html"><a href="intro.html#ejemplo-7"><i class="fa fa-check"></i><b>2.15.7</b> <strong>Ejemplo 7</strong></a></li>
+<li class="chapter" data-level="2.15.8" data-path="intro.html"><a href="intro.html#ejemplo-8"><i class="fa fa-check"></i><b>2.15.8</b> <strong>Ejemplo 8</strong></a></li>
+<li class="chapter" data-level="2.15.9" data-path="intro.html"><a href="intro.html#ejemplo-9"><i class="fa fa-check"></i><b>2.15.9</b> <strong>Ejemplo 9</strong></a></li>
+<li class="chapter" data-level="2.15.10" data-path="intro.html"><a href="intro.html#ejemplo-10"><i class="fa fa-check"></i><b>2.15.10</b> <strong>Ejemplo 10</strong></a></li>
+<li class="chapter" data-level="2.15.11" data-path="intro.html"><a href="intro.html#ejemplo-11"><i class="fa fa-check"></i><b>2.15.11</b> <strong>Ejemplo 11</strong></a></li>
+<li class="chapter" data-level="2.15.12" data-path="intro.html"><a href="intro.html#ejemplo-12"><i class="fa fa-check"></i><b>2.15.12</b> <strong>Ejemplo 12</strong></a></li>
+<li class="chapter" data-level="2.15.13" data-path="intro.html"><a href="intro.html#ejemplo-13"><i class="fa fa-check"></i><b>2.15.13</b> <strong>Ejemplo 13</strong></a></li>
+<li class="chapter" data-level="2.15.14" data-path="intro.html"><a href="intro.html#ejemplo-14"><i class="fa fa-check"></i><b>2.15.14</b> <strong>Ejemplo 14</strong></a></li>
+<li class="chapter" data-level="2.15.15" data-path="intro.html"><a href="intro.html#ejemplo-15a"><i class="fa fa-check"></i><b>2.15.15</b> <strong>Ejemplo 15A</strong></a></li>
+<li class="chapter" data-level="2.15.16" data-path="intro.html"><a href="intro.html#ejemplo-15b"><i class="fa fa-check"></i><b>2.15.16</b> <strong>Ejemplo 15B</strong></a></li>
+<li class="chapter" data-level="2.15.17" data-path="intro.html"><a href="intro.html#ejemplo-16a"><i class="fa fa-check"></i><b>2.15.17</b> <strong>Ejemplo 16A</strong></a></li>
+<li class="chapter" data-level="2.15.18" data-path="intro.html"><a href="intro.html#ejemplo-16b"><i class="fa fa-check"></i><b>2.15.18</b> <strong>Ejemplo 16B</strong></a></li>
+<li class="chapter" data-level="2.15.19" data-path="intro.html"><a href="intro.html#ejemplo-16c"><i class="fa fa-check"></i><b>2.15.19</b> <strong>Ejemplo 16C</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="2.16" data-path="intro.html"><a href="intro.html#evaluación-fórmula-del-estudiante-parábola-y-línea-recta"><i class="fa fa-check"></i><b>2.16</b> Evaluación (Fórmula del Estudiante, Parábola y Línea Recta)</a></li>
+<li class="chapter" data-level="2.17" data-path="intro.html"><a href="intro.html#concepto-de-valor-absoluto"><i class="fa fa-check"></i><b>2.17</b> Concepto de valor absoluto</a><ul>
+<li class="chapter" data-level="2.17.1" data-path="intro.html"><a href="intro.html#ejemplo-1-1"><i class="fa fa-check"></i><b>2.17.1</b> Ejemplo 1</a></li>
+<li class="chapter" data-level="2.17.2" data-path="intro.html"><a href="intro.html#ejemplo-2-1"><i class="fa fa-check"></i><b>2.17.2</b> Ejemplo 2</a></li>
+<li class="chapter" data-level="2.17.3" data-path="intro.html"><a href="intro.html#ejemplo-3-1"><i class="fa fa-check"></i><b>2.17.3</b> Ejemplo 3</a></li>
+<li class="chapter" data-level="2.17.4" data-path="intro.html"><a href="intro.html#ejemplo-4-1"><i class="fa fa-check"></i><b>2.17.4</b> Ejemplo 4</a></li>
+<li class="chapter" data-level="2.17.5" data-path="intro.html"><a href="intro.html#ejemplo-5-1"><i class="fa fa-check"></i><b>2.17.5</b> Ejemplo 5</a></li>
+<li class="chapter" data-level="2.17.6" data-path="intro.html"><a href="intro.html#ejemplo-6-1"><i class="fa fa-check"></i><b>2.17.6</b> Ejemplo 6</a></li>
+<li class="chapter" data-level="2.17.7" data-path="intro.html"><a href="intro.html#ejemplo-7-1"><i class="fa fa-check"></i><b>2.17.7</b> Ejemplo 7</a></li>
+</ul></li>
+<li class="chapter" data-level="2.18" data-path="intro.html"><a href="intro.html#evaluación-desigualdades-y-valor-absoluto"><i class="fa fa-check"></i><b>2.18</b> Evaluación (Desigualdades y Valor absoluto)</a></li>
+<li class="chapter" data-level="2.19" data-path="intro.html"><a href="intro.html#evaluación-problemas-con-desigualdades"><i class="fa fa-check"></i><b>2.19</b> Evaluación (Problemas con desigualdades)</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="potenciación-y-radicales.html"><a href="potenciación-y-radicales.html"><i class="fa fa-check"></i><b>3</b> Potenciación y Radicales</a><ul>
+<li class="chapter" data-level="3.1" data-path="potenciación-y-radicales.html"><a href="potenciación-y-radicales.html#propiedades-potenciación"><i class="fa fa-check"></i><b>3.1</b> Propiedades potenciación</a></li>
+<li class="chapter" data-level="3.2" data-path="potenciación-y-radicales.html"><a href="potenciación-y-radicales.html#propiedades-de-radicales"><i class="fa fa-check"></i><b>3.2</b> Propiedades de radicales</a></li>
+<li class="chapter" data-level="3.3" data-path="potenciación-y-radicales.html"><a href="potenciación-y-radicales.html#ejemplo-ejercicio-del-taller"><i class="fa fa-check"></i><b>3.3</b> Ejemplo (ejercicio del taller)</a></li>
+<li class="chapter" data-level="3.4" data-path="potenciación-y-radicales.html"><a href="potenciación-y-radicales.html#ejemplo-ejercicio-del-taller-1"><i class="fa fa-check"></i><b>3.4</b> Ejemplo (ejercicio del taller)</a></li>
+<li class="chapter" data-level="3.5" data-path="potenciación-y-radicales.html"><a href="potenciación-y-radicales.html#ejemplo"><i class="fa fa-check"></i><b>3.5</b> Ejemplo</a></li>
+<li class="chapter" data-level="3.6" data-path="potenciación-y-radicales.html"><a href="potenciación-y-radicales.html#ley-distributiva"><i class="fa fa-check"></i><b>3.6</b> Ley distributiva</a></li>
+<li class="chapter" data-level="3.7" data-path="potenciación-y-radicales.html"><a href="potenciación-y-radicales.html#ejemplos-ley-distributiva"><i class="fa fa-check"></i><b>3.7</b> Ejemplos ley distributiva</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html"><i class="fa fa-check"></i><b>4</b> Solución de Ecuaciones</a><ul>
+<li class="chapter" data-level="4.1" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#propiedades-de-las-ecuaciones"><i class="fa fa-check"></i><b>4.1</b> Propiedades de las ecuaciones</a></li>
+<li class="chapter" data-level="4.2" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ley-distributiva-1"><i class="fa fa-check"></i><b>4.2</b> Ley distributiva</a></li>
+<li class="chapter" data-level="4.3" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#factorización-tema1"><i class="fa fa-check"></i><b>4.3</b> Factorización (Tema1)</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo1-f.c.-letra"><i class="fa fa-check"></i><b>4.3.1</b> Ejemplo1 (F.C. letra)</a></li>
+<li class="chapter" data-level="4.3.2" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo2-f.c.-letra"><i class="fa fa-check"></i><b>4.3.2</b> Ejemplo2 (F.C. letra)</a></li>
+<li class="chapter" data-level="4.3.3" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo3-f.c.-número"><i class="fa fa-check"></i><b>4.3.3</b> Ejemplo3 (F.C. número)</a></li>
+<li class="chapter" data-level="4.3.4" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo4-f.c.-número-y-letra"><i class="fa fa-check"></i><b>4.3.4</b> Ejemplo4 (F.C. número y letra)</a></li>
+<li class="chapter" data-level="4.3.5" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo5-f.c.-por-agrupación"><i class="fa fa-check"></i><b>4.3.5</b> Ejemplo5 (F.C. por agrupación)</a></li>
+<li class="chapter" data-level="4.3.6" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo6-f.c.-por-agrupación"><i class="fa fa-check"></i><b>4.3.6</b> Ejemplo6 (F.C. por agrupación)</a></li>
+<li class="chapter" data-level="4.3.7" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#factorizar-x2bxc"><i class="fa fa-check"></i><b>4.3.7</b> Factorizar <span class="math inline">\(x^2+Bx+C\)</span></a></li>
+<li class="chapter" data-level="4.3.8" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#factorizar-ax2bxc"><i class="fa fa-check"></i><b>4.3.8</b> Factorizar <span class="math inline">\(Ax^2+Bx+C\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#método-de-la-cruceta"><i class="fa fa-check"></i><b>4.4</b> Método de la cruceta</a></li>
+<li class="chapter" data-level="4.5" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#condición-para-aplicar-la-técnica-llamada-cruceta"><i class="fa fa-check"></i><b>4.5</b> Condición para aplicar la técnica llamada <strong>CRUCETA</strong></a><ul>
+<li class="chapter" data-level="4.5.1" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo-si-la-raíz-de-dgeq-0-es-exacta"><i class="fa fa-check"></i><b>4.5.1</b> Ejemplo (Si la raíz de <span class="math inline">\(D\geq 0\)</span> es exacta)</a></li>
+<li class="chapter" data-level="4.5.2" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo-2-4"><i class="fa fa-check"></i><b>4.5.2</b> Ejemplo 2</a></li>
+<li class="chapter" data-level="4.5.3" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo-3-2"><i class="fa fa-check"></i><b>4.5.3</b> Ejemplo 3</a></li>
+<li class="chapter" data-level="4.5.4" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo-4-2"><i class="fa fa-check"></i><b>4.5.4</b> Ejemplo 4</a></li>
+<li class="chapter" data-level="4.5.5" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo-5-2"><i class="fa fa-check"></i><b>4.5.5</b> Ejemplo 5</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#método-factorización-forzada"><i class="fa fa-check"></i><b>4.6</b> Método factorización forzada</a><ul>
+<li class="chapter" data-level="4.6.1" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo-1-4"><i class="fa fa-check"></i><b>4.6.1</b> Ejemplo 1</a></li>
+<li class="chapter" data-level="4.6.2" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo-2-5"><i class="fa fa-check"></i><b>4.6.2</b> Ejemplo 2</a></li>
+</ul></li>
+<li class="chapter" data-level="4.7" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo-si-d0"><i class="fa fa-check"></i><b>4.7</b> Ejemplo (Si <span class="math inline">\(D&lt;0\)</span>)</a></li>
+<li class="chapter" data-level="4.8" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#productos-notables-básicos"><i class="fa fa-check"></i><b>4.8</b> Productos notables básicos</a><ul>
+<li class="chapter" data-level="4.8.1" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#suma-al-cuadrado"><i class="fa fa-check"></i><b>4.8.1</b> Suma al cuadrado</a></li>
+<li class="chapter" data-level="4.8.2" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#diferencia-al-cuadrado"><i class="fa fa-check"></i><b>4.8.2</b> Diferencia al cuadrado</a></li>
+<li class="chapter" data-level="4.8.3" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#diferencia-de-cuadrados"><i class="fa fa-check"></i><b>4.8.3</b> Diferencia de cuadrados</a></li>
+<li class="chapter" data-level="4.8.4" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#suma-al-cúbo"><i class="fa fa-check"></i><b>4.8.4</b> Suma al cúbo</a></li>
+<li class="chapter" data-level="4.8.5" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#diferencia-al-cúbo"><i class="fa fa-check"></i><b>4.8.5</b> Diferencia al cúbo</a></li>
+<li class="chapter" data-level="4.8.6" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#suma-de-cúbos"><i class="fa fa-check"></i><b>4.8.6</b> Suma de cúbos</a></li>
+<li class="chapter" data-level="4.8.7" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#diferencia-de-cúbos"><i class="fa fa-check"></i><b>4.8.7</b> Diferencia de cúbos</a></li>
+</ul></li>
+<li class="chapter" data-level="4.9" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#operaciones-con-polinomios"><i class="fa fa-check"></i><b>4.9</b> Operaciones con polinomios</a><ul>
+<li class="chapter" data-level="4.9.1" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#suma-de-polinomios"><i class="fa fa-check"></i><b>4.9.1</b> <strong>Suma de polinomios</strong></a></li>
+<li class="chapter" data-level="4.9.2" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#diferencia-de-polinomios"><i class="fa fa-check"></i><b>4.9.2</b> <strong>Diferencia de polinomios</strong></a></li>
+<li class="chapter" data-level="4.9.3" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#producto-de-dos-polinomios"><i class="fa fa-check"></i><b>4.9.3</b> <strong>Producto de dos polinomios</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="4.10" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo1-simplificación"><i class="fa fa-check"></i><b>4.10</b> Ejemplo1 (Simplificación)</a></li>
+<li class="chapter" data-level="4.11" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo2-simplificación"><i class="fa fa-check"></i><b>4.11</b> Ejemplo2 (Simplificación)</a></li>
+<li class="chapter" data-level="4.12" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo3-simplificación"><i class="fa fa-check"></i><b>4.12</b> Ejemplo3 (Simplificación)</a></li>
+<li class="chapter" data-level="4.13" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo4-simplificación"><i class="fa fa-check"></i><b>4.13</b> Ejemplo4 (Simplificación)</a></li>
+<li class="chapter" data-level="4.14" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo5-simplificación"><i class="fa fa-check"></i><b>4.14</b> Ejemplo5 (Simplificación)</a></li>
+<li class="chapter" data-level="4.15" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo6-simplificación"><i class="fa fa-check"></i><b>4.15</b> Ejemplo6 (Simplificación)</a></li>
+<li class="chapter" data-level="4.16" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo7-simplificación"><i class="fa fa-check"></i><b>4.16</b> Ejemplo7 (Simplificación)</a></li>
+<li class="chapter" data-level="4.17" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#despeje-de-variable-tema1"><i class="fa fa-check"></i><b>4.17</b> Despeje de variable (Tema1)</a><ul>
+<li class="chapter" data-level="4.17.1" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo1-despeje-de-variable"><i class="fa fa-check"></i><b>4.17.1</b> Ejemplo1 (Despeje de variable)</a></li>
+<li class="chapter" data-level="4.17.2" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo2-despeje-de-variable"><i class="fa fa-check"></i><b>4.17.2</b> Ejemplo2 (Despeje de variable)</a></li>
+<li class="chapter" data-level="4.17.3" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo3-despeje-de-variable"><i class="fa fa-check"></i><b>4.17.3</b> Ejemplo3 (Despeje de variable)</a></li>
+<li class="chapter" data-level="4.17.4" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo4-despeje-de-variable"><i class="fa fa-check"></i><b>4.17.4</b> Ejemplo4 (Despeje de variable)</a></li>
+<li class="chapter" data-level="4.17.5" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo5-despeje-de-variable"><i class="fa fa-check"></i><b>4.17.5</b> Ejemplo5 (Despeje de variable)</a></li>
+<li class="chapter" data-level="4.17.6" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo6-despeje-de-variable"><i class="fa fa-check"></i><b>4.17.6</b> Ejemplo6 (Despeje de variable)</a></li>
+<li class="chapter" data-level="4.17.7" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo7-despeje-de-variable"><i class="fa fa-check"></i><b>4.17.7</b> Ejemplo7 (Despeje de variable)</a></li>
+<li class="chapter" data-level="4.17.8" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo8-despeje-de-variable"><i class="fa fa-check"></i><b>4.17.8</b> Ejemplo8 (Despeje de variable)</a></li>
+<li class="chapter" data-level="4.17.9" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo9-despeje-de-variable"><i class="fa fa-check"></i><b>4.17.9</b> Ejemplo9 (Despeje de variable)</a></li>
+<li class="chapter" data-level="4.17.10" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo10-despeje-de-variable"><i class="fa fa-check"></i><b>4.17.10</b> Ejemplo10 (Despeje de variable)</a></li>
+</ul></li>
+<li class="chapter" data-level="4.18" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#resolución-de-ecuaciones"><i class="fa fa-check"></i><b>4.18</b> Resolución de ecuaciones</a><ul>
+<li class="chapter" data-level="4.18.1" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ceros-de-una-ecuación"><i class="fa fa-check"></i><b>4.18.1</b> Ceros de una ecuación</a></li>
+<li class="chapter" data-level="4.18.2" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#link-shiny-para-graficar-ecuaciones-y-aproximar-raíces-irracionales"><i class="fa fa-check"></i><b>4.18.2</b> Link Shiny para graficar ecuaciones y aproximar raíces irracionales</a></li>
+<li class="chapter" data-level="4.18.3" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#fórmula-del-estudiante"><i class="fa fa-check"></i><b>4.18.3</b> Fórmula del estudiante</a></li>
+<li class="chapter" data-level="4.18.4" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo1-solución-de-ec"><i class="fa fa-check"></i><b>4.18.4</b> Ejemplo1 (Solución de Ec)</a></li>
+<li class="chapter" data-level="4.18.5" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo2-solución-de-ec"><i class="fa fa-check"></i><b>4.18.5</b> Ejemplo2 (Solución de Ec)</a></li>
+<li class="chapter" data-level="4.18.6" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo3-solución-de-ec"><i class="fa fa-check"></i><b>4.18.6</b> Ejemplo3 (Solución de Ec)</a></li>
+<li class="chapter" data-level="4.18.7" data-path="solución-de-ecuaciones.html"><a href="solución-de-ecuaciones.html#ejemplo4-solución-de-ec"><i class="fa fa-check"></i><b>4.18.7</b> Ejemplo4 (Solución de Ec)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html"><i class="fa fa-check"></i><b>5</b> Solución de sistemas de ecuaciones</a><ul>
+<li class="chapter" data-level="5.1" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#teorema-de-los-sistema-lineales"><i class="fa fa-check"></i><b>5.1</b> Teorema de los sistema lineales</a></li>
+<li class="chapter" data-level="5.2" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#sistemas-2-por-2"><i class="fa fa-check"></i><b>5.2</b> Sistemas <span class="math inline">\(2\)</span> por <span class="math inline">\(2\)</span></a></li>
+<li class="chapter" data-level="5.3" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#gráfica-sistemas-de-ecuaciones"><i class="fa fa-check"></i><b>5.3</b> Gráfica sistemas de ecuaciones</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#técnica-de-sustitución"><i class="fa fa-check"></i><b>5.3.1</b> Técnica de sustitución</a></li>
+<li class="chapter" data-level="5.3.2" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#técnica-de-eliminación"><i class="fa fa-check"></i><b>5.3.2</b> Técnica de eliminación</a></li>
+<li class="chapter" data-level="5.3.3" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#herramienta-shiny-para-resolver-sistemas-2por2"><i class="fa fa-check"></i><b>5.3.3</b> Herramienta shiny para resolver sistemas 2por2</a></li>
+<li class="chapter" data-level="5.3.4" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#técnica-de-los-determinantes"><i class="fa fa-check"></i><b>5.3.4</b> Técnica de los determinantes</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#sistemas-3-por-3"><i class="fa fa-check"></i><b>5.4</b> Sistemas <span class="math inline">\(3\)</span> por <span class="math inline">\(3\)</span></a><ul>
+<li class="chapter" data-level="5.4.1" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#técnica-de-sustitución-1"><i class="fa fa-check"></i><b>5.4.1</b> Técnica de sustitución</a></li>
+<li class="chapter" data-level="5.4.2" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#técnica-de-eliminación-1"><i class="fa fa-check"></i><b>5.4.2</b> Técnica de eliminación</a></li>
+<li class="chapter" data-level="5.4.3" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#herramienta-shiny-para-resolver-sistemas-3por3"><i class="fa fa-check"></i><b>5.4.3</b> Herramienta shiny para resolver sistemas 3por3</a></li>
+<li class="chapter" data-level="5.4.4" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#técnica-de-los-determinantes-1"><i class="fa fa-check"></i><b>5.4.4</b> Técnica de los determinantes</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#sistemas-nl"><i class="fa fa-check"></i><b>5.5</b> Sistemas NL</a><ul>
+<li class="chapter" data-level="5.5.1" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejemplos-de-sistemas-no-lineales"><i class="fa fa-check"></i><b>5.5.1</b> Ejemplos de sistemas no lineales</a></li>
+<li class="chapter" data-level="5.5.2" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#técnica-de-sustitución-2"><i class="fa fa-check"></i><b>5.5.2</b> Técnica de sustitución</a></li>
+<li class="chapter" data-level="5.5.3" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#técnica-de-eliminación-2"><i class="fa fa-check"></i><b>5.5.3</b> Técnica de eliminación</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#observaciones"><i class="fa fa-check"></i><b>5.6</b> <strong>OBSERVACIONES</strong></a><ul>
+<li class="chapter" data-level="5.6.1" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejercicio-del-taller"><i class="fa fa-check"></i><b>5.6.1</b> Ejercicio del taller</a></li>
+<li class="chapter" data-level="5.6.2" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejercicio-del-taller-1"><i class="fa fa-check"></i><b>5.6.2</b> Ejercicio del taller</a></li>
+<li class="chapter" data-level="5.6.3" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejercicio-del-taller-2"><i class="fa fa-check"></i><b>5.6.3</b> Ejercicio del taller</a></li>
+<li class="chapter" data-level="5.6.4" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejercicio-del-parcial"><i class="fa fa-check"></i><b>5.6.4</b> Ejercicio del parcial</a></li>
+<li class="chapter" data-level="5.6.5" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejercicio-del-parcial-1"><i class="fa fa-check"></i><b>5.6.5</b> Ejercicio del parcial</a></li>
+<li class="chapter" data-level="5.6.6" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejercicio-del-parcial-2"><i class="fa fa-check"></i><b>5.6.6</b> Ejercicio del parcial</a></li>
+</ul></li>
+<li class="chapter" data-level="5.7" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejemplo1-1"><i class="fa fa-check"></i><b>5.7</b> Ejemplo1</a><ul>
+<li class="chapter" data-level="5.7.1" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejemplo2-1"><i class="fa fa-check"></i><b>5.7.1</b> Ejemplo2</a></li>
+<li class="chapter" data-level="5.7.2" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejemplo3-1"><i class="fa fa-check"></i><b>5.7.2</b> Ejemplo3</a></li>
+<li class="chapter" data-level="5.7.3" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejercicio4taller"><i class="fa fa-check"></i><b>5.7.3</b> Ejercicio4(Taller)</a></li>
+<li class="chapter" data-level="5.7.4" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejercicio16taller"><i class="fa fa-check"></i><b>5.7.4</b> Ejercicio16(Taller)</a></li>
+<li class="chapter" data-level="5.7.5" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejercicio14taller"><i class="fa fa-check"></i><b>5.7.5</b> Ejercicio14(Taller)</a></li>
+<li class="chapter" data-level="5.7.6" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejercicio20taller"><i class="fa fa-check"></i><b>5.7.6</b> Ejercicio20(Taller)</a></li>
+<li class="chapter" data-level="5.7.7" data-path="solución-de-sistemas-de-ecuaciones.html"><a href="solución-de-sistemas-de-ecuaciones.html#ejercicio9taller"><i class="fa fa-check"></i><b>5.7.7</b> Ejercicio9(Taller)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html"><i class="fa fa-check"></i><b>6</b> Planteo y solución de problemas</a><ul>
+<li class="chapter" data-level="6.1" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#sugerencia-para-construir-una-ecuación"><i class="fa fa-check"></i><b>6.1</b> <strong>Sugerencia para construir una ecuación</strong></a></li>
+<li class="chapter" data-level="6.2" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#sugerencia-para-resolver-un-problema-según-george-polya-13-dic1887-7sep1985"><i class="fa fa-check"></i><b>6.2</b> <strong>Sugerencia para resolver un problema según George Polya (13 Dic1887-7Sep1985)</strong></a></li>
+<li class="chapter" data-level="6.3" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo1-problema-de-las-edades"><i class="fa fa-check"></i><b>6.3</b> Modelo1 (Problema de las edades)</a></li>
+<li class="chapter" data-level="6.4" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo2-problema-de-las-edades"><i class="fa fa-check"></i><b>6.4</b> Modelo2 (Problema de las edades)</a></li>
+<li class="chapter" data-level="6.5" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo3-problema-de-las-dimensiones"><i class="fa fa-check"></i><b>6.5</b> Modelo3 (Problema de las dimensiones)</a></li>
+<li class="chapter" data-level="6.6" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo4-problema-de-las-dimensiones"><i class="fa fa-check"></i><b>6.6</b> Modelo4 (Problema de las dimensiones)</a></li>
+<li class="chapter" data-level="6.7" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo5-problema-de-las-dimensiones"><i class="fa fa-check"></i><b>6.7</b> Modelo5 (Problema de las dimensiones)</a></li>
+<li class="chapter" data-level="6.8" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo6-problema-de-las-aceras"><i class="fa fa-check"></i><b>6.8</b> Modelo6 (Problema de las aceras)</a></li>
+<li class="chapter" data-level="6.9" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo7-problema-de-interés-simple"><i class="fa fa-check"></i><b>6.9</b> Modelo7 (Problema de interés simple)</a></li>
+<li class="chapter" data-level="6.10" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo8-problema-de-velocidad"><i class="fa fa-check"></i><b>6.10</b> Modelo8 (Problema de velocidad)</a></li>
+<li class="chapter" data-level="6.11" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo9-problema-de-mezcla"><i class="fa fa-check"></i><b>6.11</b> Modelo9 (Problema de mezcla)</a></li>
+<li class="chapter" data-level="6.12" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo10-problema-de-trabajo"><i class="fa fa-check"></i><b>6.12</b> Modelo10 (Problema de trabajo)</a></li>
+<li class="chapter" data-level="6.13" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#variación-directa"><i class="fa fa-check"></i><b>6.13</b> Variación directa</a></li>
+<li class="chapter" data-level="6.14" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#variación-inversa"><i class="fa fa-check"></i><b>6.14</b> Variación inversa</a></li>
+<li class="chapter" data-level="6.15" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#regla-de-tres-simple-y-directa"><i class="fa fa-check"></i><b>6.15</b> Regla de tres simple y directa</a></li>
+<li class="chapter" data-level="6.16" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo11-problema-regla-de-tres-simple-y-directa"><i class="fa fa-check"></i><b>6.16</b> Modelo11 (Problema Regla de tres simple y directa)</a></li>
+<li class="chapter" data-level="6.17" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#regla-de-tres-simple-e-inversa"><i class="fa fa-check"></i><b>6.17</b> Regla de tres simple e inversa</a></li>
+<li class="chapter" data-level="6.18" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo12-problema-regla-de-tres-simple-inversa"><i class="fa fa-check"></i><b>6.18</b> Modelo12 (Problema Regla de tres simple inversa)</a></li>
+<li class="chapter" data-level="6.19" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo13-problema-regla-de-tres-simple-inversa"><i class="fa fa-check"></i><b>6.19</b> Modelo13 (Problema Regla de tres simple inversa)</a></li>
+<li class="chapter" data-level="6.20" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#regla-de-tres-simple-compuesta"><i class="fa fa-check"></i><b>6.20</b> Regla de tres simple compuesta</a></li>
+<li class="chapter" data-level="6.21" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#directamente-proporcional"><i class="fa fa-check"></i><b>6.21</b> Directamente proporcional</a></li>
+<li class="chapter" data-level="6.22" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#inversamente-proporcional"><i class="fa fa-check"></i><b>6.22</b> Inversamente proporcional</a></li>
+<li class="chapter" data-level="6.23" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#directamente-e-inversamente-proporcional-mixta"><i class="fa fa-check"></i><b>6.23</b> Directamente e Inversamente proporcional (Mixta)</a></li>
+<li class="chapter" data-level="6.24" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo14-problema-regla-de-tres-compuesta-ó-mixta"><i class="fa fa-check"></i><b>6.24</b> Modelo14 (Problema Regla de tres compuesta ó Mixta)</a></li>
+<li class="chapter" data-level="6.25" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo15-problema-regla-de-tres-compuesta-ó-mixta"><i class="fa fa-check"></i><b>6.25</b> Modelo15 (Problema Regla de tres compuesta ó Mixta)</a></li>
+<li class="chapter" data-level="6.26" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo16-problema-regla-de-tres-compuesta-ó-mixta"><i class="fa fa-check"></i><b>6.26</b> Modelo16 (Problema Regla de tres compuesta ó Mixta)</a></li>
+<li class="chapter" data-level="6.27" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo17-problema-regla-de-tres-compuesta-ó-mixta"><i class="fa fa-check"></i><b>6.27</b> Modelo17 (Problema Regla de tres compuesta ó Mixta)</a></li>
+<li class="chapter" data-level="6.28" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo18-problema-regla-de-tres-simple-y-directa"><i class="fa fa-check"></i><b>6.28</b> Modelo18 (Problema Regla de tres simple y directa)</a></li>
+<li class="chapter" data-level="6.29" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo19-problema-regla-de-tres-simple-y-directa"><i class="fa fa-check"></i><b>6.29</b> Modelo19 (Problema Regla de tres simple y directa)</a></li>
+<li class="chapter" data-level="6.30" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo20-problema-regla-de-tres-compuesta"><i class="fa fa-check"></i><b>6.30</b> Modelo20 (Problema Regla de tres compuesta)</a></li>
+<li class="chapter" data-level="6.31" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo23-problema-de-la-caja"><i class="fa fa-check"></i><b>6.31</b> Modelo23 (Problema de la caja)</a></li>
+<li class="chapter" data-level="6.32" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo25-problema-del-triángulo"><i class="fa fa-check"></i><b>6.32</b> Modelo25 (Problema del triángulo)</a></li>
+<li class="chapter" data-level="6.33" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo26-problema-de-mezcla"><i class="fa fa-check"></i><b>6.33</b> Modelo26 (Problema de mezcla)</a></li>
+<li class="chapter" data-level="6.34" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo27-problema-de-mezcla"><i class="fa fa-check"></i><b>6.34</b> Modelo27 (Problema de mezcla)</a></li>
+<li class="chapter" data-level="6.35" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo28-problema-de-velocidad1"><i class="fa fa-check"></i><b>6.35</b> Modelo28 (Problema de velocidad1)</a></li>
+<li class="chapter" data-level="6.36" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo29-problema-de-la-recta"><i class="fa fa-check"></i><b>6.36</b> Modelo29 (Problema de la recta)</a></li>
+<li class="chapter" data-level="6.37" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo30-problema-de-la-región-sombreada"><i class="fa fa-check"></i><b>6.37</b> Modelo30 (Problema de la región sombreada)</a></li>
+<li class="chapter" data-level="6.38" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo31-problema-de-la-recta-tangente"><i class="fa fa-check"></i><b>6.38</b> Modelo31 (Problema de la recta tangente)</a></li>
+<li class="chapter" data-level="6.39" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo39-problema-de-trabajo"><i class="fa fa-check"></i><b>6.39</b> Modelo39 (Problema de trabajo)</a></li>
+<li class="chapter" data-level="6.40" data-path="planteo-y-solución-de-problemas.html"><a href="planteo-y-solución-de-problemas.html#modelo-40-problema-de-velocidad2"><i class="fa fa-check"></i><b>6.40</b> Modelo 40 (Problema de velocidad2)</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="concepto-de-función.html"><a href="concepto-de-función.html"><i class="fa fa-check"></i><b>7</b> Concepto de función</a><ul>
+<li class="chapter" data-level="7.1" data-path="concepto-de-función.html"><a href="concepto-de-función.html#ejemplos"><i class="fa fa-check"></i><b>7.1</b> Ejemplos</a></li>
+<li class="chapter" data-level="7.2" data-path="concepto-de-función.html"><a href="concepto-de-función.html#criterio-de-la-recta-vertical"><i class="fa fa-check"></i><b>7.2</b> Criterio de la recta vertical</a></li>
+<li class="chapter" data-level="7.3" data-path="concepto-de-función.html"><a href="concepto-de-función.html#desplazamiento-horizontal-y-vertical-de-una-gráfica-en-el-plano-xy"><i class="fa fa-check"></i><b>7.3</b> Desplazamiento horizontal y vertical de una gráfica en el plano <span class="math inline">\(XY\)</span></a></li>
+<li class="chapter" data-level="7.4" data-path="concepto-de-función.html"><a href="concepto-de-función.html#estiramiento-y-comprensión-de-una-gráfica-en-el-plano-xy"><i class="fa fa-check"></i><b>7.4</b> Estiramiento y comprensión de una gráfica en el plano <span class="math inline">\(XY\)</span></a></li>
+<li class="chapter" data-level="7.5" data-path="concepto-de-función.html"><a href="concepto-de-función.html#aplicaciones-del-concepto-de-función"><i class="fa fa-check"></i><b>7.5</b> Aplicaciones del concepto de función</a></li>
+<li class="chapter" data-level="7.6" data-path="concepto-de-función.html"><a href="concepto-de-función.html#ejemplos-básicos"><i class="fa fa-check"></i><b>7.6</b> Ejemplos básicos</a></li>
+<li class="chapter" data-level="7.7" data-path="concepto-de-función.html"><a href="concepto-de-función.html#función-exponencial"><i class="fa fa-check"></i><b>7.7</b> Función exponencial</a></li>
+<li class="chapter" data-level="7.8" data-path="concepto-de-función.html"><a href="concepto-de-función.html#leyes-de-los-exponentes"><i class="fa fa-check"></i><b>7.8</b> Leyes de los exponentes</a></li>
+<li class="chapter" data-level="7.9" data-path="concepto-de-función.html"><a href="concepto-de-función.html#gráfica-de-una-función-exponencial"><i class="fa fa-check"></i><b>7.9</b> Gráfica de una función exponencial</a></li>
+<li class="chapter" data-level="7.10" data-path="concepto-de-función.html"><a href="concepto-de-función.html#comparando-dos-funciones-exponenciales"><i class="fa fa-check"></i><b>7.10</b> Comparando dos funciones exponenciales</a></li>
+<li class="chapter" data-level="7.11" data-path="concepto-de-función.html"><a href="concepto-de-función.html#propiedades-de-la-función-exponencial"><i class="fa fa-check"></i><b>7.11</b> Propiedades de la función exponencial</a></li>
+<li class="chapter" data-level="7.12" data-path="concepto-de-función.html"><a href="concepto-de-función.html#función-logarítmica"><i class="fa fa-check"></i><b>7.12</b> Función logarítmica</a></li>
+<li class="chapter" data-level="7.13" data-path="concepto-de-función.html"><a href="concepto-de-función.html#gráfica-de-una-función-logarítmica"><i class="fa fa-check"></i><b>7.13</b> Gráfica de una función logarítmica</a></li>
+<li class="chapter" data-level="7.14" data-path="concepto-de-función.html"><a href="concepto-de-función.html#comparando-dos-funciones-logarítmicas"><i class="fa fa-check"></i><b>7.14</b> Comparando dos funciones logarítmicas</a></li>
+<li class="chapter" data-level="7.15" data-path="concepto-de-función.html"><a href="concepto-de-función.html#propiedades-de-la-función-logarítmica"><i class="fa fa-check"></i><b>7.15</b> Propiedades de la función logarítmica</a></li>
+<li class="chapter" data-level="7.16" data-path="concepto-de-función.html"><a href="concepto-de-función.html#leyes-de-los-logarítmos"><i class="fa fa-check"></i><b>7.16</b> Leyes de los logarítmos</a></li>
+<li class="chapter" data-level="7.17" data-path="concepto-de-función.html"><a href="concepto-de-función.html#ecuación-exponencial"><i class="fa fa-check"></i><b>7.17</b> Ecuación exponencial</a></li>
+<li class="chapter" data-level="7.18" data-path="concepto-de-función.html"><a href="concepto-de-función.html#ecuación-logaritmica"><i class="fa fa-check"></i><b>7.18</b> Ecuación logaritmica</a></li>
+<li class="chapter" data-level="7.19" data-path="concepto-de-función.html"><a href="concepto-de-función.html#sistemas-de-ecuaciones-exponenciales-y-logaritmicas"><i class="fa fa-check"></i><b>7.19</b> Sistemas de ecuaciones exponenciales y logaritmicas</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="trigonometria.html"><a href="trigonometria.html"><i class="fa fa-check"></i><b>8</b> Trigonometria</a><ul>
+<li class="chapter" data-level="8.1" data-path="trigonometria.html"><a href="trigonometria.html#qué-es-la-trigonometría"><i class="fa fa-check"></i><b>8.1</b> ¿Qué es la trigonometría?</a></li>
+<li class="chapter" data-level="8.2" data-path="trigonometria.html"><a href="trigonometria.html#respuesta-según-wikipedia"><i class="fa fa-check"></i><b>8.2</b> Respuesta: Según WIKIPEDIA</a></li>
+<li class="chapter" data-level="8.3" data-path="trigonometria.html"><a href="trigonometria.html#definición-de-ángulo"><i class="fa fa-check"></i><b>8.3</b> Definición de Ángulo</a></li>
+<li class="chapter" data-level="8.4" data-path="trigonometria.html"><a href="trigonometria.html#medición-de-un-ángulo-en-grados"><i class="fa fa-check"></i><b>8.4</b> Medición de un ángulo en grados:</a></li>
+<li class="chapter" data-level="8.5" data-path="trigonometria.html"><a href="trigonometria.html#simplificación-de-un-ángulo-medido-en-radianes"><i class="fa fa-check"></i><b>8.5</b> Simplificación de un ángulo medido en radianes</a></li>
+<li class="chapter" data-level="8.6" data-path="trigonometria.html"><a href="trigonometria.html#notación-para-ángulos"><i class="fa fa-check"></i><b>8.6</b> Notación para ángulos</a></li>
+<li class="chapter" data-level="8.7" data-path="trigonometria.html"><a href="trigonometria.html#minutos-y-segundos"><i class="fa fa-check"></i><b>8.7</b> Minutos y segundos</a></li>
+<li class="chapter" data-level="8.8" data-path="trigonometria.html"><a href="trigonometria.html#ejemplo-15"><i class="fa fa-check"></i><b>8.8</b> <strong>Ejemplo</strong></a></li>
+<li class="chapter" data-level="8.9" data-path="trigonometria.html"><a href="trigonometria.html#ejemplo-16"><i class="fa fa-check"></i><b>8.9</b> <strong>Ejemplo</strong></a></li>
+<li class="chapter" data-level="8.10" data-path="trigonometria.html"><a href="trigonometria.html#trigonometría-del-triángulo-rectángulo"><i class="fa fa-check"></i><b>8.10</b> Trigonometría del triángulo rectángulo</a></li>
+<li class="chapter" data-level="8.11" data-path="trigonometria.html"><a href="trigonometria.html#modelo21-problema-del-triángulo"><i class="fa fa-check"></i><b>8.11</b> Modelo21 (Problema del triángulo)</a></li>
+<li class="chapter" data-level="8.12" data-path="trigonometria.html"><a href="trigonometria.html#seis-funciones-trigonometricas-en-el-plano-xy"><i class="fa fa-check"></i><b>8.12</b> Seis funciones trigonometricas en el plano <span class="math inline">\(XY\)</span></a></li>
+<li class="chapter" data-level="8.13" data-path="trigonometria.html"><a href="trigonometria.html#teorema-de-pítagoras-e-identidad-trigonométrica"><i class="fa fa-check"></i><b>8.13</b> Teorema de Pítagoras e identidad trigonométrica</a></li>
+<li class="chapter" data-level="8.14" data-path="trigonometria.html"><a href="trigonometria.html#identidad-trigonométrica-básicas"><i class="fa fa-check"></i><b>8.14</b> Identidad trigonométrica básicas</a></li>
+<li class="chapter" data-level="8.15" data-path="trigonometria.html"><a href="trigonometria.html#ángulo-de-45-grados"><i class="fa fa-check"></i><b>8.15</b> Ángulo de 45 grados</a></li>
+<li class="chapter" data-level="8.16" data-path="trigonometria.html"><a href="trigonometria.html#ángulo-de-30-grados"><i class="fa fa-check"></i><b>8.16</b> Ángulo de 30 grados</a></li>
+<li class="chapter" data-level="8.17" data-path="trigonometria.html"><a href="trigonometria.html#ángulo-de-60-grados"><i class="fa fa-check"></i><b>8.17</b> Ángulo de 60 grados</a></li>
+<li class="chapter" data-level="8.18" data-path="trigonometria.html"><a href="trigonometria.html#ángulos-básicos-y-su-representación-desde-la-geometría"><i class="fa fa-check"></i><b>8.18</b> Ángulos básicos y su representación desde la geometría</a></li>
+<li class="chapter" data-level="8.19" data-path="trigonometria.html"><a href="trigonometria.html#fórmulas-de-adición-para-coseno-y-seno"><i class="fa fa-check"></i><b>8.19</b> Fórmulas de adición para coseno y seno</a></li>
+<li class="chapter" data-level="8.20" data-path="trigonometria.html"><a href="trigonometria.html#tabla-30circ-45circ-y-60circ"><i class="fa fa-check"></i><b>8.20</b> Tabla <span class="math inline">\(30^{\circ}\)</span> <span class="math inline">\(45^{\circ}\)</span> y <span class="math inline">\(60^{\circ}\)</span></a></li>
+<li class="chapter" data-level="8.21" data-path="trigonometria.html"><a href="trigonometria.html#ángulo-de-elevación-y-depresión"><i class="fa fa-check"></i><b>8.21</b> Ángulo de elevación y depresión</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="ley-del-seno.html"><a href="ley-del-seno.html"><i class="fa fa-check"></i><b>9</b> Ley del seno</a></li>
+<li class="chapter" data-level="10" data-path="ley-del-coseno.html"><a href="ley-del-coseno.html"><i class="fa fa-check"></i><b>10</b> Ley del coseno</a><ul>
+<li class="chapter" data-level="10.1" data-path="ley-del-coseno.html"><a href="ley-del-coseno.html#modelo22-problema-del-triángulo"><i class="fa fa-check"></i><b>10.1</b> Modelo22 (Problema del triángulo)</a></li>
+<li class="chapter" data-level="10.2" data-path="ley-del-coseno.html"><a href="ley-del-coseno.html#modelo24-problema-del-triángulo"><i class="fa fa-check"></i><b>10.2</b> Modelo24 (Problema del triángulo)</a></li>
+<li class="chapter" data-level="10.3" data-path="ley-del-coseno.html"><a href="ley-del-coseno.html#modelo32-problema-del-triángulo"><i class="fa fa-check"></i><b>10.3</b> Modelo32 (Problema del triángulo)</a></li>
+<li class="chapter" data-level="10.4" data-path="ley-del-coseno.html"><a href="ley-del-coseno.html#modelo33-problema-del-triángulo"><i class="fa fa-check"></i><b>10.4</b> Modelo33 (Problema del triángulo)</a></li>
+<li class="chapter" data-level="10.5" data-path="ley-del-coseno.html"><a href="ley-del-coseno.html#modelo34-problema-del-triángulo"><i class="fa fa-check"></i><b>10.5</b> Modelo34 (Problema del triángulo)</a></li>
+<li class="chapter" data-level="10.6" data-path="ley-del-coseno.html"><a href="ley-del-coseno.html#modelo35-problema-del-triángulo"><i class="fa fa-check"></i><b>10.6</b> Modelo35 (Problema del triángulo)</a></li>
+<li class="chapter" data-level="10.7" data-path="ley-del-coseno.html"><a href="ley-del-coseno.html#modelo36-problema-del-triángulo"><i class="fa fa-check"></i><b>10.7</b> Modelo36 (Problema del triángulo)</a></li>
+<li class="chapter" data-level="10.8" data-path="ley-del-coseno.html"><a href="ley-del-coseno.html#modelo37-problema-del-triángulo"><i class="fa fa-check"></i><b>10.8</b> Modelo37 (Problema del triángulo)</a></li>
+<li class="chapter" data-level="10.9" data-path="ley-del-coseno.html"><a href="ley-del-coseno.html#modelo38-problema-del-triángulo"><i class="fa fa-check"></i><b>10.9</b> Modelo38 (Problema del triángulo)</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="taller-uno.html"><a href="taller-uno.html"><i class="fa fa-check"></i><b>11</b> Taller Uno</a><ul>
+<li class="chapter" data-level="11.1" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-1"><i class="fa fa-check"></i><b>11.1</b> Ejercicio (1)</a></li>
+<li class="chapter" data-level="11.2" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-2"><i class="fa fa-check"></i><b>11.2</b> Ejercicio (2)</a></li>
+<li class="chapter" data-level="11.3" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-3"><i class="fa fa-check"></i><b>11.3</b> Ejercicio (3)</a></li>
+<li class="chapter" data-level="11.4" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-4"><i class="fa fa-check"></i><b>11.4</b> Ejercicio (4)</a></li>
+<li class="chapter" data-level="11.5" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-5"><i class="fa fa-check"></i><b>11.5</b> Ejercicio (5)</a></li>
+<li class="chapter" data-level="11.6" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-6"><i class="fa fa-check"></i><b>11.6</b> Ejercicio (6)</a></li>
+<li class="chapter" data-level="11.7" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-7"><i class="fa fa-check"></i><b>11.7</b> Ejercicio (7)</a></li>
+<li class="chapter" data-level="11.8" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-8"><i class="fa fa-check"></i><b>11.8</b> Ejercicio (8)</a></li>
+<li class="chapter" data-level="11.9" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-9"><i class="fa fa-check"></i><b>11.9</b> Ejercicio (9)</a></li>
+<li class="chapter" data-level="11.10" data-path="taller-uno.html"><a href="taller-uno.html#ejerciciio-10"><i class="fa fa-check"></i><b>11.10</b> Ejerciciio (10)</a></li>
+<li class="chapter" data-level="11.11" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-11"><i class="fa fa-check"></i><b>11.11</b> Ejercicio (11)</a></li>
+<li class="chapter" data-level="11.12" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-12"><i class="fa fa-check"></i><b>11.12</b> Ejercicio (12)</a></li>
+<li class="chapter" data-level="11.13" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-13"><i class="fa fa-check"></i><b>11.13</b> Ejercicio (13)</a></li>
+<li class="chapter" data-level="11.14" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-14"><i class="fa fa-check"></i><b>11.14</b> Ejercicio (14)</a></li>
+<li class="chapter" data-level="11.15" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-15"><i class="fa fa-check"></i><b>11.15</b> Ejercicio (15)</a></li>
+<li class="chapter" data-level="11.16" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-16"><i class="fa fa-check"></i><b>11.16</b> Ejercicio (16)</a></li>
+<li class="chapter" data-level="11.17" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-17"><i class="fa fa-check"></i><b>11.17</b> Ejercicio (17)</a></li>
+<li class="chapter" data-level="11.18" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-18"><i class="fa fa-check"></i><b>11.18</b> Ejercicio (18)</a></li>
+<li class="chapter" data-level="11.19" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-19"><i class="fa fa-check"></i><b>11.19</b> Ejercicio (19)</a></li>
+<li class="chapter" data-level="11.20" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-20"><i class="fa fa-check"></i><b>11.20</b> Ejercicio (20)</a></li>
+<li class="chapter" data-level="11.21" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-21"><i class="fa fa-check"></i><b>11.21</b> Ejercicio (21)</a></li>
+<li class="chapter" data-level="11.22" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-22"><i class="fa fa-check"></i><b>11.22</b> Ejercicio (22)</a></li>
+<li class="chapter" data-level="11.23" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-23"><i class="fa fa-check"></i><b>11.23</b> Ejercicio (23)</a></li>
+<li class="chapter" data-level="11.24" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-24"><i class="fa fa-check"></i><b>11.24</b> Ejercicio (24)</a></li>
+<li class="chapter" data-level="11.25" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-25"><i class="fa fa-check"></i><b>11.25</b> Ejercicio (25)</a></li>
+<li class="chapter" data-level="11.26" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-26"><i class="fa fa-check"></i><b>11.26</b> Ejercicio (26)</a></li>
+<li class="chapter" data-level="11.27" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-27"><i class="fa fa-check"></i><b>11.27</b> Ejercicio (27)</a></li>
+<li class="chapter" data-level="11.28" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-28"><i class="fa fa-check"></i><b>11.28</b> Ejercicio (28)</a></li>
+<li class="chapter" data-level="11.29" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-29"><i class="fa fa-check"></i><b>11.29</b> Ejercicio (29)</a></li>
+<li class="chapter" data-level="11.30" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-30"><i class="fa fa-check"></i><b>11.30</b> Ejercicio (30)</a></li>
+<li class="chapter" data-level="11.31" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-31"><i class="fa fa-check"></i><b>11.31</b> Ejercicio (31)</a></li>
+<li class="chapter" data-level="11.32" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-32"><i class="fa fa-check"></i><b>11.32</b> Ejercicio (32)</a></li>
+<li class="chapter" data-level="11.33" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-33"><i class="fa fa-check"></i><b>11.33</b> Ejercicio (33)</a></li>
+<li class="chapter" data-level="11.34" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-34"><i class="fa fa-check"></i><b>11.34</b> Ejercicio (34)</a></li>
+<li class="chapter" data-level="11.35" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-35"><i class="fa fa-check"></i><b>11.35</b> Ejercicio (35)</a></li>
+<li class="chapter" data-level="11.36" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-36"><i class="fa fa-check"></i><b>11.36</b> Ejercicio (36)</a></li>
+<li class="chapter" data-level="11.37" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-37"><i class="fa fa-check"></i><b>11.37</b> Ejercicio (37)</a></li>
+<li class="chapter" data-level="11.38" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-38"><i class="fa fa-check"></i><b>11.38</b> Ejercicio (38)</a></li>
+<li class="chapter" data-level="11.39" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-39"><i class="fa fa-check"></i><b>11.39</b> Ejercicio (39)</a></li>
+<li class="chapter" data-level="11.40" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-40"><i class="fa fa-check"></i><b>11.40</b> Ejercicio (40)</a></li>
+<li class="chapter" data-level="11.41" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-41"><i class="fa fa-check"></i><b>11.41</b> Ejercicio (41)</a></li>
+<li class="chapter" data-level="11.42" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-42"><i class="fa fa-check"></i><b>11.42</b> Ejercicio (42)</a></li>
+<li class="chapter" data-level="11.43" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-43"><i class="fa fa-check"></i><b>11.43</b> Ejercicio (43)</a></li>
+<li class="chapter" data-level="11.44" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-44"><i class="fa fa-check"></i><b>11.44</b> Ejercicio (44)</a></li>
+<li class="chapter" data-level="11.45" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-45"><i class="fa fa-check"></i><b>11.45</b> Ejercicio (45)</a></li>
+<li class="chapter" data-level="11.46" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-46"><i class="fa fa-check"></i><b>11.46</b> Ejercicio (46)</a></li>
+<li class="chapter" data-level="11.47" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-47"><i class="fa fa-check"></i><b>11.47</b> Ejercicio (47)</a></li>
+<li class="chapter" data-level="11.48" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-48"><i class="fa fa-check"></i><b>11.48</b> Ejercicio (48)</a></li>
+<li class="chapter" data-level="11.49" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-49"><i class="fa fa-check"></i><b>11.49</b> Ejercicio (49)</a></li>
+<li class="chapter" data-level="11.50" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-50"><i class="fa fa-check"></i><b>11.50</b> Ejercicio (50)</a></li>
+<li class="chapter" data-level="11.51" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-51"><i class="fa fa-check"></i><b>11.51</b> Ejercicio (51)</a></li>
+<li class="chapter" data-level="11.52" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-52"><i class="fa fa-check"></i><b>11.52</b> Ejercicio (52)</a></li>
+<li class="chapter" data-level="11.53" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-53"><i class="fa fa-check"></i><b>11.53</b> Ejercicio (53)</a></li>
+<li class="chapter" data-level="11.54" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-54"><i class="fa fa-check"></i><b>11.54</b> Ejercicio (54)</a></li>
+<li class="chapter" data-level="11.55" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-55"><i class="fa fa-check"></i><b>11.55</b> Ejercicio (55)</a></li>
+<li class="chapter" data-level="11.56" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-56"><i class="fa fa-check"></i><b>11.56</b> Ejercicio (56)</a></li>
+<li class="chapter" data-level="11.57" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-57"><i class="fa fa-check"></i><b>11.57</b> Ejercicio (57)</a></li>
+<li class="chapter" data-level="11.58" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-57-1"><i class="fa fa-check"></i><b>11.58</b> Ejercicio (57)</a></li>
+<li class="chapter" data-level="11.59" data-path="taller-uno.html"><a href="taller-uno.html#ejercicio-58"><i class="fa fa-check"></i><b>11.59</b> Ejercicio (58)</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="taller-dos.html"><a href="taller-dos.html"><i class="fa fa-check"></i><b>12</b> Taller Dos</a><ul>
+<li class="chapter" data-level="12.1" data-path="taller-dos.html"><a href="taller-dos.html#ejercicio-1b"><i class="fa fa-check"></i><b>12.1</b> Ejercicio (1b)</a></li>
+<li class="chapter" data-level="12.2" data-path="taller-dos.html"><a href="taller-dos.html#ejercicio-2b"><i class="fa fa-check"></i><b>12.2</b> Ejercicio (2b)</a></li>
+<li class="chapter" data-level="12.3" data-path="taller-dos.html"><a href="taller-dos.html#ejercicio-3b"><i class="fa fa-check"></i><b>12.3</b> EJERCICIO (3b)</a></li>
+<li class="chapter" data-level="12.4" data-path="taller-dos.html"><a href="taller-dos.html#ejercicio-4b"><i class="fa fa-check"></i><b>12.4</b> Ejercicio (4b)</a></li>
+<li class="chapter" data-level="12.5" data-path="taller-dos.html"><a href="taller-dos.html#ejercicio-5b"><i class="fa fa-check"></i><b>12.5</b> Ejercicio (5b)</a></li>
+<li class="chapter" data-level="12.6" data-path="taller-dos.html"><a href="taller-dos.html#ejercicio-6b"><i class="fa fa-check"></i><b>12.6</b> Ejercicio (6b)</a></li>
+<li class="chapter" data-level="12.7" data-path="taller-dos.html"><a href="taller-dos.html#ejercicio-7b"><i class="fa fa-check"></i><b>12.7</b> Ejercicio (7b)</a></li>
+<li class="chapter" data-level="12.8" data-path="taller-dos.html"><a href="taller-dos.html#ejercicio-8b"><i class="fa fa-check"></i><b>12.8</b> Ejercicio (8b)</a></li>
+<li class="chapter" data-level="12.9" data-path="taller-dos.html"><a href="taller-dos.html#ejercicio-9b"><i class="fa fa-check"></i><b>12.9</b> Ejercicio (9b)</a></li>
+<li class="chapter" data-level="12.10" data-path="taller-dos.html"><a href="taller-dos.html#ejercicio-10b"><i class="fa fa-check"></i><b>12.10</b> Ejercicio (10b)</a></li>
+<li class="chapter" data-level="12.11" data-path="taller-dos.html"><a href="taller-dos.html#ejercicio-11b"><i class="fa fa-check"></i><b>12.11</b> Ejercicio (11b)</a></li>
+<li class="chapter" data-level="12.12" data-path="taller-dos.html"><a href="taller-dos.html#ejercicio-12b"><i class="fa fa-check"></i><b>12.12</b> ejercicio (12b)</a></li>
+<li class="chapter" data-level="12.13" data-path="taller-dos.html"><a href="taller-dos.html#ejercicio-13b"><i class="fa fa-check"></i><b>12.13</b> Ejercicio (13b)</a></li>
+<li class="chapter" data-level="12.14" data-path="taller-dos.html"><a href="taller-dos.html#ejercicio-14b"><i class="fa fa-check"></i><b>12.14</b> Ejercicio (14b)</a></li>
+<li class="chapter" data-level="12.15" data-path="taller-dos.html"><a href="taller-dos.html#ejercicio-15b"><i class="fa fa-check"></i><b>12.15</b> Ejercicio (15b</a></li>
+<li class="chapter" data-level="12.16" data-path="taller-dos.html"><a href="taller-dos.html#ejercicio-16b"><i class="fa fa-check"></i><b>12.16</b> Ejercicio (16b)</a></li>
+<li class="chapter" data-level="12.17" data-path="taller-dos.html"><a href="taller-dos.html#ejercicio-17b"><i class="fa fa-check"></i><b>12.17</b> Ejercicio (17b)</a></li>
+<li class="chapter" data-level="12.18" data-path="taller-dos.html"><a href="taller-dos.html#ejercicio-18b"><i class="fa fa-check"></i><b>12.18</b> Ejercicio (18b)</a></li>
+<li class="chapter" data-level="12.19" data-path="taller-dos.html"><a href="taller-dos.html#ejercicio-19b"><i class="fa fa-check"></i><b>12.19</b> Ejercicio (19b)</a></li>
+<li class="chapter" data-level="12.20" data-path="taller-dos.html"><a href="taller-dos.html#ejercicio-20b"><i class="fa fa-check"></i><b>12.20</b> Ejercicio (20b)</a></li>
+<li class="chapter" data-level="12.21" data-path="taller-dos.html"><a href="taller-dos.html#ejercicio-21b"><i class="fa fa-check"></i><b>12.21</b> Ejercicio (21b)</a></li>
+<li class="chapter" data-level="12.22" data-path="taller-dos.html"><a href="taller-dos.html#ejercicio-22b"><i class="fa fa-check"></i><b>12.22</b> Ejercicio (22b)</a></li>
+<li class="chapter" data-level="12.23" data-path="taller-dos.html"><a href="taller-dos.html#ejercicio-23b"><i class="fa fa-check"></i><b>12.23</b> Ejercicio (23b)</a></li>
+<li class="chapter" data-level="12.24" data-path="taller-dos.html"><a href="taller-dos.html#ejercicio-24b"><i class="fa fa-check"></i><b>12.24</b> Ejercicio (24b)</a></li>
+<li class="chapter" data-level="12.25" data-path="taller-dos.html"><a href="taller-dos.html#ejercicio-25b"><i class="fa fa-check"></i><b>12.25</b> Ejercicio (25b)</a></li>
+<li class="chapter" data-level="12.26" data-path="taller-dos.html"><a href="taller-dos.html#ejercicio-26b"><i class="fa fa-check"></i><b>12.26</b> Ejercicio (26b)</a></li>
+<li class="chapter" data-level="12.27" data-path="taller-dos.html"><a href="taller-dos.html#ejercicio-27b"><i class="fa fa-check"></i><b>12.27</b> Ejercicio (27b)</a></li>
+<li class="chapter" data-level="12.28" data-path="taller-dos.html"><a href="taller-dos.html#ejercicio-28b"><i class="fa fa-check"></i><b>12.28</b> Ejercicio (28b)</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="taller-tres.html"><a href="taller-tres.html"><i class="fa fa-check"></i><b>13</b> Taller Tres</a><ul>
+<li class="chapter" data-level="13.1" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-1c"><i class="fa fa-check"></i><b>13.1</b> Ejercicio (1c)</a></li>
+<li class="chapter" data-level="13.2" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-2c"><i class="fa fa-check"></i><b>13.2</b> Ejercicio (2c)</a></li>
+<li class="chapter" data-level="13.3" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-3c"><i class="fa fa-check"></i><b>13.3</b> Ejercicio (3c)</a></li>
+<li class="chapter" data-level="13.4" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-4c"><i class="fa fa-check"></i><b>13.4</b> Ejercicio (4c)</a></li>
+<li class="chapter" data-level="13.5" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-5c"><i class="fa fa-check"></i><b>13.5</b> Ejercicio (5c)</a></li>
+<li class="chapter" data-level="13.6" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-6c"><i class="fa fa-check"></i><b>13.6</b> Ejercicio (6c)</a></li>
+<li class="chapter" data-level="13.7" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-7c"><i class="fa fa-check"></i><b>13.7</b> Ejercicio (7c)</a></li>
+<li class="chapter" data-level="13.8" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-8c"><i class="fa fa-check"></i><b>13.8</b> Ejercicio (8c)</a></li>
+<li class="chapter" data-level="13.9" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-9c"><i class="fa fa-check"></i><b>13.9</b> Ejercicio (9c)</a></li>
+<li class="chapter" data-level="13.10" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-10c"><i class="fa fa-check"></i><b>13.10</b> Ejercicio (10c)</a></li>
+<li class="chapter" data-level="13.11" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-11c"><i class="fa fa-check"></i><b>13.11</b> Ejercicio (11c)</a></li>
+<li class="chapter" data-level="13.12" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-12c"><i class="fa fa-check"></i><b>13.12</b> Ejercicio (12c)</a></li>
+<li class="chapter" data-level="13.13" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-13c"><i class="fa fa-check"></i><b>13.13</b> Ejercicio (13c)</a></li>
+<li class="chapter" data-level="13.14" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-14c"><i class="fa fa-check"></i><b>13.14</b> Ejercicio (14c)</a></li>
+<li class="chapter" data-level="13.15" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-15c"><i class="fa fa-check"></i><b>13.15</b> Ejercicio (15c)</a></li>
+<li class="chapter" data-level="13.16" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-16c"><i class="fa fa-check"></i><b>13.16</b> Ejercicio (16c)</a></li>
+<li class="chapter" data-level="13.17" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-17c"><i class="fa fa-check"></i><b>13.17</b> Ejercicio (17c)</a></li>
+<li class="chapter" data-level="13.18" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-18c"><i class="fa fa-check"></i><b>13.18</b> Ejercicio (18c)</a></li>
+<li class="chapter" data-level="13.19" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-19c"><i class="fa fa-check"></i><b>13.19</b> Ejercicio (19c)</a></li>
+<li class="chapter" data-level="13.20" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-20c"><i class="fa fa-check"></i><b>13.20</b> Ejercicio (20c)</a></li>
+<li class="chapter" data-level="13.21" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-21c"><i class="fa fa-check"></i><b>13.21</b> Ejercicio (21c)</a></li>
+<li class="chapter" data-level="13.22" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-22c"><i class="fa fa-check"></i><b>13.22</b> Ejercicio (22c)</a></li>
+<li class="chapter" data-level="13.23" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-23c"><i class="fa fa-check"></i><b>13.23</b> Ejercicio (23c)</a></li>
+<li class="chapter" data-level="13.24" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-24c"><i class="fa fa-check"></i><b>13.24</b> Ejercicio (24c)</a></li>
+<li class="chapter" data-level="13.25" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-25c"><i class="fa fa-check"></i><b>13.25</b> Ejercicio (25c)</a></li>
+<li class="chapter" data-level="13.26" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-26c"><i class="fa fa-check"></i><b>13.26</b> Ejercicio (26c)</a></li>
+<li class="chapter" data-level="13.27" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-27c"><i class="fa fa-check"></i><b>13.27</b> Ejercicio (27c)</a></li>
+<li class="chapter" data-level="13.28" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-28c"><i class="fa fa-check"></i><b>13.28</b> Ejercicio (28c)</a></li>
+<li class="chapter" data-level="13.29" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-29c"><i class="fa fa-check"></i><b>13.29</b> Ejercicio (29c)</a></li>
+<li class="chapter" data-level="13.30" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-30c"><i class="fa fa-check"></i><b>13.30</b> Ejercicio (30c)</a></li>
+<li class="chapter" data-level="13.31" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-31c"><i class="fa fa-check"></i><b>13.31</b> Ejercicio (31c)</a></li>
+<li class="chapter" data-level="13.32" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-32c"><i class="fa fa-check"></i><b>13.32</b> Ejercicio (32c)</a></li>
+<li class="chapter" data-level="13.33" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-33c"><i class="fa fa-check"></i><b>13.33</b> Ejercicio (33c)</a></li>
+<li class="chapter" data-level="13.34" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-34c"><i class="fa fa-check"></i><b>13.34</b> Ejercicio (34c)</a></li>
+<li class="chapter" data-level="13.35" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-35c"><i class="fa fa-check"></i><b>13.35</b> Ejercicio (35c)</a></li>
+<li class="chapter" data-level="13.36" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-36c"><i class="fa fa-check"></i><b>13.36</b> Ejercicio (36c)</a></li>
+<li class="chapter" data-level="13.37" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-37c"><i class="fa fa-check"></i><b>13.37</b> Ejercicio (37c)</a></li>
+<li class="chapter" data-level="13.38" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-38c"><i class="fa fa-check"></i><b>13.38</b> Ejercicio (38c)</a></li>
+<li class="chapter" data-level="13.39" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-39c"><i class="fa fa-check"></i><b>13.39</b> Ejercicio (39c)</a></li>
+<li class="chapter" data-level="13.40" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-40c"><i class="fa fa-check"></i><b>13.40</b> Ejercicio (40c)</a></li>
+<li class="chapter" data-level="13.41" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-41c"><i class="fa fa-check"></i><b>13.41</b> Ejercicio (41c)</a></li>
+<li class="chapter" data-level="13.42" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-42c"><i class="fa fa-check"></i><b>13.42</b> Ejercicio (42c)</a></li>
+<li class="chapter" data-level="13.43" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-43c"><i class="fa fa-check"></i><b>13.43</b> Ejercicio (43c)</a></li>
+<li class="chapter" data-level="13.44" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-44c"><i class="fa fa-check"></i><b>13.44</b> Ejercicio (44c)</a></li>
+<li class="chapter" data-level="13.45" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-45c"><i class="fa fa-check"></i><b>13.45</b> Ejercicio (45c)</a></li>
+<li class="chapter" data-level="13.46" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-46c"><i class="fa fa-check"></i><b>13.46</b> Ejercicio (46c)</a></li>
+<li class="chapter" data-level="13.47" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-47c"><i class="fa fa-check"></i><b>13.47</b> Ejercicio (47c)</a></li>
+<li class="chapter" data-level="13.48" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-48c"><i class="fa fa-check"></i><b>13.48</b> Ejercicio (48c)</a></li>
+<li class="chapter" data-level="13.49" data-path="taller-tres.html"><a href="taller-tres.html#ejercicio-49c"><i class="fa fa-check"></i><b>13.49</b> Ejercicio (49c)</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="taller-cuatro.html"><a href="taller-cuatro.html"><i class="fa fa-check"></i><b>14</b> Taller Cuatro</a><ul>
+<li class="chapter" data-level="14.1" data-path="taller-cuatro.html"><a href="taller-cuatro.html#ejercicio-1d"><i class="fa fa-check"></i><b>14.1</b> Ejercicio (1d)</a></li>
+<li class="chapter" data-level="14.2" data-path="taller-cuatro.html"><a href="taller-cuatro.html#ejercicio-2d"><i class="fa fa-check"></i><b>14.2</b> Ejercicio (2d)</a></li>
+<li class="chapter" data-level="14.3" data-path="taller-cuatro.html"><a href="taller-cuatro.html#ejercicio-3d"><i class="fa fa-check"></i><b>14.3</b> Ejercicio (3d)</a></li>
+<li class="chapter" data-level="14.4" data-path="taller-cuatro.html"><a href="taller-cuatro.html#ejercicio-4d"><i class="fa fa-check"></i><b>14.4</b> Ejercicio (4d)</a></li>
+<li class="chapter" data-level="14.5" data-path="taller-cuatro.html"><a href="taller-cuatro.html#ejercicio-5d"><i class="fa fa-check"></i><b>14.5</b> Ejercicio (5d)</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="videos-de-clase.html"><a href="videos-de-clase.html"><i class="fa fa-check"></i><b>15</b> Videos de clase</a></li>
+<li class="chapter" data-level="16" data-path="videos-de-asesoría.html"><a href="videos-de-asesoría.html"><i class="fa fa-check"></i><b>16</b> Videos de asesoría</a></li>
+<li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referencias</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Curso básico de Matemáticas Uno</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="ley-del-coseno" class="section level1">
+<h1><span class="header-section-number">Capítulo 10</span> Ley del coseno</h1>
+<p>Sean los ángulos <span class="math inline">\(\alpha\)</span>, <span class="math inline">\(\beta\)</span>, y <span class="math inline">\(\gamma\)</span>, y los lados opuestos de longitud <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, y <span class="math inline">\(c\)</span> son como se muestra en la figura arriba. Entonces</p>
+<p><span class="math display">\[
+\begin{array}{cc}
+a^2 &amp;=b^2+c^2-2.b.c.cos(\alpha)\\
+b^2 &amp;=a^2+c^2-2.a.c.cos(\beta)\\
+c^2 &amp;=a^2+b^2-2.a.b.cos(\gamma)
+\end{array}
+\]</span></p>
+<p><strong>Ejemplo de aplicación uno</strong></p>
+<p>Esta es una aplicación de la ley del coseno, el Author:Ken Schwartz (<a href="https://www.geogebra.org/m/ep8ukrnv" class="uri">https://www.geogebra.org/m/ep8ukrnv</a>) las elaboro usando geogebra.</p>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<script src="https://www.geogebra.org/apps/deployggb.js"></script>
+<div id="ggb-elementTrigo11">
+
+</div>
+<script>  
+       var ggbAppTrigo11 = new GGBApplet({"material_id":"ep8ukrnv",
+       "width": 800,
+       "height": 400,
+       "showToolBar": false,
+       "showAlgebraInput": false,
+       "showMenuBar": false },
+       true);
+       
+         window.addEventListener("load", function() {  
+           ggbAppTrigo11.inject('ggb-elementTrigo11');
+      });
+</script>
+<div id="modelo22-problema-del-triángulo" class="section level2">
+<h2><span class="header-section-number">10.1</span> Modelo22 (Problema del triángulo)</h2>
+<p><strong>Enunciado pág 446 texto guía</strong></p>
+<p>Una cometa queda atorada en las ramas de la copa de un árbol. Si el hilo de 90 pies de la cometa forma un ángulo de <span class="math inline">\(22^{\circ}\)</span> con el suelo, estime la altura del árbol, calculando la distancia de la cometa al suelo.</p>
+<center>
+<img src="images/Problematrigo1.jpg" style="width:35.0%" />
+</center>
+<p><strong>Proceso de solución</strong></p>
+<p>Sea <span class="math inline">\(h\)</span> la altura de la cometa. En la figura se ve que</p>
+<p><span class="math display">\[
+\dfrac{h}{90}=sen(22^{\circ}) \ \ \ \text{y así} \ \ \ \ h=90sen(22^{\circ})\approx33.71 pies
+\]</span>
+<strong>Respuesta</strong>: La distancia de la cometa al suelo es de <span class="math inline">\(33.71 pies\)</span></p>
+</div>
+<div id="modelo24-problema-del-triángulo" class="section level2">
+<h2><span class="header-section-number">10.2</span> Modelo24 (Problema del triángulo)</h2>
+<p><strong>Enunciado pág 447 texto guía</strong></p>
+<p>Un topógrafo usa un instrumento llamdo teodolito para medir el ángulo de elevación entre el nivel del piso y la cumbre de una montaña. En un punto, se mide un ángulo de elevación de <span class="math inline">\(41^{\circ}\)</span>. Medio kilómetro más lejos de la base de la montaña, el ángulo de elevación medido es de <span class="math inline">\(37^{\circ}\)</span>. ¿Qué altura tiene la montaña?</p>
+<center>
+<img src="images/Problematrigo3.jpg" style="width:35.0%" />
+</center>
+<p><strong>Proceso de solución</strong></p>
+<p>A partir de la gráfica se puede deducir la geometría de dos triángulos rectágulos, uno con ángulo de <span class="math inline">\(37^{\circ}\)</span>, y otro con ángulo de <span class="math inline">\(41^{\circ}\)</span>. Entonces</p>
+<p>Para el triángulo de <span class="math inline">\(37^{\circ}\)</span>:</p>
+<p><span class="math display">\[
+(1) \ \ \ tan(37^{\circ})=\dfrac{\text{lado op}}{\text{lado ady}}=\dfrac{h}{z+0.5}
+\]</span>
+Simplificando la <span class="math inline">\(ec(1)\)</span>, tenemos</p>
+<p><span class="math display">\[
+(1) \ \ tan(37^{\circ})(z+0.5)=h
+\]</span></p>
+<p>Para el triángulo de <span class="math inline">\(41^{\circ}\)</span>:</p>
+<p><span class="math display">\[
+(2) \ \ \ tan(41^{\circ})=\dfrac{\text{lado op}}{\text{lado ady}}=\dfrac{h}{z}
+\]</span>
+Simplificando la <span class="math inline">\(ec(2)\)</span>, tenemos</p>
+<p><span class="math display">\[
+(2) \ \ tan(41^{\circ}).z=h
+\]</span>
+Despejando <span class="math inline">\(z\)</span> de la <span class="math inline">\(ec(2)\)</span> y sustituyendo en la <span class="math inline">\(ec(1)\)</span>, se obtiene una ecuación sólo en términos de <span class="math inline">\(h\)</span>, así:</p>
+<p><span class="math display">\[
+z=\dfrac{h}{tan(41^{\circ})}
+\]</span>
+Sustituyento en <span class="math inline">\((1)\)</span></p>
+<p><span class="math display">\[
+ tan(37^{\circ})\left(\dfrac{h}{tan(41^{\circ})}+0.5\right)=h
+\]</span>
+Despejando la variable <span class="math inline">\(h\)</span> se tiene:</p>
+<p><span class="math display">\[\begin{equation}
+\begin{split}
+
+tan(37^{\circ})\left(\dfrac{h}{tan(41^{\circ})}+0.5\right) &amp; = &amp; h\\
+
+\dfrac{tan(37^{\circ})}{tan(41^{\circ})}h+(0.5).tan(37^{\circ}) &amp; = &amp; h\\
+
+\dfrac{tan(37^{\circ})}{tan(41^{\circ})}h-h &amp; = &amp; -(0.5).tan(37^{\circ})\\
+
+h\left(\dfrac{tan(37^{\circ})}{tan(41^{\circ})}-1\right) &amp; = &amp; -(0.5).tan(37^{\circ})\\
+
+h &amp; = &amp; \dfrac{-(0.5).tan(37^{\circ})}{\left(\dfrac{tan(37^{\circ})}{tan(41^{\circ})}-1\right)}\\
+
+h &amp; \approx &amp; \dfrac{-0.376777}{-0.133135}\\
+
+h &amp; \approx &amp; 2.83003718 km \ \ \ \text{es decir} \ \ \ 2830.04 metros
+
+\end{split}
+\end{equation}\]</span></p>
+</div>
+<div id="modelo32-problema-del-triángulo" class="section level2">
+<h2><span class="header-section-number">10.3</span> Modelo32 (Problema del triángulo)</h2>
+<p>Unos observadores en dos pueblos <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span>, a cada lado de una montaña de <span class="math inline">\(12000 pies\)</span> de altura, miden los ángulos de elevación entre el suelo y la cumbre de la montaña. Vea la Figura. Suponiendo que los pueblos y la cumbre de la montaña están en el mismo plano vertical, calcule la distancia entre ellos.</p>
+<center>
+<img src="images/TRIGOmontana3.jpg" style="width:25.0%" />
+</center>
+<p><strong>Proceso de solución</strong>:</p>
+<p>Sea <span class="math inline">\(C\)</span> el punto donde cae la altura perpendicular de la montaña.</p>
+<p>Sea <span class="math inline">\(x\)</span> la distancia entre el punto <span class="math inline">\(A\)</span> y el punto <span class="math inline">\(C\)</span>.</p>
+<p>Sea <span class="math inline">\(y\)</span> la distancia entre el punto <span class="math inline">\(C\)</span> y el punto <span class="math inline">\(B\)</span>.</p>
+<p>Entonces la distancia entre ambos pueblos es <span class="math inline">\(x+y\)</span>.</p>
+<p>Además por la gráfica puede verse:</p>
+<p><span class="math display">\[
+tan(28^{\circ})=\dfrac{12000}{x} \ \ \ \text{de donde} \ \ \ \ x=\dfrac{12000}{tan(28^{\circ})}
+\]</span></p>
+<p><span class="math display">\[
+tan(46^{\circ})=\dfrac{12000}{y} \ \ \ \text{de donde} \ \ \ \ y=\dfrac{12000}{tan(46^{\circ})}
+\]</span>
+Por lo tanto</p>
+<p><span class="math display">\[
+\text{distancia entre los pueblos}=x+y=\dfrac{12000}{tan(46^{\circ})}+\dfrac{12000}{tan(28^{\circ})}=34156.98 pies
+\]</span>
+<strong>Respuesta</strong>: La distancia entre ambos pueblos se de <span class="math inline">\(34156.98 pies\)</span></p>
+</div>
+<div id="modelo33-problema-del-triángulo" class="section level2">
+<h2><span class="header-section-number">10.4</span> Modelo33 (Problema del triángulo)</h2>
+<p>Una bandera está en la orilla de un acantilado de <span class="math inline">\(50 pies\)</span> de altura, en la orilla de un río de <span class="math inline">\(40 pies\)</span> de ancho. Véase la Figura. Un osbserador en la orilla opuesta del río mide un ángulo de <span class="math inline">\(9\)</span> grados entre su visual a la punta del asta y su visual a la base del asta. Obtenga la altura del asta.</p>
+<center>
+<img src="images/TRIGOastaacantilado1.jpg" style="width:25.0%" />
+</center>
+<p><strong>Proceso de solución</strong></p>
+<p>Sea <span class="math inline">\(h\)</span> la altura del asta.</p>
+<p>Sea <span class="math inline">\(\alpha\)</span> el ángulo desde la visual del obtervador a la base del asta.</p>
+<p>Entonces</p>
+<p>Primero:</p>
+<p><span class="math display">\[
+tan(\alpha)=\dfrac{50}{40}=\dfrac{5}{4}
+\]</span></p>
+<p><span class="math display">\[
+tan(\alpha + 9^{\circ})=\dfrac{50+h}{40}   \ \ \ \Rightarrow  \ \ \ \ \  (40).tan(\alpha + 9^{\circ})=50+h    \ \ \ \Rightarrow  \ \ \ \ \ (40).tan(\alpha + 9^{\circ})-50=h
+\]</span>
+Sabemos por identidades básicas trigonometricas que:</p>
+<p><span class="math display">\[
+tan(\alpha + 9^{\circ})=\dfrac{tan(\alpha)+tan(9^{\circ})}{1-tan(\alpha).tan(9^{\circ})}=\dfrac{\dfrac{5}{4}+tan(9^{\circ})}{1-tan(9^{\circ}).\left(\dfrac{5}{4}\right)}\approx 1.756047
+\]</span></p>
+<p>Entonces el valor de <span class="math inline">\(h\)</span> es:</p>
+<p><span class="math display">\[
+(40).(1.756047)-50\approx h \ \ \ \ \ \Rightarrow  \ \ \ \ \ 20.24188 pies    \approx h
+\]</span></p>
+<p><strong>Respuesta</strong>: El asta mide <span class="math inline">\(\approx 20.24188 pies\)</span> de altura</p>
+</div>
+<div id="modelo34-problema-del-triángulo" class="section level2">
+<h2><span class="header-section-number">10.5</span> Modelo34 (Problema del triángulo)</h2>
+<p>Un puente levadizo mide <span class="math inline">\(7.5 m\)</span> de orilla a orilla, y cuando se abre por completo forma un ángulo de <span class="math inline">\(43\)</span> grados con la hoirzontal. Véase la Figura. Cuando el puente se cierra, el ángulo de depresión de la orilla a un punto en la superficie del agua bajo el extremo opuesto es de <span class="math inline">\(27\)</span> grados. Cuando el puente está totalmente abierto, cuál es la distancia <span class="math inline">\(d\)</span> entre el punto más alto del puente y el agua?</p>
+<center>
+<img src="images/TRIGOpuenteelevado1.jpg" style="width:25.0%" />
+</center>
+<p><strong>Proceso de solución</strong>:</p>
+<p>Sea <span class="math inline">\(d=x+y\)</span> la distancia del punto más alto del puente y el agua.</p>
+<p>Sea <span class="math inline">\(x\)</span> la distancia entre el agua y el puente, al momento de estar cerrado.</p>
+<p>Sea <span class="math inline">\(y =d-x\)</span>.</p>
+<p>Sea <span class="math inline">\(z\)</span> la distancia entre ambas orillas del puente, al momento de estar cerrado.</p>
+<p>Por la gráfica se puede deducir que:</p>
+<p><span class="math display">\[
+sen(43^{\circ})=\dfrac{y}{7.5} \ \ \ \text{de donde} \ \ \ \ y=(7.5)sen(43^{\circ})
+\]</span></p>
+<p><span class="math display">\[
+cos(43^{\circ})=\dfrac{z}{7.5} \ \ \ \text{de donde} \ \ \ \ z=(7.5)cos(43^{\circ})
+\]</span></p>
+<p><span class="math display">\[
+tan(27^{\circ})=\dfrac{x}{z} \ \ \ \text{de donde} \ \ \ \ x=ztan(27^{\circ})
+\]</span></p>
+<p>Entonces</p>
+<p><span class="math display">\[
+d=x+y=ztan(27^{\circ})+(7.5)sen(43^{\circ})=(7.5)cos(43^{\circ})tan(27^{\circ})+(7.5)sen(43^{\circ})=7.909813 m
+\]</span></p>
+<p><strong>Respuesta</strong>: La distancia del punto más lejano del puente y el agua es de <span class="math inline">\(7.909813 m\)</span></p>
+</div>
+<div id="modelo35-problema-del-triángulo" class="section level2">
+<h2><span class="header-section-number">10.6</span> Modelo35 (Problema del triángulo)</h2>
+<p>Desde el suelo de un cañon se necesitan <span class="math inline">\(62 pies\)</span> de soga para alcanza la cima de la pared del cañon y <span class="math inline">\(86 pies\)</span> para alcanzar la cima de la pared opuesta. Véase la Figura. Si las dos sogas forman un ángulo de <span class="math inline">\(123\)</span> grados, cuál es la distancia <span class="math inline">\(d\)</span> desde la cima de una pared del cañon a la otra?</p>
+<center>
+<img src="images/TRIGOcanon1.jpg" style="width:25.0%" />
+</center>
+<p><strong>Proceso de solución</strong>:</p>
+<p>Aplicando la ley de cosenos tenemos:</p>
+<p>Sea <span class="math inline">\(a=62 pies\)</span>, <span class="math inline">\(b=86 pies\)</span>, y <span class="math inline">\(\gamma=123^{\circ}\)</span></p>
+<p>Entonces aplicando la fórmula:</p>
+<p><span class="math display">\[
+c^2 =a^2+b^2-2.a.b.cos(\gamma)
+\]</span></p>
+<p><span class="math display">\[
+c^2 =(62)^2+(86)^2-2.(62).(86).cos(123^{\circ})
+\]</span>
+de donde</p>
+<p><span class="math display">\[
+c^2 \approx 17048.03 \ \ \ \ \text{entonces} \ \ \ \ c \approx \sqrt{17048.03}\approx 130.5681 pies
+\]</span></p>
+<p><strong>Respuesta</strong>: La distancia <span class="math inline">\(d\)</span> desde la cima de una pared del cañon a la otra es: <span class="math inline">\(d \approx 130.5681 pies\)</span></p>
+<!-- ```{r echo=FALSE} -->
+<!-- a <- 62 -->
+<!-- b <- 86 -->
+<!-- A <- 123 -->
+<!-- d <- a^2+b^2-2*a*b*cos((A/180)*pi) -->
+<!-- d -->
+<!-- sqrt(d) -->
+<!-- ``` -->
+</div>
+<div id="modelo36-problema-del-triángulo" class="section level2">
+<h2><span class="header-section-number">10.7</span> Modelo36 (Problema del triángulo)</h2>
+<p>Un hombre de <span class="math inline">\(5 pies\)</span> <span class="math inline">\(9\)</span> pulgadas de estatura está parado en una acera que baja en ángulo constante. Un poste de alumbrado vertical, directamente atrás de él, forma una sombra de <span class="math inline">\(25 pies\)</span> de longitud. El ángulo de depresión desde la parte superior del hombre hasta la inclinación de su sombra es de <span class="math inline">\(31\)</span> grados. Calcule el ángulo <span class="math inline">\(\alpha\)</span>, que se indica en la Figura, el cual esta formado por la acera y la horizontal.</p>
+<center>
+<img src="images/TRIGOacera1.jpg" style="width:25.0%" />
+</center>
+</div>
+<div id="modelo37-problema-del-triángulo" class="section level2">
+<h2><span class="header-section-number">10.8</span> Modelo37 (Problema del triángulo)</h2>
+<p>Use la ley de senos para resolver cada uno de los triángulos. Véase la Figura abajo.</p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\(\alpha =80^{\circ}\)</span>, <span class="math inline">\(\beta =20^{\circ}\)</span>, <span class="math inline">\(b=7UL\)</span></p></li>
+<li><p><span class="math inline">\(\alpha =60^{\circ}\)</span>, <span class="math inline">\(\beta =15^{\circ}\)</span>, <span class="math inline">\(c=30UL\)</span></p></li>
+</ol>
+<center>
+<img src="images/TRIGOconceptoleyseno1.jpg" style="width:25.0%" />
+</center>
+</div>
+<div id="modelo38-problema-del-triángulo" class="section level2">
+<h2><span class="header-section-number">10.9</span> Modelo38 (Problema del triángulo)</h2>
+<p>Use la ley de cosenos para resolver cada uno de los triángulos. Véase la Figura arriba.</p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\(\alpha=162^{\circ}\)</span>, <span class="math inline">\(b=11UL\)</span>, <span class="math inline">\(c=8UL\)</span></p></li>
+<li><p><span class="math inline">\(\alpha=22^{\circ}\)</span>, <span class="math inline">\(b=3UL\)</span>, <span class="math inline">\(c=9UL\)</span></p></li>
+</ol>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="ley-del-seno.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="taller-uno.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["LibroMateUnoSemestre01-2020.pdf", "LibroMateUnoSemestre01-2020.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
