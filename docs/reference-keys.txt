@@ -543,3 +543,4 @@ fig:Conjunto4
 fig:CajaOficina1
 solución-numérica-de-una-ecuación
 ejemplo-raices-irracionales
+link-de-asistencia-a-clase
