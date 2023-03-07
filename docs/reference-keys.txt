@@ -545,3 +545,4 @@ solución-numérica-de-una-ecuación
 ejemplo-raices-irracionales
 link-de-asistencia-a-clase
 método-de-po-shen-loh
+link-shiny-para-gráficar-ecuaciones-y-apróximar-raíces-irracionales
