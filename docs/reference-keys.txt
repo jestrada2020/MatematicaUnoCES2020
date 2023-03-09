@@ -547,3 +547,4 @@ link-de-asistencia-a-clase
 método-de-po-shen-loh
 link-shiny-para-gráficar-ecuaciones-y-apróximar-raíces-irracionales
 ec.-trigonométricas-factorizables
+problemas-de-ecuaciones
