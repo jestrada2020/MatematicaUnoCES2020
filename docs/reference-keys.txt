@@ -577,3 +577,6 @@ fig:Planteo12
 taller-Tres
 taller-Cuatro
 videos-de-asesoria
+intersección-de-conjuntos-de-intervalos-en-la-recta-numérica
+actividad-exponenciales-con-cambio-de-base-transformables-en-cúbicas
+actividad-exponenciales-con-diferentes-bases
