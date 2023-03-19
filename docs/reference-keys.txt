@@ -600,3 +600,6 @@ actividad-geogebra-identidades-trigonométricas
 actividad-geogebra-ecuaciones-trigonométricas-interpretación-gráfica
 actividad-geogebra-resolución-gráfica-de-sistemas-de-tres-ecuaciones-con-tres-incógnitas
 división-de-polinomios
+actividad-geogebra-fórmula-del-binomio-de-newton
+actividad-geogebra-división-de-polinomios
+actividad-geogebra-valor-numérico-de-un-polinomio
