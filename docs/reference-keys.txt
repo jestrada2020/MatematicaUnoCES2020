@@ -599,3 +599,4 @@ actividad-geogebra-inecuación-racional-interpretación-gráfica
 actividad-geogebra-identidades-trigonométricas
 actividad-geogebra-ecuaciones-trigonométricas-interpretación-gráfica
 actividad-geogebra-resolución-gráfica-de-sistemas-de-tres-ecuaciones-con-tres-incógnitas
+división-de-polinomios
