@@ -603,3 +603,9 @@ división-de-polinomios
 actividad-geogebra-fórmula-del-binomio-de-newton
 actividad-geogebra-división-de-polinomios
 actividad-geogebra-valor-numérico-de-un-polinomio
+actividad-geogebra-círculo-unitario
+actividad-geogebra-resolver-un-triángulo-rectángulo-conociendo-la-hipotenusa-y-un-ángulo-agudo
+actividad-geogebra-resolver-un-triángulo-rectángulo-conociendo-la-hipotenusa-y-un-cateto
+actividad-geogebra-resolver-un-triángulo-rectángulo-conociendo-los-dos-catetos
+actividad-geogebra-resolver-un-triángulo-rectángulo-conociendo-un-cateto-y-el-ángulo-opuesto
+actividad-geogebra-resolver-un-triángulo-rectángulo-conociendo-un-cateto-y-el-ángulo-contiguo
