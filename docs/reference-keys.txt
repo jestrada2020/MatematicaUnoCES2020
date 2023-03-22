@@ -619,3 +619,6 @@ dan-kaminski-en-internet-hay-siete-llaves-de-seguridad-y-yo-tengo-una-de-ellas
 cómo-se-inventaron-los-números-imaginarios
 técnica-de-po-shen-loh
 marte-the-martian-misión-rescate---audio-latino
+actividad-geogebra-potencias-y-raíces-de-fracciones
+actividad-geogebra-propiedades-de-las-potencias
+actividad-geogebra-ecuaciones-con-paréntesis-soluciones-enteras
