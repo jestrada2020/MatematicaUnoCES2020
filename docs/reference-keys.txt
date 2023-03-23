@@ -622,3 +622,15 @@ marte-the-martian-misión-rescate---audio-latino
 actividad-geogebra-potencias-y-raíces-de-fracciones
 actividad-geogebra-propiedades-de-las-potencias
 actividad-geogebra-ecuaciones-con-paréntesis-soluciones-enteras
+Potenciacion-y-radicales
+SolucionDeEcuaciones
+Sistemas-de-ecuaciones
+Planteo-y-solucion-de-problemas
+FuncionExponencial-y-Logaritmica
+Trigonometria
+Taller-Uno
+Taller-Dos
+Taller-Tres
+Taller-Cuatro
+Videos-de-clase
+Videos-de-asesoria
