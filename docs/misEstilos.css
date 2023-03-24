@@ -1,0 +1,90 @@
+div.csl-entry {
+  line-height: 25px;   /* within paragraph */
+  margin-bottom: 17px; /* between paragraphs */
+}
+
+
+/* Para encerrar en una caja azul */
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
+
+<div class = "blue">
+
+- This is my first conclusion
+- This is my second conclusion
+
+</div>
+
+
+/* Forma 1: Para dividir en dos columnas */
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
+
+/* Forma 2:  para dividir en dos y tres columnas */
+<style>
+  .col2 {
+    columns: 2 200px;         /* number of columns and width in pixels*/
+    -webkit-columns: 2 200px; /* chrome, safari */
+    -moz-columns: 2 200px;    /* firefox */
+  }
+  .col3 {
+    columns: 3 100px;
+    -webkit-columns: 3 100px;
+    -moz-columns: 3 100px;
+  }
+</style>
+
+
+/* Forma 3:  para dividir en dos y tres columnas */
+<style>
+.column-left{
+  float: left;
+  width: 33%;
+  text-align: left;
+}
+.column-center{
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+}
+.column-right{
+  float: right;
+  width: 33%;
+  text-align: right;
+}
+</style>
+
+/* Forma 4:  para dividir en dos columnas */
+<style>
+.col-izq{
+  float: left;
+  width: 65%;
+  text-align: left;
+}
+.col-der{
+  float: right;
+  width: 33%;
+  text-align: right;
+}
+</style>
+
