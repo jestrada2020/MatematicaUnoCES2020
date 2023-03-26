@@ -637,3 +637,8 @@ Videos-de-asesoria
 section
 title-curso-básico-de-matemáticas-uno
 ejemplos-de-fracciones-en-los-números-reales
+def:unnamed-chunk-21
+def:unnamed-chunk-24
+thm:unnamed-chunk-25
+def:unnamed-chunk-26
+diferencia-simétrica-de-un-conjuntos
