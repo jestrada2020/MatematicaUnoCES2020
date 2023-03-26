@@ -643,3 +643,7 @@ thm:unnamed-chunk-25
 def:unnamed-chunk-26
 diferencia-simétrica-de-un-conjuntos
 ejemplo-de-cardinalidad
+ejemplos-de-cardinalidad
+primer-ejemplo-dos-conjuntos
+segundo-ejemplo-tres-conjuntos
+tercer-ejemplo-cuatro-conjuntos
