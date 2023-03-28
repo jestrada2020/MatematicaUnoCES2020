@@ -23,7 +23,7 @@
 <meta name="author" content="Carlos Andrés Escobar Guerra - Juan Alberto Arias Quiceno - John Jairo Estrada Alvarez" />
 
 
-<meta name="date" content="2023-03-26" />
+<meta name="date" content="2023-03-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -675,24 +675,54 @@ Figura 4.3: Signo de la recta real [Imagen tomada de <span class="citation">(<a 
 <p><span class="math display">\[
 a&lt;b \ \ \ \text{si y sólo si} \ \ \ (b-a)&gt;0
 \]</span></p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:NotacionDesigualdades1"></span>
-<img src="images/NotacionDesigualdades1.jpg" alt="Notación de desigualdades[Imagen tomada de [@swokowski1996algebra] pág $9$]" width="50%" />
-<p class="caption">
-Figura 4.4: Notación de desigualdades[Imagen tomada de <span class="citation">(<a href="#ref-swokowski1996algebra" role="doc-biblioref">Swokowski &amp; COLE, 1996</a>)</span> pág <span class="math inline">\(9\)</span>]
-</p>
-</div>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigRectaReal1C"></span>
-<img src="images/PropiedadesDesigualdades1A.jpg" alt="Propiedades de desigualdades[Imagen tomada de [@swokowski1996algebra] pág $114$]" width="70%" />
-<p class="caption">
-Figura 4.5: Propiedades de desigualdades[Imagen tomada de <span class="citation">(<a href="#ref-swokowski1996algebra" role="doc-biblioref">Swokowski &amp; COLE, 1996</a>)</span> pág <span class="math inline">\(114\)</span>]
-</p>
-</div>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigRectaReal2C"></span>
-<img src="images/Desigualdades3.jpg" alt="Propiedades de desigualdades extras[Imagen tomada de [@swokowski1996algebra] pág $127$]" width="100%" />
-<p class="caption">
-Figura 4.6: Propiedades de desigualdades extras[Imagen tomada de <span class="citation">(<a href="#ref-swokowski1996algebra" role="doc-biblioref">Swokowski &amp; COLE, 1996</a>)</span> pág <span class="math inline">\(127\)</span>]
-</p>
-</div>
+<p><span class="math display">\[\begin{equation}
+\begin{matrix}
+&amp; \text{Notación } &amp; \text{Definición } &amp; \text{Terminología } &amp; \text{Significado en la recta} R\\
+  &amp; &amp; &amp; \\
+(1a) &amp; a &gt; b &amp; a - b \ \text{ es positivo } &amp; a \ \text{es mayor que } \ b &amp; a \ \text{está a derecha de } \ b \\  
+
+(2a) &amp; a &lt; b &amp; a - b \ \text{ es negativo } &amp; a \ \text{es menor que } \ b &amp; a \ \text{está a izquierda de } \ b\\
+
+\end{matrix}
+\end{equation}\]</span></p>
+<!-- ```{r NotacionDesigualdades1, fig.cap="Notación de desigualdades[Imagen tomada de [@swokowski1996algebra] pág $9$]", fig.align='center' ,echo=FALSE, message=FALSE,  warning=FALSE,out.width = "50%"} -->
+<!-- knitr::include_graphics("images/NotacionDesigualdades1.jpg") -->
+<!-- ``` -->
+<p><span class="math display">\[\begin{equation}
+\begin{matrix}
+
+
+
+\text{Propiedad } &amp; \text{Ejemplo } &amp; \\
+&amp; &amp; \\
+(1a)  \text{Si } \ a &lt; b \ \text{y} \ b &lt; c, \text{entonces } a &lt; c &amp; \text{Si } \ -1 &lt; 3, \ \text{y} \ 3 &lt; 7, \\ \text{entonces } -1 &lt; 7   &amp; \\  
+&amp; &amp; \\
+(2a)  \forall c, \ \ \text{Si } \ a &lt; b,  \text{entonces } a + c &lt; b + c &amp; \text{Si } \ -1 &lt; 4, \text{entonces } -1 + 3 &lt; 4 + 3, \\ \text{e.d.} \ 2 &lt; 7  &amp; \\  
+&amp; &amp; \\
+(3a)  \forall c, \ \ \text{Si } \ a &lt; b,  \text{entonces } a - c &lt; b - c &amp; \text{Si } \ -1 &lt; 4, \text{entonces } -1 - 3 &lt; 4 - 3, \\ \text{e.d.} \ -4 &lt; 1 &amp; \\  
+&amp; &amp; \\
+(4a)  \forall c&gt;0, \ \ \text{Si } \ a &lt; b,  \text{entonces } a.c &lt; b.c &amp; \text{Si } \ -1 &lt; 2, \text{entonces } (-1).(3) &lt; (2).(3) , \\ \text{e.d.} \ -3 &lt; 6 &amp; \\
+&amp; &amp; \\
+(5a) \forall c&gt;0, \ \ \text{Si } \ a &lt; b,  \text{entonces } \dfrac{a}{c} &lt; \dfrac{b}{c} &amp; \text{Si } \ -1 &lt; 2, \text{entonces } \dfrac{-1}{3} &lt; \dfrac{2}{3} , \\ \text{e.d.} \ -\dfrac{1}{3} &lt; \dfrac{2}{3} &amp; \\  
+&amp; &amp; \\
+(6a) \forall c&lt;0, \ \ \text{Si } \ a &lt; b \ \text{entonces } a.c &gt; b.c &amp; \text{Si } \ -1 &lt; 2, \text{entonces } (-1).(-3) &gt; (2).(-3) , \\ \text{e.d.} \ 3 &gt; -6 &amp; \\
+&amp; &amp; \\
+(7a) \forall c&lt;0, \ \ \text{Si } \ a &lt; b \ \text{entonces } \dfrac{a}{c} &gt; \dfrac{b}{c} &amp; \text{Si } \ -1 &lt; 2, \text{entonces } \dfrac{-1}{-3} &gt; \dfrac{2}{-3} , \\ \text{e.d.} \ \dfrac{1}{3} &gt; -\dfrac{2}{3} &amp; \\
+&amp; &amp; \\
+(8a) \ \text{Si } \ 0 &lt; a &lt; b \ \text{entonces } \dfrac{1}{a} &gt; \dfrac{1}{b} &amp; \text{Si } \ 0 &lt; \dfrac{1}{x} &lt; 4, \text{entonces } \dfrac{1}{1/x} &gt; \dfrac{1}{4} , \\ \text{e.d.} \ x &gt; -\dfrac{1}{4} &amp; \\
+&amp; &amp; \\
+(9a) \ \text{Si } \ 0 &lt; a &lt; b \ \text{entonces } 0 &lt; a^2 &lt; b^2 &amp;  \text{Si } \ 0 &lt; \sqrt{x} &lt; 4, \text{entonces } 0 &lt; (\sqrt{x})^2 &lt; {4}^2 , \\ \text{e.d.} \ 0 &lt; x &lt; 16 &amp; \\
+&amp; &amp; \\
+(10a) \ \text{Si } \ a &lt; b \ \text{entonces } 0 &lt; \sqrt{a} &lt; \sqrt{b} &amp; \text{Si } \ 0 &lt; x^2 &lt; 4, \text{entonces } 0 &lt; \sqrt{x^2} &lt; \sqrt{4} , \\ \text{e.d.} \ 0 &lt; |x| &lt; 2 &amp; \\
+\end{matrix}
+\end{equation}\]</span></p>
+<p><br></br></p>
+<!-- ```{r FigRectaReal1C, fig.cap="Propiedades de desigualdades[Imagen tomada de [@swokowski1996algebra] pág $114$]", fig.align='center' ,echo=FALSE, message=FALSE,  warning=FALSE,out.width = "70%"} -->
+<!-- knitr::include_graphics("images/PropiedadesDesigualdades1A.jpg") -->
+<!-- ``` -->
+<!-- ```{r FigRectaReal2C, fig.cap="Propiedades de desigualdades extras[Imagen tomada de [@swokowski1996algebra] pág $127$]", fig.align='center' ,echo=FALSE, message=FALSE,  warning=FALSE,out.width = "100%"} -->
+<!-- knitr::include_graphics("images/Desigualdades3.jpg") -->
+<!-- ``` -->
 <div id="actividad-geogebra-desigualdades-y-conjuntos-de-intervalos-en-la-recta-real" class="section level3 hasAnchor" number="4.0.1">
 <h3><span class="header-section-number">4.0.1</span> Actividad Geogebra: Desigualdades y conjuntos de intervalos en la recta real<a href="recta-real-y-desigualdades.html#actividad-geogebra-desigualdades-y-conjuntos-de-intervalos-en-la-recta-real" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Esta es una aplicación que muestra graficamente las desigualdades y los intervalos en la recta real, el Autor:Javier Cayetano Rodríguez (<a href="https://www.geogebra.org/m/ck59naqz" class="uri">https://www.geogebra.org/m/ck59naqz</a>) las elaboro usando geogebra.</p>
@@ -779,7 +809,7 @@ x \in \left [-\dfrac{2}{3}, +\infty \right)
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigDesigualdad2"></span>
 <img src="images/Desigualdades4.jpg" alt="Respuesta en la recta real ejemplo 1[Imagen tomada de [@zill2012algebra] pág $146$]" width="50%" />
 <p class="caption">
-Figura 4.7: Respuesta en la recta real ejemplo 1[Imagen tomada de <span class="citation">(<a href="#ref-zill2012algebra" role="doc-biblioref">Zill &amp; Dewar, 2012</a>)</span> pág <span class="math inline">\(146\)</span>]
+Figura 4.4: Respuesta en la recta real ejemplo 1[Imagen tomada de <span class="citation">(<a href="#ref-zill2012algebra" role="doc-biblioref">Zill &amp; Dewar, 2012</a>)</span> pág <span class="math inline">\(146\)</span>]
 </p>
 </div>
 </div>
@@ -804,7 +834,7 @@ x \in [-4,9)
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigDesigualdad3"></span>
 <img src="images/Desigualdades5.jpg" alt="Respuesta en la recta real ejemplo 3[Imagen tomada de [@zill2012algebra] pág $148$]" width="50%" />
 <p class="caption">
-Figura 4.8: Respuesta en la recta real ejemplo 3[Imagen tomada de <span class="citation">(<a href="#ref-zill2012algebra" role="doc-biblioref">Zill &amp; Dewar, 2012</a>)</span> pág <span class="math inline">\(148\)</span>]
+Figura 4.5: Respuesta en la recta real ejemplo 3[Imagen tomada de <span class="citation">(<a href="#ref-zill2012algebra" role="doc-biblioref">Zill &amp; Dewar, 2012</a>)</span> pág <span class="math inline">\(148\)</span>]
 </p>
 </div>
 </div>
@@ -826,13 +856,13 @@ Los factores <span class="math inline">\((x+1)\)</span> y <span class="math inli
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigDesigualdad6"></span>
 <img src="images/Desigualdades6.jpg" alt="Respuesta en la recta real ejemplo[Imagen tomada de [@swokowski1996algebra] pág $122$]" width="65%" />
 <p class="caption">
-Figura 4.9: Respuesta en la recta real ejemplo[Imagen tomada de <span class="citation">(<a href="#ref-swokowski1996algebra" role="doc-biblioref">Swokowski &amp; COLE, 1996</a>)</span> pág <span class="math inline">\(122\)</span>]
+Figura 4.6: Respuesta en la recta real ejemplo[Imagen tomada de <span class="citation">(<a href="#ref-swokowski1996algebra" role="doc-biblioref">Swokowski &amp; COLE, 1996</a>)</span> pág <span class="math inline">\(122\)</span>]
 </p>
 </div>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigDesigualdad7"></span>
 <img src="images/ReglaSignos1.jpg" alt="Respuesta en la recta real ejemplo[Imagen tomada de [@swokowski1996algebra] pág $122$]" width="75%" />
 <p class="caption">
-Figura 4.10: Respuesta en la recta real ejemplo[Imagen tomada de <span class="citation">(<a href="#ref-swokowski1996algebra" role="doc-biblioref">Swokowski &amp; COLE, 1996</a>)</span> pág <span class="math inline">\(122\)</span>]
+Figura 4.7: Respuesta en la recta real ejemplo[Imagen tomada de <span class="citation">(<a href="#ref-swokowski1996algebra" role="doc-biblioref">Swokowski &amp; COLE, 1996</a>)</span> pág <span class="math inline">\(122\)</span>]
 </p>
 </div>
 <p><strong>Respuesta</strong>: El conjunto solución para la desigualdad es:</p>
@@ -1172,7 +1202,7 @@ x \in (12,+\infty)
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigDesigualdad8"></span>
 <img src="images/Desigualdades7.jpg" alt="Respuesta en la recta real ejemplo[Imagen tomada de [@swokowski1996algebra] pág $124$]" width="50%" />
 <p class="caption">
-Figura 4.11: Respuesta en la recta real ejemplo[Imagen tomada de <span class="citation">(<a href="#ref-swokowski1996algebra" role="doc-biblioref">Swokowski &amp; COLE, 1996</a>)</span> pág <span class="math inline">\(124\)</span>]
+Figura 4.8: Respuesta en la recta real ejemplo[Imagen tomada de <span class="citation">(<a href="#ref-swokowski1996algebra" role="doc-biblioref">Swokowski &amp; COLE, 1996</a>)</span> pág <span class="math inline">\(124\)</span>]
 </p>
 </div>
 </div>
@@ -1184,17 +1214,17 @@ Figura 4.11: Respuesta en la recta real ejemplo[Imagen tomada de <span class="ci
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigDesigualdad9"></span>
 <img src="images/Desigualdades8.jpg" alt="Respuesta en la recta real ejemplo[Imagen tomada de [@swokowski1996algebra] pág $125$]" width="50%" />
 <p class="caption">
-Figura 4.12: Respuesta en la recta real ejemplo[Imagen tomada de <span class="citation">(<a href="#ref-swokowski1996algebra" role="doc-biblioref">Swokowski &amp; COLE, 1996</a>)</span> pág <span class="math inline">\(125\)</span>]
+Figura 4.9: Respuesta en la recta real ejemplo[Imagen tomada de <span class="citation">(<a href="#ref-swokowski1996algebra" role="doc-biblioref">Swokowski &amp; COLE, 1996</a>)</span> pág <span class="math inline">\(125\)</span>]
 </p>
 </div>
 </div>
 <div id="ejemplo-16a" class="section level3 hasAnchor" number="4.1.19">
 <h3><span class="header-section-number">4.1.19</span> <strong>Ejemplo 16A</strong><a href="recta-real-y-desigualdades.html#ejemplo-16a" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Los lados de un cuadrado se extienden para formar un rectángulo. Como se muestra en la Figura <a href="recta-real-y-desigualdades.html#fig:Rectangulo1">4.13</a>, un lado se extiende <span class="math inline">\(2 cm\)</span> y el otro <span class="math inline">\(5 cm\)</span>. Si el área del rectángulo resultante es menor de <span class="math inline">\(130 cm^2\)</span>, cuál es la posible longitud de un lado del cuadrado original?</p>
+<p>Los lados de un cuadrado se extienden para formar un rectángulo. Como se muestra en la Figura <a href="recta-real-y-desigualdades.html#fig:Rectangulo1">4.10</a>, un lado se extiende <span class="math inline">\(2 cm\)</span> y el otro <span class="math inline">\(5 cm\)</span>. Si el área del rectángulo resultante es menor de <span class="math inline">\(130 cm^2\)</span>, cuál es la posible longitud de un lado del cuadrado original?</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:Rectangulo1"></span>
 <img src="images/DesigualdadRectangulo.jpg" alt="Rectángulo que extiende dos de sus lados [Imagen tomada de [@zill2012algebra] pág $197$]" width="20%" />
 <p class="caption">
-Figura 4.13: Rectángulo que extiende dos de sus lados [Imagen tomada de <span class="citation">(<a href="#ref-zill2012algebra" role="doc-biblioref">Zill &amp; Dewar, 2012</a>)</span> pág <span class="math inline">\(197\)</span>]
+Figura 4.10: Rectángulo que extiende dos de sus lados [Imagen tomada de <span class="citation">(<a href="#ref-zill2012algebra" role="doc-biblioref">Zill &amp; Dewar, 2012</a>)</span> pág <span class="math inline">\(197\)</span>]
 </p>
 </div>
 <p><strong>Proceso de solución</strong></p>
@@ -1280,14 +1310,14 @@ x \in \left(50,\text{Capacidad máxima del autobús}\right]
 </div>
 <div id="ejemplo-16c" class="section level3 hasAnchor" number="4.1.21">
 <h3><span class="header-section-number">4.1.21</span> <strong>Ejemplo 16C</strong><a href="recta-real-y-desigualdades.html#ejemplo-16c" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Como se muestra en la figura <a href="recta-real-y-desigualdades.html#fig:Opticafisica1">4.14</a>, si una lente convexa tiene longitud focal de <span class="math inline">\(f\)</span> centímetros y si un objeto se coloca a una distancia de <span class="math inline">\(p\)</span> centímetros de la lente con <span class="math inline">\(p&gt;f\)</span>, entonces la distancia <span class="math inline">\(q\)</span> desde la lente a la imagen está relacionada a <span class="math inline">\(p\)</span> y <span class="math inline">\(f\)</span> mediante la fórmula</p>
+<p>Como se muestra en la figura <a href="recta-real-y-desigualdades.html#fig:Opticafisica1">4.11</a>, si una lente convexa tiene longitud focal de <span class="math inline">\(f\)</span> centímetros y si un objeto se coloca a una distancia de <span class="math inline">\(p\)</span> centímetros de la lente con <span class="math inline">\(p&gt;f\)</span>, entonces la distancia <span class="math inline">\(q\)</span> desde la lente a la imagen está relacionada a <span class="math inline">\(p\)</span> y <span class="math inline">\(f\)</span> mediante la fórmula</p>
 <p><span class="math display">\[
 \dfrac{1}{p}+\dfrac{1}{q}=\dfrac{1}{f}
 \]</span></p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:Opticafisica1"></span>
 <img src="images/ProbDesigualdadOptica1.jpg" alt="Rectángulo que extiende dos de sus lados [Imagen tomada de [@swokowski1996algebra] pág $117$]" width="50%" />
 <p class="caption">
-Figura 4.14: Rectángulo que extiende dos de sus lados [Imagen tomada de <span class="citation">(<a href="#ref-swokowski1996algebra" role="doc-biblioref">Swokowski &amp; COLE, 1996</a>)</span> pág <span class="math inline">\(117\)</span>]
+Figura 4.11: Rectángulo que extiende dos de sus lados [Imagen tomada de <span class="citation">(<a href="#ref-swokowski1996algebra" role="doc-biblioref">Swokowski &amp; COLE, 1996</a>)</span> pág <span class="math inline">\(117\)</span>]
 </p>
 </div>
 <p>Si <span class="math inline">\(f=5 cm\)</span>, ¿qué tan cerca debe estar el objeto desde la lente para que la imagen esté a más de <span class="math inline">\(12\)</span> centímetros de la lente?</p>
@@ -1332,7 +1362,7 @@ p &amp;&lt;\dfrac{60}{7} \ \ \ \ \text{equivalentemente}
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigRectaRealC"></span>
 <img src="images/Desigualdades2.jpg" alt="Intervalos básicos en la línea real [Imagen tomada de [@zill2012algebra] pág $147$]" width="100%" />
 <p class="caption">
-Figura 4.15: Intervalos básicos en la línea real [Imagen tomada de <span class="citation">(<a href="#ref-zill2012algebra" role="doc-biblioref">Zill &amp; Dewar, 2012</a>)</span> pág <span class="math inline">\(147\)</span>]
+Figura 4.12: Intervalos básicos en la línea real [Imagen tomada de <span class="citation">(<a href="#ref-zill2012algebra" role="doc-biblioref">Zill &amp; Dewar, 2012</a>)</span> pág <span class="math inline">\(147\)</span>]
 </p>
 </div>
 </div>
