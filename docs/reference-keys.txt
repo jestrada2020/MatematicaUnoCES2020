@@ -655,3 +655,4 @@ fig:Conjuntos2D
 fig:Conjuntos2B
 fig:SubConjuntos2A
 fig:Complemento0
+diferencia-simétrica-de-dos-conjuntos
