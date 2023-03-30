@@ -648,3 +648,10 @@ primer-ejemplo-dos-conjuntos
 segundo-ejemplo-tres-conjuntos
 tercer-ejemplo-cuatro-conjuntos
 cuarto-ejemplo-lectura-de-revistas
+fig:Conjuntos2A
+fig:Conjuntos2E
+fig:Conjuntos2C
+fig:Conjuntos2D
+fig:Conjuntos2B
+fig:SubConjuntos2A
+fig:Complemento0

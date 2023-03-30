@@ -23,7 +23,7 @@
 <meta name="author" content="Carlos Andrés Escobar Guerra - Juan Alberto Arias Quiceno - John Jairo Estrada Alvarez" />
 
 
-<meta name="date" content="2023-03-27" />
+<meta name="date" content="2023-03-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -701,19 +701,39 @@ Card(A) \ \ \ \text{ó}  \ \ \ |A|
 <p><span class="math display">\[
 A \subset B  \ \ \ \text{ó}  \ \ \ B \supset A
 \]</span></p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:Figconjunto1"></span>
-<img src="images/Figconjunto1.png" alt="Relación de subconjunto [Imagen tomada de [@zill2012algebra] pág $26$]" width="140" />
+<p><span class="math display">\[
+A \subset B \ \  \ \text{si y sólo si  } \ \  \  \ \text{Para todo } x,  \ \  \ \ \  x \in A \ \  \ \text{entonces } \ \  \  x \in B
+\]</span></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:SubConjuntos2A"></span>
+<img src="LibroMateUnoSemestre01-2020_files/figure-html/SubConjuntos2A-1.png" alt=" Inclusión de conjuntos" width="26%" />
 <p class="caption">
-Figura 2.1: Relación de subconjunto [Imagen tomada de <span class="citation">(<a href="#ref-zill2012algebra" role="doc-biblioref">Zill &amp; Dewar, 2012</a>)</span> pág <span class="math inline">\(26\)</span>]
+Figura 2.1:  Inclusión de conjuntos
 </p>
 </div>
+<!-- ```{r Figconjunto1, fig.cap="Relación de subconjunto [Imagen tomada de [@zill2012algebra] pág $26$]", fig.align='center' ,echo=FALSE, message=FALSE,  warning=FALSE} -->
+<!-- knitr::include_graphics("images/Figconjunto1.png") -->
+<!-- ``` -->
 <div class="definition">
 <p><span id="def:unnamed-chunk-10" class="definition"><strong>Definición2.9  </strong></span>La unión de dos conjuntos <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span> consta de todos los elementos que pertenecen a <span class="math inline">\(A\)</span> o a <span class="math inline">\(B\)</span>. La unión de <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span> se denota por <span class="math inline">\(A \cup B\)</span>. [Tomado de <span class="citation">(<a href="#ref-zill2012algebra" role="doc-biblioref">Zill &amp; Dewar, 2012</a>)</span> pág <span class="math inline">\(31\)</span>]</p>
 </div>
 <p><span class="math display">\[
 A \cup B = \{ x | x \in A \ \text{o} \ x \in B\}
 \]</span></p>
-<p><img src="LibroMateUnoSemestre01-2020_files/figure-html/figConjunto1-1.png" width="192" style="display: block; margin: auto;" /></p>
+<!-- ```{r figConjunto1, echo=FALSE, message=FALSE,  warning=FALSE,  fig.height=2,fig.width=2,fig.align='center'} -->
+<!-- library(venn) -->
+<!-- venn("A+B", -->
+<!--      lwd= 2, -->
+<!--          sncs = 2, -->
+<!--          ilcs = 2, -->
+<!--          zcolor = "style") -->
+<!-- text(899,1073,"U",col="blue",cex = 1.57) -->
+<!-- ``` -->
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:Conjuntos2A"></span>
+<img src="LibroMateUnoSemestre01-2020_files/figure-html/Conjuntos2A-1.png" alt=" Unión de conjuntos" width="26%" />
+<p class="caption">
+Figura 2.2:  Unión de conjuntos
+</p>
+</div>
 <!-- ```{r FigUnionA, fig.cap="Relación de subconjunto [Imagen tomada de [@zill2012algebra] pág $32$]", fig.align='center' ,echo=FALSE, message=FALSE,  warning=FALSE} -->
 <!-- knitr::include_graphics("images/FigUniona1.png") -->
 <!-- knitr::include_graphics("images/FigUniona2.png") -->
@@ -742,7 +762,21 @@ A \cup B = \{ x | x \in A \ \text{o} \ x \in B\}
 <p><span class="math display">\[
 A \cap B = \{ x | x \in A \ \text{y} \ x \in B\}
 \]</span></p>
-<p><img src="LibroMateUnoSemestre01-2020_files/figure-html/figConjunto2-1.png" width="192" style="display: block; margin: auto;" /></p>
+<!-- ```{r figConjunto2, echo=FALSE, message=FALSE,  warning=FALSE,  fig.height=2,fig.width=2,fig.align='center'} -->
+<!-- library(venn) -->
+<!-- venn("AB", -->
+<!--      lwd= 2, -->
+<!--          sncs = 2, -->
+<!--          ilcs = 2, -->
+<!--          zcolor = "style") -->
+<!-- text(899,1073,"U",col="blue",cex = 1.57) -->
+<!-- ``` -->
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:Conjuntos2E"></span>
+<img src="LibroMateUnoSemestre01-2020_files/figure-html/Conjuntos2E-1.png" alt=" Intersección de conjuntos " width="26%" />
+<p class="caption">
+Figura 2.3:  Intersección de conjuntos
+</p>
+</div>
 <!-- ```{r FigInterseccion, fig.cap="Intersección de conjuntos [Imagen tomada de [@zill2012algebra] pág $30$]", fig.align='center' ,echo=FALSE, message=FALSE,  warning=FALSE} -->
 <!-- knitr::include_graphics("images/FigInterseccion1.png") -->
 <!-- ``` -->
@@ -785,7 +819,30 @@ A \cap B = \{ x | x \in A \ \text{y} \ x \in B\}
 <p><span class="math display">\[
 A - B = \{ x | x \in A \ \text{y} \ x \notin B\}
 \]</span></p>
-<p><img src="LibroMateUnoSemestre01-2020_files/figure-html/figConjunto3-1.png" width="192" style="display: block; margin: auto;" /></p>
+<!-- ```{r figConjunto3, echo=FALSE, message=FALSE,  warning=FALSE,  fig.height=2,fig.width=2,fig.align='center'} -->
+<!-- library(venn) -->
+<!-- venn("A~B", -->
+<!--      lwd= 2, -->
+<!--          sncs = 2, -->
+<!--          ilcs = 2, -->
+<!--          zcolor = "style") -->
+<!-- text(899,1073,"U",col="blue",cex = 1.57) -->
+<!-- ``` -->
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:Conjuntos2C"></span>
+<img src="LibroMateUnoSemestre01-2020_files/figure-html/Conjuntos2C-1.png" alt=" Diferencia de conjuntos " width="26%" />
+<p class="caption">
+Figura 2.4:  Diferencia de conjuntos
+</p>
+</div>
+<p><span class="math display">\[
+B - A = \{ x | x \in B \ \text{y} \ x \notin A\}
+\]</span></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:Conjuntos2B"></span>
+<img src="LibroMateUnoSemestre01-2020_files/figure-html/Conjuntos2B-1.png" alt=" Diferencia de conjuntos " width="26%" />
+<p class="caption">
+Figura 2.5:  Diferencia de conjuntos
+</p>
+</div>
 <!-- ```{r FigDif, fig.cap="Diferencia entre conjuntos [Imagen tomada de [@zill2012algebra] pág $34$]", fig.align='center' ,echo=FALSE, message=FALSE,  warning=FALSE} -->
 <!-- knitr::include_graphics("images/FigDif.png") -->
 <!-- ``` -->
@@ -798,7 +855,21 @@ A - B = \{ x | x \in A \ \text{y} \ x \notin B\}
 <p><span class="math display">\[
 A&#39;=A^{c} = \{ x | x \notin A \}
 \]</span></p>
-<p><img src="LibroMateUnoSemestre01-2020_files/figure-html/figConjunto4-1.png" width="192" style="display: block; margin: auto;" /></p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:Complemento0"></span>
+<img src="LibroMateUnoSemestre01-2020_files/figure-html/Complemento0-1.png" alt=" Complemento de un conjunto " width="26%" />
+<p class="caption">
+Figura 2.6:  Complemento de un conjunto
+</p>
+</div>
+<!-- ```{r figConjunto4, echo=FALSE, message=FALSE,  warning=FALSE, fig.height=2,fig.width=2,fig.align='center'} -->
+<!-- library(venn) -->
+<!-- venn("~A", -->
+<!--      lwd= 2, -->
+<!--          sncs = 2, -->
+<!--          ilcs = 2, -->
+<!--          zcolor = "style") -->
+<!-- text(899,1073,"U",col="blue",cex = 1.57) -->
+<!-- ``` -->
 <!-- ```{r FigComplemento, fig.cap="Complemento de un conjunto [Imagen tomada de [@zill2012algebra] pág $34$]", fig.align='center' ,echo=FALSE, message=FALSE,  warning=FALSE} -->
 <!-- knitr::include_graphics("images/FigComplemento.png") -->
 <!-- ``` -->
@@ -808,6 +879,12 @@ A&#39;=A^{c} = \{ x | x \notin A \}
 <h2><span class="header-section-number">2.7</span> Diferencia simétrica de un conjuntos<a href="intro.html#diferencia-simétrica-de-un-conjuntos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="definition">
 <p><span id="def:unnamed-chunk-14" class="definition"><strong>Definición2.13  </strong></span>La diferencia simétrica entre dos conjuntos <span class="math inline">\(A\)</span> y <span class="math inline">\(B\)</span> se define como el conjunto de todos los elementos del universo <span class="math inline">\(U\)</span>, que pertenecen a <span class="math inline">\((A-B) \cup (B-A)\)</span>.</p>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:Conjuntos2D"></span>
+<img src="LibroMateUnoSemestre01-2020_files/figure-html/Conjuntos2D-1.png" alt=" Diferencia simétrica de conjuntos " width="26%" />
+<p class="caption">
+Figura 2.7:  Diferencia simétrica de conjuntos
+</p>
 </div>
 <p><br></br></p>
 </div>
@@ -883,10 +960,10 @@ A&#39;=A^{c} = \{ x | x \notin A \}
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigEjConjunto1"></span>
 <img src="images/EjemploConjuntos1.jpg" alt="Ejemplo 1 de conjuntos [Imagen tomada de [@zill2012algebra] pág $33$]" width="40%" />
 <p class="caption">
-Figura 2.2: Ejemplo 1 de conjuntos [Imagen tomada de <span class="citation">(<a href="#ref-zill2012algebra" role="doc-biblioref">Zill &amp; Dewar, 2012</a>)</span> pág <span class="math inline">\(33\)</span>]
+Figura 2.8: Ejemplo 1 de conjuntos [Imagen tomada de <span class="citation">(<a href="#ref-zill2012algebra" role="doc-biblioref">Zill &amp; Dewar, 2012</a>)</span> pág <span class="math inline">\(33\)</span>]
 </p>
 </div>
-<p>A partir de la figura <a href="intro.html#fig:FigEjConjunto1">2.2</a>, obtener la solución a los enunciados de conjuntos</p>
+<p>A partir de la figura <a href="intro.html#fig:FigEjConjunto1">2.8</a>, obtener la solución a los enunciados de conjuntos</p>
 <ul>
 <li><p>Obtener <span class="math inline">\(A \cup B=?\)</span></p></li>
 <li><p>Obtener <span class="math inline">\(A \cup C=?\)</span></p></li>
@@ -908,10 +985,10 @@ Figura 2.2: Ejemplo 1 de conjuntos [Imagen tomada de <span class="citation">(<a 
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigEjConjunto2"></span>
 <img src="images/EjemploConjuntos2.jpg" alt="Ejemplo 2 de conjuntos [Imagen tomada de [@zill2012algebra] pág $35$]" width="40%" />
 <p class="caption">
-Figura 2.3: Ejemplo 2 de conjuntos [Imagen tomada de <span class="citation">(<a href="#ref-zill2012algebra" role="doc-biblioref">Zill &amp; Dewar, 2012</a>)</span> pág <span class="math inline">\(35\)</span>]
+Figura 2.9: Ejemplo 2 de conjuntos [Imagen tomada de <span class="citation">(<a href="#ref-zill2012algebra" role="doc-biblioref">Zill &amp; Dewar, 2012</a>)</span> pág <span class="math inline">\(35\)</span>]
 </p>
 </div>
-<p>A partir de la figura <a href="intro.html#fig:FigEjConjunto2">2.3</a>, obtener la solución a los enunciados de conjuntos</p>
+<p>A partir de la figura <a href="intro.html#fig:FigEjConjunto2">2.9</a>, obtener la solución a los enunciados de conjuntos</p>
 <ul>
 <li><p>Obtener <span class="math inline">\(A \cup B=?\)</span></p></li>
 <li><p>Obtener <span class="math inline">\(A \cap B=?\)</span></p></li>
@@ -924,10 +1001,10 @@ Figura 2.3: Ejemplo 2 de conjuntos [Imagen tomada de <span class="citation">(<a 
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:FigEjConjunto3"></span>
 <img src="images/EjemploConjuntos3.jpg" alt="Ejemplo 3 de conjuntos [Imagen tomada de [@zill2012algebra] pág $33$]" width="40%" />
 <p class="caption">
-Figura 2.4: Ejemplo 3 de conjuntos [Imagen tomada de <span class="citation">(<a href="#ref-zill2012algebra" role="doc-biblioref">Zill &amp; Dewar, 2012</a>)</span> pág <span class="math inline">\(33\)</span>]
+Figura 2.10: Ejemplo 3 de conjuntos [Imagen tomada de <span class="citation">(<a href="#ref-zill2012algebra" role="doc-biblioref">Zill &amp; Dewar, 2012</a>)</span> pág <span class="math inline">\(33\)</span>]
 </p>
 </div>
-<p>A partir de la figura <a href="intro.html#fig:FigEjConjunto3">2.4</a>, obtener la solución a los enunciados de conjuntos</p>
+<p>A partir de la figura <a href="intro.html#fig:FigEjConjunto3">2.10</a>, obtener la solución a los enunciados de conjuntos</p>
 <ul>
 <li><p>Obtener <span class="math inline">\({\bigcup}_{i=1}^{2}A_{i} =?\)</span></p></li>
 <li><p>Obtener <span class="math inline">\({\bigcap}_{i=2}^{3}A_{i} =?\)</span></p></li>
