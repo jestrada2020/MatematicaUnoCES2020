@@ -657,3 +657,5 @@ fig:SubConjuntos2A
 fig:Complemento0
 diferencia-simétrica-de-dos-conjuntos
 fig:Conjuntos3b
+fig:ConjuntosProblema0
+ejemplo4

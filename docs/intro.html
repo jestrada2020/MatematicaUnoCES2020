@@ -23,7 +23,7 @@
 <meta name="author" content="Carlos Andrés Escobar Guerra - Juan Alberto Arias Quiceno - John Jairo Estrada Alvarez" />
 
 
-<meta name="date" content="2023-03-30" />
+<meta name="date" content="2023-03-31" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -144,12 +144,13 @@ div.csl-indent {
 <li class="chapter" data-level="2.9" data-path="intro.html"><a href="intro.html#ejemplo1"><i class="fa fa-check"></i><b>2.9</b> Ejemplo1</a></li>
 <li class="chapter" data-level="2.10" data-path="intro.html"><a href="intro.html#ejemplo2"><i class="fa fa-check"></i><b>2.10</b> Ejemplo2</a></li>
 <li class="chapter" data-level="2.11" data-path="intro.html"><a href="intro.html#ejemplo3"><i class="fa fa-check"></i><b>2.11</b> Ejemplo3</a></li>
-<li class="chapter" data-level="2.12" data-path="intro.html"><a href="intro.html#ejemplos-de-cardinalidad"><i class="fa fa-check"></i><b>2.12</b> Ejemplos de cardinalidad</a>
+<li class="chapter" data-level="2.12" data-path="intro.html"><a href="intro.html#ejemplo4"><i class="fa fa-check"></i><b>2.12</b> Ejemplo4</a></li>
+<li class="chapter" data-level="2.13" data-path="intro.html"><a href="intro.html#ejemplos-de-cardinalidad"><i class="fa fa-check"></i><b>2.13</b> Ejemplos de cardinalidad</a>
 <ul>
-<li class="chapter" data-level="2.12.1" data-path="intro.html"><a href="intro.html#primer-ejemplo-dos-conjuntos"><i class="fa fa-check"></i><b>2.12.1</b> Primer ejemplo dos conjuntos</a></li>
-<li class="chapter" data-level="2.12.2" data-path="intro.html"><a href="intro.html#segundo-ejemplo-tres-conjuntos"><i class="fa fa-check"></i><b>2.12.2</b> Segundo ejemplo tres conjuntos</a></li>
-<li class="chapter" data-level="2.12.3" data-path="intro.html"><a href="intro.html#tercer-ejemplo-cuatro-conjuntos"><i class="fa fa-check"></i><b>2.12.3</b> Tercer ejemplo cuatro conjuntos</a></li>
-<li class="chapter" data-level="2.12.4" data-path="intro.html"><a href="intro.html#cuarto-ejemplo-lectura-de-revistas"><i class="fa fa-check"></i><b>2.12.4</b> Cuarto ejemplo (lectura de revistas)</a></li>
+<li class="chapter" data-level="2.13.1" data-path="intro.html"><a href="intro.html#primer-ejemplo-dos-conjuntos"><i class="fa fa-check"></i><b>2.13.1</b> Primer ejemplo dos conjuntos</a></li>
+<li class="chapter" data-level="2.13.2" data-path="intro.html"><a href="intro.html#segundo-ejemplo-tres-conjuntos"><i class="fa fa-check"></i><b>2.13.2</b> Segundo ejemplo tres conjuntos</a></li>
+<li class="chapter" data-level="2.13.3" data-path="intro.html"><a href="intro.html#tercer-ejemplo-cuatro-conjuntos"><i class="fa fa-check"></i><b>2.13.3</b> Tercer ejemplo cuatro conjuntos</a></li>
+<li class="chapter" data-level="2.13.4" data-path="intro.html"><a href="intro.html#cuarto-ejemplo-lectura-de-revistas"><i class="fa fa-check"></i><b>2.13.4</b> Cuarto ejemplo (lectura de revistas)</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="conjuntos-numéricos.html"><a href="conjuntos-numéricos.html"><i class="fa fa-check"></i><b>3</b> Conjuntos numéricos</a>
@@ -1027,11 +1028,51 @@ Figura 2.10: Ejemplo 3 de conjuntos [Imagen tomada de <span class="citation">(<a
 <li><p>Obtener <span class="math inline">\(A_1-\left({\bigcup}_{i=2}^{3}A_{i}\right)=?\)</span></p></li>
 </ul>
 </div>
-<div id="ejemplos-de-cardinalidad" class="section level2 hasAnchor" number="2.12">
-<h2><span class="header-section-number">2.12</span> Ejemplos de cardinalidad<a href="intro.html#ejemplos-de-cardinalidad" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="ejemplo4" class="section level2 hasAnchor" number="2.12">
+<h2><span class="header-section-number">2.12</span> Ejemplo4<a href="intro.html#ejemplo4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>De un grupo de 80 personas de las cuales se tiene información de que 27 leían la revista A, pero no leían la revista B; 26 leían la revista B, pero no la C; 19 leían C pero no A; 2 las tres revistas mencionadas. ¿Cúantos preferían otras revistas?</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:ConjuntosProblema0"></span>
+<img src="LibroMateUnoSemestre01-2020_files/figure-html/ConjuntosProblema0-1.png" alt="Gráfica para el planteo " width="36%" />
+<p class="caption">
+Figura 2.11: Gráfica para el planteo
+</p>
+</div>
+<p><strong>Planteo y solución de la ecuación: </strong></p>
+<p>A partir de la figura <a href="intro.html#fig:ConjuntosProblema0">2.11</a>, y usando los conceptos de cartinalidad para un conjunto se logra obtener el sistema de ecuaciones:</p>
+<p><span class="math display">\[\begin{equation}
+\begin{split}
+
+80 &amp; = &amp; \ \ a + b + c + d + e + f + g + X \\
+
+27 &amp; = &amp; \ \  e + f \ \ \ \text{leían la revista A pero no la B}\\
+
+26 &amp; = &amp; \ \  a + d \ \ \ \text{leían la revista B pero no la C}\\
+
+19 &amp; = &amp; \ \  b + g \ \ \ \text{leían la revista C pero no la A}\\
+
+2 &amp; = &amp; \ \  c \ \ \ \text{leián las tres revistas}\\
+
+&amp; &amp; \text{sustituyendo } (2) , (3), (4), (5) \ \ \text{en } \ \ (1) \ \ \text{se tiene:}\\
+
+80 &amp; = &amp; \ \  (e + f) + (a + d) + (b + g) + c + X\\
+
+80 &amp; = &amp; \ \  27 + 26 + 19 + 2 + X\\
+
+80 &amp; = &amp; \ \  74 + X\\
+
+X &amp; = &amp; \ \  80 - 74\\
+
+X &amp; = &amp; \ \  6
+
+\end{split}
+\end{equation}\]</span></p>
+<p><strong>Respuesta: </strong> Son 6 el número de personas que preferían leer otras revistas.</p>
+</div>
+<div id="ejemplos-de-cardinalidad" class="section level2 hasAnchor" number="2.13">
+<h2><span class="header-section-number">2.13</span> Ejemplos de cardinalidad<a href="intro.html#ejemplos-de-cardinalidad" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Suponer que para cada uno de los siguientes ejmplos el cardinal del universo (e.d <span class="math inline">\(U\)</span> ) es la suma de las magnitudes que representan los números en la gráfica.</p>
-<div id="primer-ejemplo-dos-conjuntos" class="section level3 hasAnchor" number="2.12.1">
-<h3><span class="header-section-number">2.12.1</span> Primer ejemplo dos conjuntos<a href="intro.html#primer-ejemplo-dos-conjuntos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="primer-ejemplo-dos-conjuntos" class="section level3 hasAnchor" number="2.13.1">
+<h3><span class="header-section-number">2.13.1</span> Primer ejemplo dos conjuntos<a href="intro.html#primer-ejemplo-dos-conjuntos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><img src="LibroMateUnoSemestre01-2020_files/figure-html/figConjunto5-1.png" width="384" style="display: block; margin: auto;" /></p>
 <p>A partir de la gáfica, obtener la solución a los enunciados de conjuntos:</p>
 <ul>
@@ -1042,8 +1083,8 @@ Figura 2.10: Ejemplo 3 de conjuntos [Imagen tomada de <span class="citation">(<a
 <li><p>Obtener el cardinal para el complemento de <span class="math inline">\(B - A=?\)</span></p></li>
 </ul>
 </div>
-<div id="segundo-ejemplo-tres-conjuntos" class="section level3 hasAnchor" number="2.12.2">
-<h3><span class="header-section-number">2.12.2</span> Segundo ejemplo tres conjuntos<a href="intro.html#segundo-ejemplo-tres-conjuntos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="segundo-ejemplo-tres-conjuntos" class="section level3 hasAnchor" number="2.13.2">
+<h3><span class="header-section-number">2.13.2</span> Segundo ejemplo tres conjuntos<a href="intro.html#segundo-ejemplo-tres-conjuntos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><img src="LibroMateUnoSemestre01-2020_files/figure-html/figConjunto6-1.png" width="384" style="display: block; margin: auto;" /></p>
 <p>A partir de la gáfica, obtener la solución a los enunciados de conjuntos:</p>
 <ul>
@@ -1061,8 +1102,8 @@ Figura 2.10: Ejemplo 3 de conjuntos [Imagen tomada de <span class="citation">(<a
 <li><p>Obtener el cardinal para el complemento de <span class="math inline">\(C - A=?\)</span></p></li>
 </ul>
 </div>
-<div id="tercer-ejemplo-cuatro-conjuntos" class="section level3 hasAnchor" number="2.12.3">
-<h3><span class="header-section-number">2.12.3</span> Tercer ejemplo cuatro conjuntos<a href="intro.html#tercer-ejemplo-cuatro-conjuntos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="tercer-ejemplo-cuatro-conjuntos" class="section level3 hasAnchor" number="2.13.3">
+<h3><span class="header-section-number">2.13.3</span> Tercer ejemplo cuatro conjuntos<a href="intro.html#tercer-ejemplo-cuatro-conjuntos" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><img src="LibroMateUnoSemestre01-2020_files/figure-html/figConjunto7-1.png" width="384" style="display: block; margin: auto;" /></p>
 <p>A partir de la gáfica, obtener la solución a los enunciados de conjuntos:</p>
 <ul>
@@ -1082,8 +1123,8 @@ Figura 2.10: Ejemplo 3 de conjuntos [Imagen tomada de <span class="citation">(<a
 <li><p>Obtener el cardinal para el complemento de <span class="math inline">\(D - A=?\)</span></p></li>
 </ul>
 </div>
-<div id="cuarto-ejemplo-lectura-de-revistas" class="section level3 hasAnchor" number="2.12.4">
-<h3><span class="header-section-number">2.12.4</span> Cuarto ejemplo (lectura de revistas)<a href="intro.html#cuarto-ejemplo-lectura-de-revistas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="cuarto-ejemplo-lectura-de-revistas" class="section level3 hasAnchor" number="2.13.4">
+<h3><span class="header-section-number">2.13.4</span> Cuarto ejemplo (lectura de revistas)<a href="intro.html#cuarto-ejemplo-lectura-de-revistas" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>En un grupo universal (<span class="math inline">\(U\)</span>) para lectura se tienen tres subgrupos de lectura para las revistas <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, y <span class="math inline">\(C\)</span>.</p>
 <p><img src="LibroMateUnoSemestre01-2020_files/figure-html/figConjunto8-1.png" width="384" style="display: block; margin: auto;" /></p>
 <p>A partir de la gáfica, obtener la solución a los enunciados de conjuntos:</p>
