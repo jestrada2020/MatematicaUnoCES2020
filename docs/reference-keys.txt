@@ -659,3 +659,5 @@ diferencia-simétrica-de-dos-conjuntos
 fig:Conjuntos3b
 fig:ConjuntosProblema0
 ejemplo4
+entrevista-perdida-con-steven-jobs-en-español
+entrevista-perdida-a-steven-jobs-en-español
