@@ -522,5 +522,3 @@ ejercicio-4d
 ejercicio-5d
 Videos-de-clase
 Videos-de-asesoria
-fig:sf-ogc
-desarrollo-temático
