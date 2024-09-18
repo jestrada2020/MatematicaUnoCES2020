@@ -542,3 +542,10 @@ video-teoría-de-conjuntos-versión-cero
 video-sobre-la-técnica-de-los-signos-o-cementerio-versión-cero
 video-operaciones-con-fracciones-versión-cero
 video-expresión-y-ecuación-cuadrática-versión-cero
+fig:Conjunto1
+fig:Conjunto2
+fig:Conjunto3
+fig:Conjunto4
+fig:CajaOficina1
+fig:Rectangulo1
+video-de-palabras-a-símbolos-con-desigualdades
