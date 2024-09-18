@@ -541,3 +541,4 @@ video-del-problema-estudiantes-en-concierto-versión-cero
 video-teoría-de-conjuntos-versión-cero
 video-sobre-la-técnica-de-los-signos-o-cementerio-versión-cero
 video-operaciones-con-fracciones-versión-cero
+video-expresión-y-ecuación-cuadrática-versión-cero
