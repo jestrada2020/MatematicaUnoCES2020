@@ -537,3 +537,6 @@ fig:ClasificacionPolinomios1
 fig:CerosDeEcu1
 simplificación
 video-despeje-de-variables-versión-cero
+video-del-problema-estudiantes-en-concierto-versión-cero
+video-teoría-de-conjuntos-versión-cero
+video-sobre-la-técnica-de-los-signos-o-cementerio-versión-cero
