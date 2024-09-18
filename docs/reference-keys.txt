@@ -524,3 +524,16 @@ Videos-de-clase
 Videos-de-asesoria
 fig:sf-ogc
 desarrollo-temático
+fig:LeyDist1aa
+fig:Factorizacion1
+fig:Factorizacion2
+fig:Factorizacion3
+fig:Factorizacion4
+fig:ProductoNotable1
+fig:ProductoNotable2
+fig:ProductoNotable3
+fig:ProductosNotables1
+fig:ClasificacionPolinomios1
+fig:CerosDeEcu1
+simplificación
+video-despeje-de-variables-versión-cero
