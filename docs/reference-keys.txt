@@ -549,3 +549,4 @@ fig:Conjunto4
 fig:CajaOficina1
 fig:Rectangulo1
 video-de-palabras-a-símbolos-con-desigualdades
+video-sistemas-2-por-2-método-de-eliminación
