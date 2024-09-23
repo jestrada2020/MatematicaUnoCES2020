@@ -553,3 +553,7 @@ video-sistemas-2-por-2-método-de-eliminación
 videos-para-describir-la-solución-de-ecuaciones-no-lineales-version-cero
 video-sobre-factorización-de-expresión-cuadráticas-versión-cero
 video-sobre-factorización-de-la-expresión-cuadráticas---versión-cero
+fig:FigPotenciacion1
+fig:FigRadicales1
+fig:LeyDist1
+video-sobre-simplificación-de-expresiones-con-potencias-y-radicales---versión-cero
