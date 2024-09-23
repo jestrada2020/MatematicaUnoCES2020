@@ -552,3 +552,4 @@ video-de-palabras-a-símbolos-con-desigualdades
 video-sistemas-2-por-2-método-de-eliminación
 videos-para-describir-la-solución-de-ecuaciones-no-lineales-version-cero
 video-sobre-factorización-de-expresión-cuadráticas-versión-cero
+video-sobre-factorización-de-la-expresión-cuadráticas---versión-cero
