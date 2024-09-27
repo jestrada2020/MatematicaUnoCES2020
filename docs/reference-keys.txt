@@ -559,3 +559,4 @@ fig:LeyDist1
 video-sobre-simplificación-de-expresiones-con-potencias-y-radicales---versión-cero
 video-sobre-simplificación-de-expresiones-con-potencias-y-radicales---versión-dos
 video-para-resolver-ecuaciones-cuadráticas-usando-completación-de-un-trinómio-cuadrado-perfecto---concepto-geométrico
+video-sobre-factorización-de-un-trinomio-cuadrado---versión-cero
