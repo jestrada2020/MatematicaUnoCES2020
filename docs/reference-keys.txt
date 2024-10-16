@@ -564,3 +564,4 @@ video-sobre-factorizacion-de-expresiones-cuadráticas-usando-la-técnica-de-po-s
 repaso-teoría-de-conjuntos
 repaso-con-conceptos-teorícos
 repaso-de-conceptos-recorridos
+calculadora-02072024
