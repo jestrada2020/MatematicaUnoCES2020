@@ -565,3 +565,7 @@ repaso-teoría-de-conjuntos
 repaso-con-conceptos-teorícos
 repaso-de-conceptos-recorridos
 calculadora-02072024
+cuestionarios-de-selección-múltiple
+cuestionario-básico
+cuestionario-uno-de-selección-múltiple
+cuestionario-dos-seleccion-múltiple
